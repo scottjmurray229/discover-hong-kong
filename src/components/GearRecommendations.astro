@@ -1,10 +1,10 @@
 ---
 // GearRecommendations.astro — "Gear We Recommend" — replaces "Packing Essentials" on destination pages
 // Standalone, no deps. 4-6 curated items with destination-specific WHY + Amazon links.
-// Usage: <GearRecommendations destination="Siquijor" />
-// Falls back to Philippines defaults if no destination prop.
+// Usage: <GearRecommendations destination="Sai Kung" />
+// Falls back to Hong Kong defaults if no destination prop.
 
-import { PHILIPPINES_GEAR_RECOMMENDATIONS, PHILIPPINES_CONFIG } from '../data/packing-list';
+import { HK_GEAR_RECOMMENDATIONS, HK_CONFIG } from '../data/packing-list';
 
 export interface Props {
   destination?: string;
@@ -12,12 +12,12 @@ export interface Props {
 }
 
 const {
-  destination = PHILIPPINES_CONFIG.destination,
+  destination = HK_CONFIG.destination,
   maxItems = 5,
 } = Astro.props;
 
-const items = PHILIPPINES_GEAR_RECOMMENDATIONS.slice(0, maxItems);
-const affiliateTag = PHILIPPINES_CONFIG.affiliateTag;
+const items = HK_GEAR_RECOMMENDATIONS.slice(0, maxItems);
+const affiliateTag = HK_CONFIG.affiliateTag;
 ---
 
 <div class="gear-rec">

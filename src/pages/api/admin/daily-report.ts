@@ -108,7 +108,7 @@ export async function GET(context: APIContext): Promise<Response> {
     const monthlyRate = (d30Cost / daysWithData) * 30;
     const allCost = estimateCost(allTime?.input_tokens ?? 0, allTime?.output_tokens ?? 0);
 
-    const subject = `PH Daily: ${calls} calls, ${fmtCost(cost)}, ${users} users`;
+    const subject = `HK Daily: ${calls} calls, ${fmtCost(cost)}, ${users} users`;
 
     // --- Shared inline styles ---
     const S = {
@@ -145,7 +145,7 @@ export async function GET(context: APIContext): Promise<Response> {
 <div style="max-width:640px;margin:24px auto;background:#161b22;border:1px solid #30363d;border-radius:12px;overflow:hidden;">
   <div style="background:linear-gradient(135deg,#0D7377,#095456);padding:20px 24px;">
     <div style="font-size:18px;font-weight:700;color:#fff;">Daily Report</div>
-    <div style="font-size:12px;color:rgba(255,255,255,0.7);margin-top:2px;">Discover Philippines &middot; Last 24 Hours</div>
+    <div style="font-size:12px;color:rgba(255,255,255,0.7);margin-top:2px;">Discovering Hong Kong &middot; Last 24 Hours</div>
   </div>
   <div style="padding:20px 24px;">
 
@@ -252,7 +252,7 @@ export async function GET(context: APIContext): Promise<Response> {
 
   </div>
   <div style="padding:12px 24px;text-align:center;font-size:11px;color:#484f58;border-top:1px solid #21262d;">
-    Claude Haiku 4.5 &middot; <a href="https://discoverphilippines.info/api/admin/stats?key=${key}" style="color:#0D7377;text-decoration:none;">Full Dashboard</a>
+    Claude Haiku 4.5 &middot; <a href="https://discoveringhongkong.info/api/admin/stats?key=${key}" style="color:#0D7377;text-decoration:none;">Full Dashboard</a>
   </div>
 </div>
 </body></html>`;

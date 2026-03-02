@@ -4,10 +4,10 @@ import PackingList from '../components/PackingList.astro';
 import FAQ from '../components/FAQ.astro';
 import EmailCapture from '../components/EmailCapture.astro';
 import FTCDisclosure from '../components/FTCDisclosure.astro';
-import { PHILIPPINES_PACKING_FAQS, PHILIPPINES_CONFIG } from '../data/packing-list';
+import { HK_PACKING_FAQS, HK_CONFIG } from '../data/packing-list';
 import { PACKING_BASE } from '../data/packing-base';
 
-const config = PHILIPPINES_CONFIG;
+const config = HK_CONFIG;
 const allItems = [...PACKING_BASE, ...config.destinationEssentials];
 
 // Build HowTo schema sections by category
@@ -17,7 +17,7 @@ const categoryLabels: Record<string, string> = {
   toiletries: 'Toiletries & Health',
   electronics: 'Electronics',
   gear: 'Gear & Accessories',
-  destination: 'Philippines Essentials',
+  destination: 'Hong Kong Essentials',
   activity: 'Activity Gear',
 };
 
@@ -31,8 +31,8 @@ allItems.forEach(item => {
 const howToSchema = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
-  name: 'How to Pack for the Philippines',
-  description: 'Complete interactive packing checklist for Philippines travelers — customized by season, duration, and activities.',
+  name: 'How to Pack for Hong Kong',
+  description: 'Complete interactive packing checklist for Hong Kong travelers — customized by season, duration, and activities.',
   totalTime: 'PT15M',
   step: Object.entries(byCategory).map(([catId, items]) => ({
     '@type': 'HowToSection',
@@ -48,8 +48,8 @@ const howToSchema = {
 const itemListSchema = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
-  name: 'Philippines Packing List — Essential Gear',
-  description: 'Gear we recommend for every Philippines trip',
+  name: 'Hong Kong Packing List — Essential Gear',
+  description: 'Gear we recommend for every Hong Kong trip',
   itemListElement: config.gearRecommendations.map((item, i) => ({
     '@type': 'ListItem',
     position: i + 1,
@@ -69,7 +69,7 @@ const itemListSchema = {
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: PHILIPPINES_PACKING_FAQS.map(faq => ({
+  mainEntity: HK_PACKING_FAQS.map(faq => ({
     '@type': 'Question',
     name: faq.question,
     acceptedAnswer: {
@@ -86,8 +86,8 @@ const breadcrumbs = [
 ---
 
 <BaseLayout
-  title="Philippines Packing List 2026 — Interactive Checklist | Discover Philippines"
-  description="Free interactive packing checklist for the Philippines. Check off what you have, see what you need, get tropical-climate recommendations. 60+ items, customized for your trip."
+  title="Hong Kong Packing List 2026 — Interactive Checklist | Discovering Hong Kong"
+  description="Free interactive packing checklist for Hong Kong. Check off what you have, see what you need, get recommendations for Type G adapters, layers, and walking shoes. 60+ items, customized for your trip."
   breadcrumbs={breadcrumbs}
 >
   <!-- Inline schema (HowTo + ItemList + FAQPage) -->
@@ -103,7 +103,7 @@ const breadcrumbs = [
       '@type': 'ListItem',
       position: i + 1,
       name: b.name,
-      item: `https://discoverphilippines.info${b.url}`,
+      item: `https://discoveringhongkong.info${b.url}`,
     })),
   })} />
 
@@ -115,16 +115,16 @@ const breadcrumbs = [
         <span aria-hidden="true">›</span>
         <span aria-current="page">Packing List</span>
       </nav>
-      <h1 class="pl-hero-title">Philippines Packing List 2026</h1>
+      <h1 class="pl-hero-title">Hong Kong Packing List 2026</h1>
       <p class="pl-hero-subtitle">
         Interactive checklist — check off what you have, see what you still need.
-        Customized for the Philippines' tropical climate, island hopping, and rainy season.
+        Customized for Hong Kong's climate, city walking, and island day trips.
       </p>
       <div class="pl-hero-meta">
         <span class="pl-meta-chip">🌴 Tropical Climate</span>
-        <span class="pl-meta-chip">⚡ 220V / Type A/B/C</span>
-        <span class="pl-meta-chip">💵 PHP + USD</span>
-        <span class="pl-meta-chip">✈️ Visa on Arrival (most passports)</span>
+        <span class="pl-meta-chip">⚡ 220V / Type G</span>
+        <span class="pl-meta-chip">💵 HKD + USD</span>
+        <span class="pl-meta-chip">✈️ Visa-Free (most passports, 90 days)</span>
       </div>
     </div>
   </section>
@@ -141,20 +141,20 @@ const breadcrumbs = [
       </div>
       <p>
         We pack for 5 days on every trip, whether we're gone for a week or three weeks. The logic is
-        simple: laundry is cheap, easy, and everywhere in the Philippines — and a lighter bag changes
+        simple: laundry is available throughout Hong Kong — and a lighter bag changes
         everything about how you travel.
       </p>
       <p>
         Once you're settled at your hotel or guesthouse, take a short walk around the neighborhood.
         There are almost always several local laundry shops within a few minutes — small family-run
-        places that offer wash, dry, and fold for about ₱100–150 per kilogram. That's roughly $2–3
+        places that offer wash, dry, and fold for about HKD 30–50 per kilogram. That's roughly $4–6
         for a full bag of clothes. Drop it off in the morning, pick it up that afternoon or the next
         day.
       </p>
       <p>
         <strong>One important thing:</strong> when you drop off your laundry, tell them your checkout
         date. If they don't know you're leaving the next morning, they'll have it ready "tomorrow
-        afternoon" — and you'll be on a bangka to the next island. A quick heads-up avoids the whole
+        afternoon" — and you'll be on the ferry to the next island. A quick heads-up avoids the whole
         problem. And if your checkout is tight or you need something back quickly, most local shops
         will do a rush order for a small extra fee — just ask.
       </p>
@@ -179,8 +179,8 @@ const breadcrumbs = [
 
   <!-- Gear We Recommend (SEO ItemList section) -->
   <section class="pl-gear-section container-prose">
-    <h2>Gear We Recommend for the Philippines</h2>
-    <p>These are the items that make the biggest difference on a Philippines trip. Each pick is chosen for a specific reason — not just "take sunscreen" but why it matters here, specifically.</p>
+    <h2>Gear We Recommend for Hong Kong</h2>
+    <p>These are the items that make the biggest difference on a Hong Kong trip. Each pick is chosen for a specific reason — not just "take a jacket" but why it matters here, specifically.</p>
 
     <div class="pl-gear-cards">
       {config.gearRecommendations.map((item, i) => {
@@ -210,35 +210,35 @@ const breadcrumbs = [
   <section class="pl-editorial container-prose">
     <p>
       For the full story on what to buy, what to skip, and why — including specific product recommendations
-      for dry bags, snorkel gear, footwear, and the voltage warning that blew up Scott's Keurig — see our
-      <a href="/practical/#packing">Philippines Travel Tips packing guide</a>.
+      for footwear, layers, and Type G adapters — see our
+      <a href="/practical/#packing">Hong Kong Practical Guide</a>.
     </p>
   </section>
 
   <!-- FAQ -->
   <section class="pl-faq container-prose">
-    <h2>Philippines Packing — Frequently Asked Questions</h2>
-    <FAQ items={PHILIPPINES_PACKING_FAQS} />
+    <h2>Hong Kong Packing — Frequently Asked Questions</h2>
+    <FAQ items={HK_PACKING_FAQS} />
   </section>
 
   <!-- Email Capture -->
   <div class="container-prose">
     <EmailCapture
-      leadMagnet="Get Our Free Philippines Packing Guide PDF"
-      description="The complete printable checklist for your Philippines trip — organized by category, customized for the tropics."
+      leadMagnet="Get Our Free Hong Kong Packing Guide PDF"
+      description="The complete printable checklist for your Hong Kong trip — organized by category, customized for the climate."
       bullets={[
         'Full 60+ item checklist, print-ready',
         'Rainy season vs. dry season packing differences',
         'Island-hopping gear essentials',
         'What to buy locally (and save luggage space)',
       ]}
-      guideTag="packing-philippines"
+      guideTag="packing-hong-kong"
     />
   </div>
 
   <!-- Related Links -->
   <section class="pl-related container-content">
-    <h2>Plan the Rest of Your Philippines Trip</h2>
+    <h2>Plan the Rest of Your Hong Kong Trip</h2>
     <div class="pl-related-links">
       <a href="/plan/" class="pl-related-card">
         <span class="pl-related-icon">🗺️</span>
@@ -254,18 +254,18 @@ const breadcrumbs = [
           <div class="pl-related-desc">Visa, money, transport, safety</div>
         </div>
       </a>
-      <a href="/snorkeling-philippines/" class="pl-related-card">
-        <span class="pl-related-icon">🤿</span>
+      <a href="/hiking-hong-kong/" class="pl-related-card">
+        <span class="pl-related-icon">🥾</span>
         <div>
-          <div class="pl-related-title">Snorkeling Guide</div>
-          <div class="pl-related-desc">Best sites, gear, what to expect</div>
+          <div class="pl-related-title">Hiking Guide</div>
+          <div class="pl-related-desc">MacLehose Trail and Dragon's Back</div>
         </div>
       </a>
       <a href="/destinations/" class="pl-related-card">
-        <span class="pl-related-icon">🏝️</span>
+        <span class="pl-related-icon">🌆</span>
         <div>
           <div class="pl-related-title">Destinations</div>
-          <div class="pl-related-desc">Boracay, El Nido, Siargao and more</div>
+          <div class="pl-related-desc">Victoria Peak, Lantau, Sai Kung and more</div>
         </div>
       </a>
     </div>

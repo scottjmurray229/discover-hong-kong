@@ -9,11 +9,11 @@ import jeniceImg from '../../images/jenice-murray.jpg';
 const faqItems = [
   {
     question: 'What exactly is the Trip Companion?',
-    answer: 'It\'s an offline-capable web app built from your specific itinerary. We enrich every destination with real directions (not just Google Maps pins), local phrases, emergency contacts, budget tracking, and insider tips from our 20+ trips to the Philippines.',
+    answer: 'It\'s an offline-capable web app built from your specific itinerary. We enrich every destination with real directions (not just Google Maps pins), local phrases, emergency contacts, budget tracking, and insider tips from our 10+ trips to Hong Kong.',
   },
   {
     question: 'How does it work offline?',
-    answer: 'After purchase, the companion downloads all content to your phone\'s browser cache. No app store needed — just add it to your home screen. Everything works without internet: directions, phrases, contacts, budget tracker. Perfect for ferries, remote islands, and areas with spotty signal.',
+    answer: 'After purchase, the companion downloads all content to your phone\'s browser cache. No app store needed — just add it to your home screen. Everything works without internet: directions, phrases, contacts, budget tracker. Perfect for the MTR, outlying islands, and areas with spotty signal.',
   },
   {
     question: 'Can I share it with my travel group?',
@@ -29,15 +29,15 @@ const faqItems = [
   },
   {
     question: 'What destinations do you cover?',
-    answer: 'We currently cover 20+ destinations across the Philippines including Cebu, Bohol, Siquijor, Palawan (El Nido & Coron), Siargao, Boracay, Dumaguete, Manila, Clark, and more. Each destination has real directions, local restaurant picks, and insider tips from our personal trips.',
+    answer: 'We currently cover 12+ destinations across Hong Kong including Central, Tsim Sha Tsui, Mong Kok, Stanley, Sai Kung, Lantau Island, Lamma Island, Cheung Chau, and more. Each destination has real directions, local restaurant picks, and insider tips from our personal trips.',
   },
 ];
 
 const features = [
   { icon: '🧭', title: 'Real Directions', description: 'Not Google Maps pins — actual "take the Ceres bus, tell the conductor Panagsama" directions from every destination.' },
   { icon: '🌅', title: 'Sunrise & Sunset', description: 'Golden hour times with best viewpoints matched to your daily locations. Never miss a sunset.' },
-  { icon: '💰', title: 'Budget Tracker', description: 'Log expenses in PHP or USD, see typical costs for your destinations, and convert currency — all offline.' },
-  { icon: '💬', title: 'Local Phrases', description: 'Cebuano and Tagalog phrases tuned to your specific destinations, with pronunciation guides.' },
+  { icon: '💰', title: 'Budget Tracker', description: 'Log expenses in HKD or USD, see typical costs for your destinations, and convert currency — all offline.' },
+  { icon: '💬', title: 'Local Phrases', description: 'Cantonese phrases tuned to your specific destinations, with pronunciation guides.' },
   { icon: '👥', title: 'Group Sharing', description: 'One purchase, up to 8 travelers. Everyone gets the full companion with real-time sync.' },
   { icon: '💵', title: 'Expense Splitter', description: 'Track shared costs, split bills, and settle up at the end of the trip. No more spreadsheets.' },
   { icon: '🎒', title: 'Smart Packing List', description: 'Auto-generated from your activities — canyoneering adds water shoes, snorkeling adds reef-safe sunscreen.' },
@@ -54,19 +54,19 @@ const steps = [
 
 const testimonials = [
   {
-    quote: 'We had zero signal on the ferry to Siquijor and the app had everything — directions, restaurant picks, even the right phrases. Felt like traveling with a local friend.',
+    quote: 'We had zero signal on the ferry to Lamma Island and the app had everything — directions, restaurant picks, even the right Cantonese phrases. Felt like traveling with a local friend.',
     author: 'Sarah & Mike',
-    trip: '7-day Visayas trip',
+    trip: '7-day Hong Kong trip',
   },
   {
     quote: 'The real directions are a game changer. Instead of staring at a map pin, I knew exactly which bus to take and what to tell the driver. Saved us hours.',
     author: 'James',
-    trip: '5-day Cebu & Bohol',
+    trip: '5-day Hong Kong & Lantau',
   },
   {
     quote: 'Shared the companion with our whole group of 6. Everyone had the same info, we tracked expenses together, and the packing list was spot on.',
     author: 'Rachel & David',
-    trip: '10-day Palawan adventure',
+    trip: '10-day Hong Kong explorer',
   },
 ];
 
@@ -74,7 +74,7 @@ const testimonials = [
 
 <BaseLayout
   title="Trip Companion"
-  description="Turn any Philippines itinerary into an offline trip companion with local directions, budget tracking, and insider tips. Free through June 30, 2026."
+  description="Turn any Hong Kong itinerary into an offline trip companion with local directions, budget tracking, and insider tips. Free through June 30, 2026."
 >
   <!-- ============================================================
        HERO
@@ -105,10 +105,10 @@ const testimonials = [
       </div>
 
       <div class="cp-hero-text">
-        <p class="cp-hero-label">Discover Philippines</p>
+        <p class="cp-hero-label">Discovering Hong Kong</p>
         <h1 class="cp-hero-title">Your Trip. Your Companion.<br />Works Offline.</h1>
         <p class="cp-hero-subtitle">
-          Turn any Philippines itinerary into an offline trip companion with local directions, budget tracking, and insider tips from 20+ real trips.
+          Turn any Hong Kong itinerary into an offline trip companion with local directions, budget tracking, and insider tips from 10+ real trips.
         </p>
         <div class="cp-hero-ctas">
           <a href="/companion/start/" class="cp-btn cp-btn--primary">Start Planning</a>
@@ -119,15 +119,15 @@ const testimonials = [
         <div class="cp-phone-frame">
           <div class="cp-phone-screen">
             <div class="cp-phone-header">
-              <span class="cp-phone-label">DISCOVER PHILIPPINES</span>
-              <span class="cp-phone-title">Central Visayas Explorer</span>
+              <span class="cp-phone-label">DISCOVERING HK</span>
+              <span class="cp-phone-title">Hong Kong Island Explorer</span>
               <span class="cp-phone-meta">7 days · 3 destinations · 14 activities</span>
             </div>
             <div class="cp-phone-items">
               <div class="cp-phone-item">
                 <span class="cp-phone-item-icon">✈️</span>
                 <div>
-                  <span class="cp-phone-item-title">Arrive Mactan-Cebu</span>
+                  <span class="cp-phone-item-title">Arrive Hong Kong International</span>
                   <span class="cp-phone-item-tag">Directions included</span>
                 </div>
               </div>
@@ -169,9 +169,9 @@ const testimonials = [
                 <span class="cp-mockup-icons">📶 🔋</span>
               </div>
               <div class="cp-mockup-header" style="background: var(--gradient-companion-hero);">
-                <span class="cp-mockup-label">DISCOVER PHILIPPINES</span>
-                <span class="cp-mockup-title">Central Visayas</span>
-                <span class="cp-mockup-sub">Day 1 of 7 · Cebu City</span>
+                <span class="cp-mockup-label">DISCOVERING HK</span>
+                <span class="cp-mockup-title">Hong Kong Island</span>
+                <span class="cp-mockup-sub">Day 1 of 7 · Central, Hong Kong</span>
               </div>
               <div class="cp-mockup-body">
                 <div class="cp-mockup-item">
@@ -179,7 +179,7 @@ const testimonials = [
                   <div class="cp-mockup-row">
                     <span class="cp-mockup-emoji">✈️</span>
                     <div>
-                      <span class="cp-mockup-name">Arrive Mactan-Cebu</span>
+                      <span class="cp-mockup-name">Arrive Hong Kong International Airport</span>
                       <span class="cp-mockup-tag">Directions included</span>
                     </div>
                   </div>
@@ -190,7 +190,7 @@ const testimonials = [
                     <span class="cp-mockup-emoji">🏨</span>
                     <div>
                       <span class="cp-mockup-name">Check in · Quest Hotel</span>
-                      <span class="cp-mockup-tag">₱2,800/night</span>
+                      <span class="cp-mockup-tag">HKD 950/night</span>
                     </div>
                   </div>
                 </div>
@@ -220,7 +220,7 @@ const testimonials = [
                     <span class="cp-mockup-emoji">🍽️</span>
                     <div>
                       <span class="cp-mockup-name">Dinner · Casa Verde</span>
-                      <span class="cp-mockup-tag">₱350/person</span>
+                      <span class="cp-mockup-tag">HKD 120/person</span>
                     </div>
                   </div>
                 </div>
@@ -248,28 +248,28 @@ const testimonials = [
               <div class="cp-mockup-header cp-mockup-header--teal">
                 <span class="cp-mockup-label">GETTING TO</span>
                 <span class="cp-mockup-title">Moalboal Beach</span>
-                <span class="cp-mockup-sub">From Cebu City · 3 hours</span>
+                <span class="cp-mockup-sub">From Central · 45 minutes</span>
               </div>
               <div class="cp-mockup-body">
                 <div class="cp-mockup-direction">
                   <div class="cp-mockup-step-circle">1</div>
                   <div>
                     <span class="cp-mockup-dir-title">South Bus Terminal</span>
-                    <span class="cp-mockup-dir-detail">Take a taxi or Grab to Cebu South Bus Terminal (₱150-200). Tell the driver "South Bus."</span>
+                    <span class="cp-mockup-dir-detail">Take the Airport Express from HK International Airport to Hong Kong Station (HKD 115, 24 min). Direct, fast, no hassle.</span>
                   </div>
                 </div>
                 <div class="cp-mockup-direction">
                   <div class="cp-mockup-step-circle">2</div>
                   <div>
                     <span class="cp-mockup-dir-title">Ceres Bus to Moalboal</span>
-                    <span class="cp-mockup-dir-detail">Look for the Ceres bus with "Bato via Barili" sign. Tell the conductor "Moalboal." ₱155, ~3 hrs.</span>
+                    <span class="cp-mockup-dir-detail">From Hong Kong Station, take the MTR Island Line east to your hotel. Octopus card works on all MTR lines.</span>
                   </div>
                 </div>
                 <div class="cp-mockup-direction">
                   <div class="cp-mockup-step-circle">3</div>
                   <div>
                     <span class="cp-mockup-dir-title">Tricycle to Panagsama</span>
-                    <span class="cp-mockup-dir-detail">At Moalboal town, take a tricycle to Panagsama Beach. ₱50 per person, 10 minutes.</span>
+                    <span class="cp-mockup-dir-detail">For Stanley or southern districts, take a bus from Exchange Square Bus Terminus. HKD 10-20 depending on destination.</span>
                   </div>
                 </div>
                 <div class="cp-mockup-tip">
@@ -300,7 +300,7 @@ const testimonials = [
               <div class="cp-mockup-header cp-mockup-header--gold">
                 <span class="cp-mockup-label">BUDGET TRACKER</span>
                 <span class="cp-mockup-title">Day 3 · Moalboal</span>
-                <span class="cp-mockup-sub">₱4,250 spent · $76 USD</span>
+                <span class="cp-mockup-sub">HKD 1,850 spent · $237 USD</span>
               </div>
               <div class="cp-mockup-body">
                 <div class="cp-mockup-budget-bar">
@@ -313,7 +313,7 @@ const testimonials = [
                     <span class="cp-mockup-name">Chief Mau Resort</span>
                     <span class="cp-mockup-tag">Accommodation</span>
                   </div>
-                  <span class="cp-mockup-amount">₱1,800</span>
+                  <span class="cp-mockup-amount">HKD 850</span>
                 </div>
                 <div class="cp-mockup-expense">
                   <span class="cp-mockup-emoji">🐟</span>
@@ -321,7 +321,7 @@ const testimonials = [
                     <span class="cp-mockup-name">Sardine Run Tour</span>
                     <span class="cp-mockup-tag">Activity</span>
                   </div>
-                  <span class="cp-mockup-amount">₱1,500</span>
+                  <span class="cp-mockup-amount">HKD 680</span>
                 </div>
                 <div class="cp-mockup-expense">
                   <span class="cp-mockup-emoji">🍜</span>
@@ -329,7 +329,7 @@ const testimonials = [
                     <span class="cp-mockup-name">Lunch · Pleasure Point</span>
                     <span class="cp-mockup-tag">Food</span>
                   </div>
-                  <span class="cp-mockup-amount">₱650</span>
+                  <span class="cp-mockup-amount">HKD 220</span>
                 </div>
                 <div class="cp-mockup-expense">
                   <span class="cp-mockup-emoji">🛺</span>
@@ -337,7 +337,7 @@ const testimonials = [
                     <span class="cp-mockup-name">Tricycle rides (×3)</span>
                     <span class="cp-mockup-tag">Transport</span>
                   </div>
-                  <span class="cp-mockup-amount">₱300</span>
+                  <span class="cp-mockup-amount">HKD 100</span>
                 </div>
               </div>
               <div class="cp-mockup-tabs">
@@ -349,7 +349,7 @@ const testimonials = [
             </div>
           </div>
           <h3 class="cp-carousel-title">Budget Tracker</h3>
-          <p class="cp-carousel-desc">Log expenses, see typical costs, convert PHP/USD — all offline.</p>
+          <p class="cp-carousel-desc">Log expenses, see typical costs, convert HKD/USD — all offline.</p>
         </div>
 
         <!-- 4. Local Phrases -->
@@ -362,8 +362,8 @@ const testimonials = [
               </div>
               <div class="cp-mockup-header cp-mockup-header--coral">
                 <span class="cp-mockup-label">LOCAL PHRASES</span>
-                <span class="cp-mockup-title">Cebuano (Bisaya)</span>
-                <span class="cp-mockup-sub">For your Visayas destinations</span>
+                <span class="cp-mockup-title">Cantonese</span>
+                <span class="cp-mockup-sub">For your Hong Kong destinations</span>
               </div>
               <div class="cp-mockup-body">
                 <div class="cp-mockup-phrase">
@@ -396,7 +396,7 @@ const testimonials = [
             </div>
           </div>
           <h3 class="cp-carousel-title">Local Phrases</h3>
-          <p class="cp-carousel-desc">Cebuano & Tagalog phrases matched to your destinations with pronunciation.</p>
+          <p class="cp-carousel-desc">Cantonese phrases matched to your destinations with pronunciation.</p>
         </div>
 
         <!-- 5. Group Sharing -->
@@ -409,7 +409,7 @@ const testimonials = [
               </div>
               <div class="cp-mockup-header cp-mockup-header--purple">
                 <span class="cp-mockup-label">GROUP TRIP</span>
-                <span class="cp-mockup-title">Visayas Adventure</span>
+                <span class="cp-mockup-title">Hong Kong Adventure</span>
                 <span class="cp-mockup-sub">6 travelers · Synced</span>
               </div>
               <div class="cp-mockup-body">
@@ -445,11 +445,11 @@ const testimonials = [
                 </div>
                 <div class="cp-mockup-group-stats">
                   <div class="cp-mockup-stat">
-                    <span class="cp-mockup-stat-val">₱12,400</span>
+                    <span class="cp-mockup-stat-val">HKD 5,200</span>
                     <span class="cp-mockup-stat-label">Group total</span>
                   </div>
                   <div class="cp-mockup-stat">
-                    <span class="cp-mockup-stat-val">₱2,067</span>
+                    <span class="cp-mockup-stat-val">HKD 867</span>
                     <span class="cp-mockup-stat-label">Per person</span>
                   </div>
                 </div>

@@ -1,8 +1,8 @@
 ---
 /**
  * LanguageSwitcher.astro
- * Toggles between English and Filipino (Tagalog) versions of the current page.
- * Detects locale from URL path (/tl/ prefix = Tagalog, otherwise English).
+ * Language switcher — HK site is English only, this component is not used.
+ * Kept for template compatibility.
  */
 const currentPath = Astro.url.pathname;
 const isTagalog = currentPath.startsWith('/tl/');

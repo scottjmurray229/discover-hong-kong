@@ -7,7 +7,7 @@ export interface Props {
   destination?: string;
 }
 
-const { affiliateTag = 'discoverphili-20', destination = 'Philippines' } = Astro.props;
+const { affiliateTag = 'discoverhk-20', destination = 'Hong Kong' } = Astro.props;
 ---
 
 <div class="packing-actions" data-packing-actions>
@@ -378,7 +378,7 @@ const { affiliateTag = 'discoverphili-20', destination = 'Philippines' } = Astro
 
     actionsEl.querySelector('[data-action="amazon"]')?.addEventListener('click', (e) => {
       const btn = e.currentTarget as HTMLButtonElement;
-      const tag = btn.dataset.tag || 'discoverphili-20';
+      const tag = btn.dataset.tag || 'discoverhk-20';
 
       if (!shopPanel || !shopItemsEl || !shopEmptyEl) return;
 

@@ -14,52 +14,52 @@ const breadcrumbs = [
 const schemaData = {
   name: 'Scott Murray',
   image: '/images/scott-murray.jpg',
-  bio: 'American travel writer with 23+ years of Philippines experience across 20+ trips. Healthcare IT professional by day. Based in San Diego, CA.',
-  url: 'https://discoverphilippines.info/about/scott/',
+  bio: 'American travel writer with 10+ trips to Hong Kong since 2007. Healthcare IT professional by day. Based in San Diego, CA.',
+  url: 'https://discoveringhongkong.info/about/scott/',
   knowsAbout: [
-    'Philippines travel',
-    'Island hopping',
+    'Hong Kong travel',
+    'MTR and transport logistics',
     'Budget travel',
     'Travel logistics',
     'Travel videography',
     'Travel planning',
-    'Philippines transport routing',
+    'Hong Kong hiking trails',
   ],
   sameAs: [
-    'https://www.youtube.com/@DiscoverPhilippines',
-    'https://www.facebook.com/DiscoverPhilippinesTravel',
-    'https://www.instagram.com/discover.philippines',
+    'https://www.youtube.com/@DiscoveringHongKong',
+    'https://www.facebook.com/DiscoveringHongKong',
+    'https://www.instagram.com/discovering.hongkong',
   ],
 };
 
 const blogPosts = [
-  { slug: 'boracay-20-years-ago', title: 'Boracay 20 Years Ago: Before the Crowds Changed Everything' },
-  { slug: 'palawan-unspoiled-beauty', title: 'Palawan 2005: When the Underground River Still Felt Like a Secret' },
-  { slug: 'discover-baguio-city', title: 'Baguio City: The Mountain Escape That Doesn\'t Feel Like the Philippines' },
+  { slug: 'dim-sum-guide-hong-kong', title: 'The Complete Dim Sum Guide: Every Restaurant We Have Tried' },
+  { slug: 'dragons-back-trail-guide', title: "Dragon's Back Trail: Hong Kong's Best Urban Hike" },
+  { slug: 'hong-kong-on-a-budget', title: 'Hong Kong on a Budget: HKD 400/Day Is Possible' },
 ];
 
 const destinations = [
-  { slug: 'boracay', title: 'Boracay' },
-  { slug: 'cebu', title: 'Cebu' },
-  { slug: 'el-nido', title: 'El Nido' },
-  { slug: 'siquijor', title: 'Siquijor' },
-  { slug: 'coron', title: 'Coron' },
-  { slug: 'bohol', title: 'Bohol' },
-  { slug: 'dumaguete', title: 'Dumaguete' },
-  { slug: 'clark', title: 'Clark' },
+  { slug: 'tsim-sha-tsui', title: 'Tsim Sha Tsui' },
+  { slug: 'mong-kok', title: 'Mong Kok' },
+  { slug: 'central', title: 'Central' },
+  { slug: 'wan-chai', title: 'Wan Chai' },
+  { slug: 'sai-kung', title: 'Sai Kung' },
+  { slug: 'lantau-island', title: 'Lantau Island' },
+  { slug: 'stanley', title: 'Stanley' },
+  { slug: 'tai-o', title: 'Tai O' },
 ];
 
 const coverageAreas = [
-  { icon: '🗺️', title: 'Logistics & Transport', desc: 'Airport codes, ferry routes, bus connections, NLEX timing, and the transport details that turn a trip from stressful to seamless.' },
-  { icon: '💰', title: 'Budget Breakdowns', desc: 'Real prices in PHP and USD from trips we actually took. Daily budgets, hotel costs, food prices, transport fares.' },
-  { icon: '🎥', title: 'Video Content', desc: 'Destination videos from the places we\'ve been — waterfalls, coastal roads, street food markets, and ferry crossings.' },
-  { icon: '🛠️', title: 'Practical Guides', desc: 'ATM availability, SIM cards, scooter rental, visa tips, and the nuts-and-bolts details guidebooks skip.' },
+  { icon: '🗺️', title: 'Logistics & Transport', desc: 'MTR routes, Octopus card tips, Airport Express, Star Ferry, buses, and the transport details that turn a Hong Kong trip from stressful to seamless.' },
+  { icon: '💰', title: 'Budget Breakdowns', desc: 'Real prices in HKD and USD from trips we actually took. Daily budgets, hotel costs, dim sum bills, transport fares, and hiking costs.' },
+  { icon: '🎥', title: 'Video Content', desc: "Destination videos from the places we've been — the harbour at night, dai pai dong street food, hiking trails, and the Star Ferry crossing." },
+  { icon: '🛠️', title: 'Practical Guides', desc: 'Octopus card setup, SIM cards, Hong Kong hiking gear, border crossings to Macau, and the nuts-and-bolts details guidebooks skip.' },
 ];
 ---
 
 <BaseLayout
-  title="Scott Murray — Travel Writer | Discover Philippines"
-  description="Meet Scott Murray — 23+ years exploring the Philippines, 20+ trips across the archipelago, 40+ countries. The logistics brain behind Discover Philippines."
+  title="Scott Murray — Travel Writer | Discovering Hong Kong"
+  description="Meet Scott Murray — 10+ trips to Hong Kong since 2007, 40+ countries traveled. The logistics brain behind Discovering Hong Kong."
   pageType="author"
   schemaData={schemaData}
   breadcrumbs={breadcrumbs}
@@ -82,8 +82,8 @@ const coverageAreas = [
     <p class="hero-role">Travel Writer & Logistics Expert</p>
     <p class="hero-location">San Diego, CA</p>
     <div class="hero-stats">
-      <div class="hero-stat"><div class="hero-stat-num">23+</div><div class="hero-stat-label">Years visiting PH</div></div>
-      <div class="hero-stat"><div class="hero-stat-num">20+</div><div class="hero-stat-label">Trips & counting</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">2007</div><div class="hero-stat-label">First HK trip</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">10+</div><div class="hero-stat-label">Trips & counting</div></div>
       <div class="hero-stat"><div class="hero-stat-num">40+</div><div class="hero-stat-label">Countries traveled</div></div>
     </div>
   </div>
@@ -95,11 +95,11 @@ const coverageAreas = [
     <div class="section-eyebrow">About Scott</div>
     <h2 class="section-title">The Foreigner Who Keeps Coming Back</h2>
     <div class="bio-content">
-      <p>Travel has always been my escape from the rat race &mdash; and honestly, I enjoy the <strong>planning</strong> almost as much as being there. Researching destinations, mapping routes, finding that perfect beach town. It all started at a travel agency in LA where we'd get cheap tickets to fly LAX to Clark. One of my best friends had a web design business with a partner in the Philippines and told me I needed to get a passport and come see it for myself.</p>
-      <p>I'd never left the country. In February 2003, I landed in Boracay &mdash; White Beach before the world discovered it &mdash; and the Philippines addiction began.</p>
-      <p>I went back in 2004 and met Jenice. We started as Yahoo Messenger chatmates. That friendship turned into a relationship, and that relationship turned into a life built around exploring her home country together. Since then I've made 20+ trips across nearly every province outside of Mindanao &mdash; Cebu, Bohol, Siquijor, Palawan, Dumaguete, and dozens more.</p>
-      <p><strong>I'm not a travel blogger. I work in healthcare IT.</strong> But the Philippines keeps pulling me back, and I finally decided to put everything I've learned into something useful &mdash; a site with real local knowledge, honest prices, video content from the places we've actually been, and an AI trip planner that builds itineraries from our 50 combined years of experience.</p>
-      <p>It's the resource my friend and I talked about building 20 years ago. It just took this long to figure out how.</p>
+      <p>Travel has always been my escape from the rat race &mdash; and honestly, I enjoy the <strong>planning</strong> almost as much as being there. Researching destinations, mapping routes, finding that perfect viewpoint or hidden dai pai dong. Hong Kong was never on my original radar. Then I visited in 2007 and understood immediately why people call it one of the world's great cities.</p>
+      <p>The efficiency of the MTR. The chaos of Mong Kok market streets at midnight. A bowl of wonton noodles at 7am that cost HKD 38 and tasted like nothing I'd had before. I was hooked.</p>
+      <p>I've been back 10+ times since, with Jenice joining me on most of those trips. We've hiked Dragon's Back and MacLehose Trail Stage 2. We've eaten dim sum in Jordan teahouses where the menu only exists in Cantonese. We've taken the Star Ferry at sunrise and the Peak Tram at dusk and the overnight train across the border. Each trip adds another layer to the map in my head.</p>
+      <p><strong>I'm not a travel blogger. I work in healthcare IT.</strong> But Hong Kong keeps pulling me back, and I finally decided to put everything I've learned into something useful &mdash; a site with real local knowledge, honest prices, video content from the places we've actually been, and an AI trip planner that builds itineraries from our experience.</p>
+      <p>It's the resource I wish had existed the first time I landed at Chek Lap Kok.</p>
     </div>
   </div>
 </section>
@@ -110,14 +110,14 @@ const coverageAreas = [
     <div class="section-eyebrow">Credentials</div>
     <h2 class="section-title">Why You Can Trust Scott's Advice</h2>
     <ul class="credential-list">
-      <li><strong>23+ years</strong> visiting the Philippines (first trip February 2003)</li>
-      <li><strong>20+ trips</strong> across Luzon, Visayas, and Mindanao</li>
-      <li><strong>40+ countries</strong> traveled &mdash; but the Philippines is always the first love</li>
-      <li><strong>Married to Jenice</strong> &mdash; a Filipina born in Bulacan, raised in Pampanga</li>
-      <li>Watched Clark Airport go from <strong>a terminal with no AC</strong> to a modern international hub</li>
-      <li>Taken the <strong>NLEX to Manila</strong> more times than he can count</li>
-      <li>Watched <strong>Grab replace taxis</strong> that never once ran their meters</li>
-      <li>Healthcare IT professional by day &mdash; <strong>Philippines travel obsessive</strong> by every other waking moment</li>
+      <li><strong>10+ trips to Hong Kong</strong> since 2007 across every major district and region</li>
+      <li><strong>Hiked Dragon's Back, MacLehose Trail Stage 2</strong>, and explored Sai Kung's coastline</li>
+      <li><strong>40+ countries</strong> traveled &mdash; but Hong Kong is always worth returning to</li>
+      <li><strong>Married to Jenice</strong> &mdash; who brings the cultural eye to everything we cover</li>
+      <li>Watched the <strong>West Kowloon Cultural District</strong> go from reclaimed land to a world-class arts hub</li>
+      <li>Navigated the MTR during <strong>rush hour at Mong Kok</strong> with luggage and lived to tell it</li>
+      <li>Found the best <strong>HKD 35 wonton noodles</strong> in Jordan &mdash; and the ones tourists overpay for in Central</li>
+      <li>Healthcare IT professional by day &mdash; <strong>Hong Kong travel obsessive</strong> by every other waking moment</li>
     </ul>
   </div>
 </section>
@@ -175,13 +175,13 @@ const coverageAreas = [
 <section class="email-section">
   <div class="email-section-inner">
     <EmailCapture
-      leadMagnet="Get Scott's Philippines Travel Checklist"
-      description="The pre-trip checklist I use before every Philippines trip &mdash; packing, logistics, money, and the mistakes I've made so you don't have to."
+      leadMagnet="Get Scott's Hong Kong Travel Checklist"
+      description="The pre-trip checklist I use before every Hong Kong trip &mdash; packing, logistics, money, and the mistakes I've made so you don't have to."
       bullets={[
         'Pre-departure logistics checklist',
-        'Budget planning worksheet (PHP & USD)',
-        'Transport routing tips for island hopping',
-        'Money & ATM guide by region',
+        'Budget planning worksheet (HKD & USD)',
+        'MTR routing tips and Octopus card setup',
+        'Money & ATM guide by district',
       ]}
       guideTag="author-scott"
     />
@@ -232,11 +232,6 @@ const coverageAreas = [
     inset: 0;
     background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.15) 40%, rgba(0,0,0,0.55) 100%);
     z-index: 0;
-  }
-  @keyframes orbFloat {
-    0%, 100% { transform: translate(0, 0); }
-    33% { transform: translate(20px, -15px); }
-    66% { transform: translate(-10px, 10px); }
   }
   .hero-grid {
     position: absolute;

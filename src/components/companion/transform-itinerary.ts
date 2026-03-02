@@ -4,7 +4,7 @@ import type { TripData, TripDay, Activity, WeatherDay, Contact, GroupMember, Not
 interface ApiDayItem {
   time: string;
   description: string;
-  pricePhp?: number;
+  priceHkd?: number;
   priceUsd?: number;
   category: 'transport' | 'accommodation' | 'activity' | 'food' | 'ferry';
   affiliateType?: 'hotel' | 'tour' | 'transport' | null;
@@ -68,13 +68,13 @@ function getIcon(category: string, description: string): string {
   if (lower.includes('street food')) return '🍢';
   if (lower.includes('coffee') || lower.includes('cafe')) return '☕';
   if (lower.includes('van') || lower.includes('bus') || lower.includes('transfer')) return '🚐';
-  if (lower.includes('tricycle') || lower.includes('trike')) return '🛺';
+  if (lower.includes('tram') || lower.includes('ding ding')) return '🚃';
   if (lower.includes('motorcycle') || lower.includes('scooter')) return '🏍️';
   return CATEGORY_ICON_MAP[category] || '📍';
 }
 
 // Split description into title (short) + detail (full)
-function splitDescription(description: string, pricePhp?: number, priceUsd?: number): { title: string; detail: string } {
+function splitDescription(description: string, priceHkd?: number, priceUsd?: number): { title: string; detail: string } {
   // Try splitting on first sentence
   const sentenceEnd = description.match(/^(.+?[.!])(\s|$)/);
   let title: string;
@@ -97,8 +97,8 @@ function splitDescription(description: string, pricePhp?: number, priceUsd?: num
   }
 
   // Append prices to detail if available
-  if (pricePhp && priceUsd) {
-    detail += ` (₱${pricePhp.toLocaleString()} / $${priceUsd})`;
+  if (priceHkd && priceUsd) {
+    detail += ` (HKD ${priceHkd.toLocaleString()} / $${priceUsd})`;
   }
 
   return { title, detail };
@@ -160,7 +160,7 @@ export function transformItinerary(apiItinerary: ApiItinerary): TripData {
     title: apiDay.title,
     location: capitalizeDestination(apiDay.destination),
     items: apiDay.items.map((item, idx): Activity => {
-      const { title, detail } = splitDescription(item.description, item.pricePhp, item.priceUsd);
+      const { title, detail } = splitDescription(item.description, item.priceHkd, item.priceUsd);
       return {
         id: `d${apiDay.dayNumber}-${idx + 1}`,
         time: item.time,
@@ -177,8 +177,8 @@ export function transformItinerary(apiItinerary: ApiItinerary): TripData {
   const numDays = apiItinerary.days.length;
 
   const contacts: Contact[] = [
-    { icon: '🚨', name: 'Philippine Emergency', role: 'Emergency Services', phone: '911' },
-    { icon: '🏥', name: 'Philippine Red Cross', role: 'Nationwide', phone: '143' },
+    { icon: '🚨', name: 'Hong Kong Emergency', role: 'Emergency Services', phone: '999' },
+    { icon: '🏥', name: 'Hong Kong Red Cross', role: 'Citywide', phone: '2802 0021' },
   ];
 
   const group: GroupMember[] = [

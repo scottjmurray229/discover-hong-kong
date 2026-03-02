@@ -9,357 +9,115 @@ const breadcrumbs = [
   { name: 'Festival Calendar', url: '/festivals/' },
 ];
 
-const pageTitle = 'Philippine Festival Calendar 2026';
-const pageDescription = 'From Sinulog\'s million-strong street dances to Batanes\' quiet community gatherings — time your trip to the celebrations that define each destination.';
+const pageTitle = 'Hong Kong Festival Calendar 2026';
+const pageDescription = 'From Chinese New Year harbour fireworks to Mid-Autumn lanterns in Victoria Park — time your Hong Kong trip to the celebrations that define the city.';
 
 const festivals = [
   {
     month: 'Jan',
     monthIndex: 0,
-    name: 'Ati-Atihan Festival',
-    destination: 'Kalibo (near Boracay)',
-    slug: 'boracay',
-    description: 'The "Mother of All Philippine Festivals" — a week of drumming, face-painting, and street dancing honoring the Santo Niño. Tribal warriors in elaborate blackface paint parade through Kalibo\'s streets in the wildest fiesta in the country.',
+    name: 'Chinese New Year',
+    destination: 'Citywide',
+    slug: 'tsim-sha-tsui',
+    description: 'The biggest celebration in Hong Kong. The harbour fireworks display on the second night of CNY is one of the most spectacular in Asia. Victoria Park hosts a massive flower market in the week before. Expect crowded restaurants, lion dances, and the city at its most energetic.',
   },
   {
     month: 'Jan',
     monthIndex: 0,
-    name: 'Sinulog Festival',
-    destination: 'Cebu',
-    slug: 'cebu',
-    description: 'A million-strong street party in Cebu City celebrating the Santo Niño with hypnotic forward-and-backward dance steps. The Grand Parade features costumed contingents from across the Visayas competing for top honors.',
-  },
-  {
-    month: 'Jan',
-    monthIndex: 0,
-    name: 'Dinagyang Festival',
-    destination: 'Iloilo City',
-    slug: 'iloilo',
-    description: 'Warrior-painted Ati tribes dance through Iloilo\'s streets in one of the Philippines\' most intense and competitive tribal festivals, rivaling Cebu\'s Sinulog in scale and spectacle.',
-  },
-  {
-    month: 'Jan',
-    monthIndex: 0,
-    name: 'Longganisa Festival',
-    destination: 'Vigan',
-    slug: 'vigan',
-    description: 'Vigan celebrates its famous garlicky sausage with cooking contests, street dancing, and longganisa-eating competitions along the cobblestone streets of Calle Crisologo.',
-  },
-  {
-    month: 'Jan',
-    monthIndex: 0,
-    name: 'Etag Festival',
-    destination: 'Sagada',
-    slug: 'sagada',
-    description: 'Sagada celebrates its traditional smoked meat preservation with cooking demonstrations, cultural performances, and community feasts. Etag — salt-cured, smoke-dried pork — is central to Igorot cuisine and the festival honors generations of mountain foodways.',
+    name: 'Chinese New Year Flower Market',
+    destination: 'Victoria Park, Causeway Bay',
+    slug: 'wan-chai',
+    description: 'In the week leading up to Chinese New Year, Victoria Park transforms into a massive flower market. Peach blossoms, narcissus, and kumquat trees are traditional New Year purchases. Locals shop in the evenings; visit before 8pm for the best atmosphere.',
   },
   {
     month: 'Feb',
     monthIndex: 1,
-    name: 'Pamulinawen Festival',
-    destination: 'Laoag',
-    slug: 'laoag',
-    description: 'Laoag\'s grandest celebration features Ilocano street dances, agri-trade fairs, and beauty pageants. "Pamulinawen" means "caring" in Ilocano — the festival honors the city\'s patron saint.',
-  },
-  {
-    month: 'Feb',
-    monthIndex: 1,
-    name: 'Panagbenga Festival',
-    destination: 'Baguio',
-    slug: 'baguio',
-    description: 'Baguio\'s flower festival fills Session Road with elaborate floats covered in fresh flowers, street dancing, and a month of cultural performances. "Panagbenga" means "season of blooming" in Kankana-ey — one of the top festivals in the Philippines.',
-  },
-  {
-    month: 'Mar',
-    monthIndex: 2,
-    name: 'Balayong Festival',
-    destination: 'Puerto Princesa',
-    slug: 'puerto-princesa',
-    description: 'Named after Palawan\'s cherry blossom tree, this festival marks the city\'s founding anniversary with tribal dances, floral floats, and street performances under canopies of pink blooms.',
-  },
-  {
-    month: 'Mar',
-    monthIndex: 2,
-    name: 'Kulambo Festival',
-    destination: 'El Nido',
-    slug: 'el-nido',
-    description: 'El Nido\'s community festival celebrates the "kulambo" (mosquito net) as a symbol of island life, with beach parties, boat races, and environmental awareness campaigns across the archipelago.',
-  },
-  {
-    month: 'Mar',
-    monthIndex: 2,
-    name: 'Moriones Festival',
-    destination: 'Marinduque Island',
-    slug: 'marinduque',
-    description: 'Week-long street theater where locals don Roman centurion masks and reenact the story of Longinus. Marinduque\'s most famous tradition transforms the entire island into an open-air biblical drama during Easter week.',
-  },
-  {
-    month: 'Mar',
-    monthIndex: 2,
-    name: 'Malasimbo Music & Arts Festival',
-    destination: 'Puerto Galera',
-    slug: 'puerto-galera',
-    description: 'Musicians, artists, and travelers converge on an open-air amphitheater in the mountains above Puerto Galera for live music, art installations, and jungle vibes — one of the most unique festival settings in the Philippines.',
+    name: 'Lantern Festival (Yuanxiao)',
+    destination: 'Citywide',
+    slug: 'central',
+    description: 'The fifteenth day of the Lunar New Year, marked with lantern displays and tang yuan (sweet rice balls). Victoria Park and Kowloon Park host lantern exhibitions. Traditional lion and dragon dances continue through the week.',
   },
   {
     month: 'Apr',
     monthIndex: 3,
-    name: 'Aliwan Fiesta',
-    destination: 'Manila',
-    slug: 'manila',
-    description: 'Manila hosts this "festival of festivals" where winning contingents from regional celebrations across the Philippines compete in one grand showdown of street dancing, float parades, and beauty pageants.',
-  },
-  {
-    month: 'Apr',
-    monthIndex: 3,
-    name: 'Bakhaw Festival',
-    destination: 'Siargao',
-    slug: 'siargao',
-    description: 'Siargao\'s mangrove conservation festival combines environmental education with island-style celebrations — tree planting, kayak races through mangrove channels, and beach concerts.',
-  },
-  {
-    month: 'Apr',
-    monthIndex: 3,
-    name: 'Araw ng Kagitingan (Day of Valor)',
-    destination: 'Bataan',
-    slug: 'bataan',
-    description: 'April 9 is a national holiday commemorating the Fall of Bataan and the Death March. Ceremonies at Mount Samat National Shrine and along the Death March route draw veterans, dignitaries, and Filipinos honoring the 76,000 defenders.',
-  },
-  {
-    month: 'Apr',
-    monthIndex: 3,
-    name: 'Imbayah Festival',
-    destination: 'Banaue',
-    slug: 'banaue',
-    description: 'The Ifugao cultural celebration features traditional dances, rice wine ceremonies, and the gathering of communities from across the province — a window into a culture that has survived two thousand years of history.',
+    name: 'Ching Ming Festival',
+    destination: 'Citywide',
+    slug: 'new-territories',
+    description: 'The traditional Chinese ancestor worship festival, when families visit cemeteries to clean graves and make offerings. A public holiday in Hong Kong. The New Territories hillside cemeteries see large family gatherings. A quiet, culturally significant day.',
   },
   {
     month: 'May',
     monthIndex: 4,
-    name: 'Manggahan Festival',
-    destination: 'Guimaras',
-    slug: 'guimaras',
-    description: 'Guimaras celebrates its world-famous mango harvest with street parades, mango-eating contests, agricultural exhibits, and tastings of the sweetest mangoes in the Philippines.',
+    name: 'Buddha\'s Birthday',
+    destination: 'Lantau Island / Po Lin',
+    slug: 'lantau-island',
+    description: 'A public holiday in Hong Kong. Po Lin Monastery on Lantau Island holds ceremonies around the Big Buddha. Worshippers bathe the Buddha statue in floral water as part of the ritual. The monastery grounds are beautifully decorated.',
   },
   {
     month: 'Jun',
     monthIndex: 5,
-    name: 'Payuhuan Festival',
-    destination: 'Batanes',
-    slug: 'batanes',
-    description: 'Batanes\' quiet community gathering celebrates Ivatan heritage with traditional stone-house building demonstrations, vakul weaving, and harvest feasts — intimate and deeply cultural.',
+    name: 'Dragon Boat Festival',
+    destination: 'Tai Mei Tuk / Stanley',
+    slug: 'stanley',
+    description: 'One of Hong Kong\'s most spectacular cultural events. Dragon boat races are held at multiple venues around the territory, including Stanley, Aberdeen, Sai Kung, and Tai Mei Tuk on Plover Cove Reservoir. International teams compete alongside local crews. A public holiday.',
   },
   {
     month: 'Jun',
     monthIndex: 5,
-    name: 'Kadagatan Festival',
-    destination: 'Caramoan',
-    slug: 'caramoan',
-    description: 'Caramoan celebrates its relationship with the sea with boat races, beach games, street dancing, and seafood feasts — a small-town festival with genuine community spirit.',
-  },
-  {
-    month: 'Jun',
-    monthIndex: 5,
-    name: 'Pintados Festival',
-    destination: 'Tacloban',
-    slug: 'tacloban',
-    description: 'Tacloban\'s celebration of the tattooed warriors of the Visayas features elaborate body-paint performances, street dancing, and cultural rites honoring the pre-colonial Pintados tradition.',
+    name: 'Stanley International Dragon Boat Championships',
+    destination: 'Stanley',
+    slug: 'stanley',
+    description: 'The international version of the Dragon Boat Festival races, held at Stanley Beach with teams from dozens of countries. One of the largest international dragon boat events in the world. Stanley Market is full of spectators and the beach is lined with race supporters.',
   },
   {
     month: 'Jul',
     monthIndex: 6,
-    name: 'Sandugo Festival',
-    destination: 'Bohol',
-    slug: 'bohol',
-    description: 'Bohol commemorates the historic blood compact between Datu Sikatuna and Spanish explorer Legazpi with reenactments, street dances, and a grand parade through Tagbilaran City.',
+    name: 'Hungry Ghost Festival',
+    destination: 'Citywide',
+    slug: 'mong-kok',
+    description: 'The month of the Hungry Ghosts — when the gates of the underworld open and spirits roam the living world. Paper offerings are burned in street-side barrels, joss sticks are lit, and temporary bamboo theatres host Cantonese opera performances for the spirits. A uniquely Hong Kong experience.',
   },
   {
-    month: 'Jul',
-    monthIndex: 6,
-    name: 'Sublian Festival',
-    destination: 'Batangas',
-    slug: 'batangas',
-    description: 'Batangas City honors its patron saint with the Subli — a traditional devotional dance unique to Batangas. Rhythmic, colorful street performances and cultural competitions showcase deep local identity.',
+    month: 'Sep',
+    monthIndex: 8,
+    name: 'Mid-Autumn Festival',
+    destination: 'Victoria Park / Citywide',
+    slug: 'wan-chai',
+    description: 'One of the most beautiful nights in Hong Kong. Victoria Park fills with lanterns of every design. Children carry lit lanterns through the streets. Mooncakes are exchanged between families and friends. The Tai Hang Fire Dragon Dance (three evenings) is extraordinary — a 67-metre dragon made of incense sticks paraded through the streets of Tai Hang, Causeway Bay.',
   },
   {
-    month: 'Aug',
-    monthIndex: 7,
-    name: 'Kadayawan Festival',
-    destination: 'Davao',
-    slug: 'davao',
-    description: 'Davao\'s week-long thanksgiving harvest festival showcases the city\'s tribal heritage, exotic fruits, and orchids. Floral floats, Lumad tribal dances, and durian-eating contests fill the streets.',
-  },
-  {
-    month: 'Aug',
-    monthIndex: 7,
-    name: 'Kasadyaan Festival',
-    destination: 'Coron',
-    slug: 'coron',
-    description: 'Coron\'s Tagbanua-influenced festival celebrates indigenous culture with traditional boat races, spear-fishing demonstrations, and communal feasts set against the backdrop of limestone cliffs.',
-  },
-  {
-    month: 'Aug',
-    monthIndex: 7,
-    name: 'Bañamos Festival',
-    destination: 'Laguna',
-    slug: 'laguna',
-    description: 'Calamba celebrates Laguna\'s famous hot springs with street dancing, float parades, and cultural performances — a tribute to the volcanic waters that define the province.',
-  },
-  {
-    month: 'Aug',
-    monthIndex: 7,
-    name: 'Ibalong Festival',
-    destination: 'Legazpi',
-    slug: 'legazpi',
-    description: 'This non-religious festival honors the Bicolano epic Ibalong with colorful street dances and mythological reenactments beneath Mayon Volcano — one of the most visually dramatic festivals in the Philippines.',
+    month: 'Sep',
+    monthIndex: 8,
+    name: 'Tai Hang Fire Dragon Dance',
+    destination: 'Tai Hang, Causeway Bay',
+    slug: 'wan-chai',
+    description: 'Over three evenings around Mid-Autumn Festival, a 67-metre dragon made of more than 70,000 incense sticks is paraded through the narrow streets of Tai Hang. The dragon glows in the darkness as it weaves through the crowds. One of the most atmospheric events in Hong Kong — completely free to watch.',
   },
   {
     month: 'Oct',
     monthIndex: 9,
-    name: 'Lanzones Festival',
-    destination: 'Camiguin',
-    slug: 'camiguin',
-    description: 'Camiguin\'s sweetest celebration honors the lanzones fruit harvest with dancers wearing lanzones-cluster costumes, fruit-picking contests, and street parades around the volcanic island.',
-  },
-  {
-    month: 'Oct',
-    monthIndex: 9,
-    name: 'Siargao Surfing Cup',
-    destination: 'Siargao',
-    slug: 'siargao',
-    description: 'International and local surfers converge on Cloud 9 for one of Asia\'s premier surfing competitions. Beach parties, live music, and surf culture take over General Luna for a week.',
-  },
-  {
-    month: 'Oct',
-    monthIndex: 9,
-    name: 'Masskara Festival',
-    destination: 'Bacolod',
-    slug: 'bacolod',
-    description: 'The City of Smiles\' biggest celebration — elaborate smiling masks, street dancing competitions, and a citywide party born from defiance during economic hardship. One of the most visually spectacular festivals in the Philippines.',
-  },
-  {
-    month: 'Nov',
-    monthIndex: 10,
-    name: 'Buglasan Festival',
-    destination: 'Dumaguete',
-    slug: 'dumaguete',
-    description: 'Negros Oriental\'s "festival of festivals" brings together the best performers from across the province. Street dancing, agricultural fairs, and cultural shows enliven the City of Gentle People.',
+    name: 'Chung Yeung Festival',
+    destination: 'Citywide Hilltops',
+    slug: 'new-territories',
+    description: 'The autumn ancestor worship festival, traditionally celebrated by climbing a hill. Hiking trails across Hong Kong become unusually busy as locals fulfill the tradition. Families visit hillside cemeteries to clean graves and make offerings. A public holiday.',
   },
   {
     month: 'Dec',
     monthIndex: 11,
-    name: 'Giant Lantern Festival',
-    destination: 'San Fernando, Pampanga',
-    slug: 'clark',
-    description: 'The "Christmas Capital of the Philippines" lights up with massive parol (lanterns) up to 6 meters wide, featuring thousands of spinning lights in kaleidoscopic patterns. A truly dazzling spectacle.',
+    name: 'Christmas in Hong Kong',
+    destination: 'Tsim Sha Tsui / Central',
+    slug: 'tsim-sha-tsui',
+    description: 'Hong Kong goes all-in on Christmas despite its non-Christian population. The Tsim Sha Tsui waterfront and Central are extensively decorated. The Avenue of Stars area hosts light displays. Major malls compete for the most elaborate Christmas installation. The Symphony of Lights continues nightly over the harbour.',
+  },
+  {
+    month: 'Dec',
+    monthIndex: 11,
+    name: 'New Year\'s Eve Countdown',
+    destination: 'Victoria Harbour',
+    slug: 'tsim-sha-tsui',
+    description: 'Victoria Harbour hosts one of Asia\'s most spectacular New Year countdowns — fireworks launched from both sides of the harbour and from barges in the water. The Tsim Sha Tsui waterfront and Central waterfront fill with crowds. Book your waterfront dinner reservation 2-3 months ahead.',
   },
 ];
-
-const months = [
-  'January', 'February', 'March', 'April', 'May', 'June',
-  'July', 'August', 'September', 'October', 'November', 'December',
-];
-
-const monthGradients = [
-  'linear-gradient(135deg, #E8654A 0%, #D4A853 100%)',
-  'linear-gradient(135deg, #C05299 0%, #E8654A 100%)',
-  'linear-gradient(135deg, #4CAF50 0%, #8BC34A 100%)',
-  'linear-gradient(135deg, #FF9800 0%, #FFC107 100%)',
-  'linear-gradient(135deg, #9E9E9E 0%, #BDBDBD 100%)',
-  'linear-gradient(135deg, #0D7377 0%, #4DB6AC 100%)',
-  'linear-gradient(135deg, #1565C0 0%, #42A5F5 100%)',
-  'linear-gradient(135deg, #6A1B9A 0%, #AB47BC 100%)',
-  'linear-gradient(135deg, #9E9E9E 0%, #BDBDBD 100%)',
-  'linear-gradient(135deg, #E65100 0%, #FF9800 100%)',
-  'linear-gradient(135deg, #BF360C 0%, #E8654A 100%)',
-  'linear-gradient(135deg, #1A2332 0%, #C62828 0%, #FFD54F 100%)',
-];
-
-// Extract first color from each month gradient for map markers
-const monthColors = [
-  '#E8654A', '#C05299', '#4CAF50', '#FF9800', '#9E9E9E', '#0D7377',
-  '#1565C0', '#6A1B9A', '#9E9E9E', '#E65100', '#BF360C', '#C62828',
-];
-
-// Geo coordinates for festival map markers
-const geoLookup: Record<string, { lat: number; lng: number; label: string }> = {
-  boracay: { lat: 11.9674, lng: 121.9248, label: 'Boracay' },
-  cebu: { lat: 10.3157, lng: 123.8854, label: 'Cebu' },
-  iloilo: { lat: 10.692, lng: 122.5706, label: 'Iloilo' },
-  vigan: { lat: 17.5747, lng: 120.3869, label: 'Vigan' },
-  sagada: { lat: 17.0833, lng: 120.9, label: 'Sagada' },
-  laoag: { lat: 18.198, lng: 120.5936, label: 'Laoag' },
-  baguio: { lat: 16.4023, lng: 120.596, label: 'Baguio' },
-  'puerto-princesa': { lat: 9.7392, lng: 118.7353, label: 'P. Princesa' },
-  'el-nido': { lat: 11.1784, lng: 119.393, label: 'El Nido' },
-  marinduque: { lat: 13.4017, lng: 121.9694, label: 'Marinduque' },
-  'puerto-galera': { lat: 13.5113, lng: 120.9553, label: 'P. Galera' },
-  manila: { lat: 14.5995, lng: 120.9842, label: 'Manila' },
-  siargao: { lat: 9.8686, lng: 126.049, label: 'Siargao' },
-  bataan: { lat: 14.6417, lng: 120.4818, label: 'Bataan' },
-  banaue: { lat: 16.914, lng: 121.057, label: 'Banaue' },
-  guimaras: { lat: 10.5928, lng: 122.6325, label: 'Guimaras' },
-  batanes: { lat: 18.5, lng: 121.97, label: 'Batanes' },
-  caramoan: { lat: 13.7681, lng: 123.8611, label: 'Caramoan' },
-  tacloban: { lat: 11.2543, lng: 125.0, label: 'Tacloban' },
-  bohol: { lat: 9.65, lng: 123.85, label: 'Bohol' },
-  batangas: { lat: 13.7565, lng: 121.0583, label: 'Batangas' },
-  davao: { lat: 7.0707, lng: 125.6087, label: 'Davao' },
-  coron: { lat: 12.0054, lng: 120.2027, label: 'Coron' },
-  laguna: { lat: 14.2691, lng: 121.4113, label: 'Laguna' },
-  legazpi: { lat: 13.1391, lng: 123.7438, label: 'Legazpi' },
-  camiguin: { lat: 9.1733, lng: 124.7289, label: 'Camiguin' },
-  bacolod: { lat: 10.684, lng: 122.9563, label: 'Bacolod' },
-  dumaguete: { lat: 9.3068, lng: 123.3054, label: 'Dumaguete' },
-  clark: { lat: 15.186, lng: 120.5464, label: 'Clark' },
-};
-
-// Build map markers — group festivals by slug (one marker per location)
-const festBySlug = new Map<string, typeof festivals>();
-festivals.forEach(f => {
-  const arr = festBySlug.get(f.slug) || [];
-  arr.push(f);
-  festBySlug.set(f.slug, arr);
-});
-
-const festMapMarkers = Array.from(festBySlug.entries())
-  .map(([slug, fests]) => {
-    const geo = geoLookup[slug];
-    if (!geo) return null;
-    return {
-      lat: geo.lat,
-      lng: geo.lng,
-      label: geo.label,
-      slug,
-      color: monthColors[fests[0].monthIndex],
-      url: `/destinations/${slug}/`,
-      festivals: fests.map(f => ({
-        name: f.name,
-        month: f.month,
-        destination: f.destination,
-      })),
-    };
-  })
-  .filter(Boolean);
-
-// Video lookup for festival cards — prefer preview (smallest), then break-1, then hero
-const festCardVideos: Record<string, string> = {};
-// Destinations with preview videos
-['bohol','dumaguete','cebu','boracay','coron','el-nido','siargao','siquijor','bacolod','camiguin','caramoan','davao','donsol','iloilo','legazpi','malapascua','manila','puerto-princesa','sagada','tagaytay','vigan','laoag']
-  .forEach(s => festCardVideos[s] = `/videos/destinations/${s}-preview.mp4`);
-// Destinations with break clips but no preview
-['baguio','bataan','banaue','guimaras','batanes','batangas','clark']
-  .forEach(s => festCardVideos[s] = `/videos/destinations/${s}-break-1.mp4`);
-// Destinations with hero only
-['marinduque','puerto-galera','tacloban','laguna']
-  .forEach(s => festCardVideos[s] = `/videos/destinations/${s}-hero.mp4`);
-
-// Fallback cycle for any slug not in lookup
-const fallbackVideos = Object.values(festCardVideos);
-
-// 10 generic festival clips — cycle 3x across 32 events
-const festGenericClips = Array.from({ length: 10 }, (_, i) => `/videos/pillar/festival-card-${i + 1}.mp4`);
-
 ---
 <BaseLayout
   title={pageTitle}
@@ -376,8 +134,8 @@ const festGenericClips = Array.from({ length: 10 }, (_, i) => `/videos/pillar/fe
     <div class="fest-hero-noise"></div>
 
     <div class="fest-hero-content">
-      <h1 class="fest-hero-title">Philippine Festival Calendar 2026</h1>
-      <p class="fest-hero-subtitle">From Sinulog's million-strong street dances to Batanes' quiet community gatherings — time your trip to the celebrations that define each destination.</p>
+      <h1 class="fest-hero-title">Hong Kong Festival Calendar 2026</h1>
+      <p class="fest-hero-subtitle">From Chinese New Year harbour fireworks to Mid-Autumn lanterns in Victoria Park — time your Hong Kong trip to the celebrations that define the city.</p>
       <div class="fest-hero-meta">
         <div class="fest-hero-meta-item">
           <span class="fest-hero-meta-label">Festivals</span>
@@ -406,7 +164,7 @@ const festGenericClips = Array.from({ length: 10 }, (_, i) => `/videos/pillar/fe
   <section class="fest-personal reveal">
     <div class="container-content">
       <blockquote class="fest-personal-quote">
-        <p>Filipinos love to have a good time — and they've built an entire culture around proving it. There are festivals for saints, harvests, historical events, and things that don't need a reason at all. Add in more national holidays than almost any country on earth, and there's always a fiesta happening somewhere. It's part of what makes the Philippines feel so alive, and we try to plan around at least one every trip.</p>
+        <p>Hong Kong doesn't stop for anything — but it does slow down, light up, and come alive during its festivals. Chinese New Year fills Victoria Harbour with fireworks. Mid-Autumn sees lanterns in every park. The Hungry Ghost Festival brings incense smoke and paper offerings to street corners across Mong Kok and Yau Ma Tei. We try to plan every trip around at least one of these.</p>
         <cite>— Scott &amp; Jenice</cite>
       </blockquote>
     </div>
@@ -507,24 +265,24 @@ const festGenericClips = Array.from({ length: 10 }, (_, i) => `/videos/pillar/fe
 
   <!-- FAQ -->
   <FAQ items={[
-    { question: "What are the biggest festivals in the Philippines?", answer: "Sinulog (Cebu, January), Ati-Atihan (Aklan, January), and Dinagyang (Iloilo, January) are the 'Big Three' — massive street dance festivals honoring the Santo Niño. MassKara (Bacolod, October) and Panagbenga (Baguio, February) draw huge crowds. Moriones (Marinduque, Holy Week) is the most dramatic. Each attracts hundreds of thousands of visitors." },
-    { question: "When is Sinulog Festival in Cebu?", answer: "Sinulog is held on the third Sunday of January, with a week of celebrations leading up to the grand parade. The main event features street dancing from early morning through the afternoon along the major roads of Cebu City. Book accommodation 2-3 months ahead — Cebu fills up completely during Sinulog week." },
-    { question: "How do I plan a trip around a Philippine festival?", answer: "Pick your festival, then book accommodation 2-3 months early (prices double during major festivals). Arrive 2-3 days before the main event — the lead-up street parties and rehearsals are often more fun than the grand parade. Use our AI Trip Planner at /plan/ to build a festival-centered itinerary with hotel and transport bookings." },
-    { question: "Are Philippine festivals safe for tourists?", answer: "Philippine festivals are very safe and locals are welcoming to foreign visitors. The main risks are pickpockets in dense crowds and sunburn from long outdoor exposure. Keep valuables in a front pocket or neck pouch, stay hydrated, and wear sunscreen. Police presence is heavy during major festivals." },
-    { question: "What should I wear to a festival in the Philippines?", answer: "Lightweight, breathable clothing — it's hot and you'll be in crowds for hours. Comfortable closed-toe shoes for dancing and walking on streets. Avoid expensive jewelry or accessories. Bring a small waterproof bag for your phone (water-throwing is common at some festivals). Sunglasses, hat, and reef-safe sunscreen are essential." },
-    { question: "Which Philippine festivals happen in January?", answer: "January is peak festival season. Sinulog (Cebu), Ati-Atihan (Kalibo, Aklan), and Dinagyang (Iloilo) all happen in the third or fourth week. These three Santo Niño festivals are the country's biggest and most energetic celebrations, featuring elaborate costumes, street dancing, and all-night parties." },
+    { question: "What is the biggest festival in Hong Kong?", answer: "Chinese New Year is Hong Kong's biggest celebration. The harbour fireworks on the second night are among the most spectacular in Asia. The Victoria Park flower market in the week before is a massive event. The Mid-Autumn Festival in September is equally atmospheric — lanterns in Victoria Park and the extraordinary Tai Hang Fire Dragon Dance." },
+    { question: "When is the best time to visit Hong Kong for festivals?", answer: "Chinese New Year (January/February) and Mid-Autumn Festival (September/October) are the two peak festival periods. Dragon Boat Festival in June is spectacular for water events. The Hungry Ghost Festival month (usually July/August) offers uniquely atmospheric street-side ceremonies. Christmas (December) sees the city heavily decorated." },
+    { question: "How do I plan a trip around a Hong Kong festival?", answer: "Pick your festival, then book accommodation 2-3 months early for Chinese New Year and Mid-Autumn (prices rise and availability drops). Arrive a day or two before the main event. Use our AI Trip Planner at /plan/ to build a festival-centered itinerary with hotel and transport bookings." },
+    { question: "Are Hong Kong festivals safe for tourists?", answer: "Hong Kong festivals are very safe. The main considerations are large crowds at peak moments — the TST waterfront for CNY fireworks, Victoria Park for Mid-Autumn. Arrive early for a good position. MTR stations near major events get crowded; expect queues. Police presence is visible and the city is well-managed." },
+    { question: "What should I wear to a festival in Hong Kong?", answer: "For Chinese New Year and Mid-Autumn: comfortable shoes for standing and walking, a light layer for cool evenings. For Dragon Boat Festival: sun protection and comfortable clothes — it's June and outdoors by the water. For Hungry Ghost ceremonies: respectful, modest clothing if attending in residential neighbourhoods at night." },
+    { question: "Which Hong Kong festivals happen in January and February?", answer: "Chinese New Year falls in January or February depending on the lunar calendar. The Victoria Park flower market runs in the week before CNY. The Lantern Festival (Yuanxiao) is on the 15th day of the Lunar New Year. These are the biggest weeks on the Hong Kong festival calendar." },
   ]} />
 
   <!-- Email Capture -->
   <div class="container-content reveal" style="padding-bottom: var(--space-6);">
     <EmailCapture
       leadMagnet="Get Our Free Festival Trip Planner"
-      description="A month-by-month PDF guide to Philippine festivals — with travel logistics, accommodation tips, and what to expect at each celebration."
+      description="A month-by-month PDF guide to Hong Kong festivals — with travel logistics, accommodation tips, and what to expect at each celebration."
       bullets={[
-        'All 32 festivals with exact dates and locations',
-        'How to get there and where to stay for each event',
-        'Insider tips — best viewing spots, what to wear, what to bring',
-        'Suggested multi-festival itineraries',
+        'All 13 festivals with exact dates and locations',
+        'Best viewing spots and transport tips for each event',
+        'Insider tips — where to stand for CNY fireworks, Mid-Autumn lantern walks',
+        'Suggested festival-focused itineraries by season',
       ]}
       guideTag="pillar-festivals"
     />

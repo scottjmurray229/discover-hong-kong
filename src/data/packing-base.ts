@@ -37,7 +37,7 @@ export interface GearRecommendation {
 
 export interface PackingConfig {
   sitePrefix: string;        // e.g. "dph" → localStorage key "dph_packing_list"
-  destination: string;       // "Philippines"
+  destination: string;       // "Hong Kong"
   climate: Climate[];
   currency: string;          // "PHP"
   plugType: string;          // "Type A/B/C"
@@ -610,7 +610,7 @@ export const BASE_GEAR: PackingItem[] = [
     seasons: ['rainy', 'shoulder'],
     amazonSearchFallback: 'compact+travel+umbrella+windproof+auto+open',
     affiliatePrice: '$15–30',
-    localAlternative: 'Available at 7-Eleven and SM for about ₱200–400',
+    localAlternative: 'Available at 7-Eleven and Watson’s for about HKD 30–60',
   },
 ];
 

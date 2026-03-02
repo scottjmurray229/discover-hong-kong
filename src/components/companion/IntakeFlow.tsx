@@ -27,13 +27,13 @@ const COLORS = {
   gray600: '#6B7280',
 };
 
-const SAMPLE_PASTE = `Day 1 - Arrive Cebu, transfer to Moalboal
-Day 2 - Sardine run snorkeling, Kawasan Falls canyoneering
-Day 3 - Ferry to Bohol, Chocolate Hills, Tarsier Sanctuary
-Day 4 - Island hopping Balicasag & Virgin Island
-Day 5 - Ferry to Siquijor, Cambugahay Falls, Paliton Beach sunset
-Day 6 - Tubod Marine Sanctuary, Balete Tree, free afternoon
-Day 7 - Ferry to Dumaguete, fly home`;
+const SAMPLE_PASTE = `Day 1 - Arrive Hong Kong International Airport, Airport Express to Central, check in
+Day 2 - Dim sum breakfast in Jordan, Star Ferry to TST, Kowloon wander
+Day 3 - Dragon's Back hike, Stanley Market, beers at Stanley waterfront
+Day 4 - Day trip to Lantau Island - Big Buddha, Ngong Ping, Tai O stilt village
+Day 5 - Sai Kung seafood lunch, Outlying Islands ferry to Cheung Chau
+Day 6 - Hong Kong Island tram, Peak Tram, night market at Temple Street
+Day 7 - Last dim sum, check out, Airport Express home`;
 
 const ENRICHMENT_FEATURES = [
   { icon: '🧭', title: 'Real Directions' },
@@ -236,15 +236,15 @@ export default function IntakeFlow() {
         <div style={{
           position: 'absolute', top: -20, right: -20, fontSize: 100, opacity: 0.08,
           transform: 'rotate(-15deg)',
-        }}>🇵🇭</div>
+        }}>🇭🇰</div>
         <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 2, textTransform: 'uppercase' as const, opacity: 0.6, marginBottom: 8 }}>
-          DISCOVER PHILIPPINES
+          DISCOVERING HK
         </div>
         <div style={{ fontSize: 26, fontWeight: 800, lineHeight: 1.2, marginBottom: 8 }}>
           Your Trip.<br />Your Companion.
         </div>
         <div style={{ fontSize: 14, opacity: 0.85, lineHeight: 1.5, maxWidth: 300 }}>
-          Turn any Philippines itinerary into an offline trip companion with local directions, budget tracking, and insider tips.
+          Turn any Hong Kong itinerary into an offline trip companion with local directions, budget tracking, and insider tips.
         </div>
       </div>
 
@@ -299,7 +299,7 @@ export default function IntakeFlow() {
         icon="📋"
         iconBg="#F0E8FF"
         title="Start from Template"
-        desc="Popular routes you can customize — Visayas, Palawan, Siargao & more"
+        desc="Popular routes you can customize — Kowloon, Islands, New Territories & more"
         style={{ marginBottom: 20 }}
       />
 
@@ -325,10 +325,10 @@ export default function IntakeFlow() {
         border: `1px solid ${COLORS.sandDark}`,
       }}>
         <div style={{ fontSize: 13, color: COLORS.deepNight, lineHeight: 1.6, fontStyle: 'italic' }}>
-          "We had zero signal on the ferry to Siquijor and the app had everything — directions, restaurant picks, even the right phrases. Felt like traveling with a local friend."
+          "We had zero signal on the ferry to Lamma Island and the app had everything — directions, restaurant picks, even the right Cantonese phrases. Felt like traveling with a local friend."
         </div>
         <div style={{ fontSize: 12, fontWeight: 700, color: COLORS.oceanTeal, marginTop: 8 }}>
-          — Sarah & Mike, 7-day Visayas trip
+          — Sarah & Mike, 7-day Hong Kong trip
         </div>
       </div>
     </>
@@ -422,7 +422,7 @@ export default function IntakeFlow() {
         <textarea
           value={pasteText}
           onChange={(e) => setPasteText(e.target.value)}
-          placeholder={"Paste your itinerary here, or describe your trip...\n\nExamples:\n• Copy/paste from an email\n• \"5 days in Cebu and Bohol, want to snorkel and see Chocolate Hills\"\n• Day-by-day breakdown from a travel blog"}
+          placeholder={"Paste your itinerary here, or describe your trip...\n\nExamples:\n• Copy/paste from an email\n• \"5 days in Hong Kong, want to do dim sum, Dragon's Back hike, and Lantau Island\"\n• Day-by-day breakdown from a travel blog"}
           style={{
             width: '100%', minHeight: 200, padding: 16, borderRadius: 16,
             border: `1.5px solid ${pasteText ? COLORS.oceanTeal : '#E8E8EC'}`,
@@ -466,9 +466,9 @@ export default function IntakeFlow() {
     const filtered = filter === 'all'
       ? templates
       : templates.filter((t) => {
-          if (filter === 'visayas') return t.route.match(/Cebu|Bohol|Siquijor|Dumaguete/i);
-          if (filter === 'palawan') return t.route.match(/Palawan|El Nido|Coron|Puerto Princesa/i);
-          if (filter === 'mindanao') return t.route.match(/Siargao|Davao/i);
+          if (filter === 'islands') return t.route.match(/Lantau|Lamma|Cheung Chau|Sai Kung/i);
+          if (filter === 'kowloon') return t.route.match(/Kowloon|TST|Mong Kok|Jordan/i);
+          if (filter === 'island') return t.route.match(/Lantau|Lamma|Cheung Chau/i);
           return true;
         });
 
@@ -480,7 +480,7 @@ export default function IntakeFlow() {
         </div>
 
         <div style={{ display: 'flex', gap: 8, marginBottom: 16, overflowX: 'auto' as const }}>
-          {['all', 'visayas', 'palawan', 'mindanao'].map((f) => (
+          {['all', 'islands', 'kowloon', 'central'].map((f) => (
             <Pill key={f} active={filter === f} onClick={() => setFilter(f)}>
               {f.charAt(0).toUpperCase() + f.slice(1)}
             </Pill>
@@ -842,11 +842,11 @@ export default function IntakeFlow() {
           {[
             { icon: '🧭', title: 'Real Directions', desc: "Not Google Maps pins — actual 'take the Ceres bus, tell the conductor Panagsama' directions" },
             { icon: '🌅', title: 'Sunrise/Sunset', desc: 'Golden hour times with best viewpoints matched to your daily locations' },
-            { icon: '💬', title: 'Local Phrases', desc: 'Cebuano & Tagalog phrases tuned to your destinations with pronunciation' },
+            { icon: '💬', title: 'Local Phrases', desc: 'Cantonese phrases tuned to your destinations with pronunciation' },
             { icon: '📞', title: 'Key Contacts', desc: 'Emergency numbers, hospitals, trusted local drivers & guides for your specific route' },
             { icon: '🎒', title: 'Smart Packing', desc: 'Checklist auto-generated from your activities — canyoneering adds water shoes' },
             { icon: '💰', title: 'Budget Tracker', desc: 'Log expenses, see typical costs, convert currency — all offline' },
-            { icon: '💵', title: 'Tipping Guide', desc: 'What to tip in every Philippines situation, from trike drivers to dive masters' },
+            { icon: '💵', title: 'Tipping Guide', desc: 'What to tip in every Hong Kong situation, from restaurants to hotels' },
             { icon: '🌅', title: 'Sunrise/Sunset', desc: 'Golden hour times with best viewpoints matched to your daily locations' },
             { icon: '📶', title: 'Works Offline', desc: 'Everything cached to your phone. No signal on the ferry? No problem' },
           ].map((f, i) => (

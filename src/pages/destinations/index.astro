@@ -6,13 +6,10 @@ import FTCDisclosure from '../../components/FTCDisclosure.astro';
 import { getCollection } from 'astro:content';
 import { destinationVideoMap } from '../../data/destination-videos';
 
-const allDests = await getCollection('destinations', (entry) => {
-  // Exclude translated files (tl/ subdirectory) from English listing
-  return !entry.id.startsWith('tl/');
-});
+const allDests = await getCollection('destinations');
 
 // Group by region and sort alphabetically
-const regions: Record<string, typeof allDests> = { visayas: [], luzon: [], mindanao: [] };
+const regions: Record<string, typeof allDests> = { 'hong-kong-island': [], 'kowloon': [], 'new-territories': [], 'outlying-islands': [] };
 allDests.forEach(d => {
   if (regions[d.data.region]) regions[d.data.region].push(d);
 });
@@ -26,32 +23,37 @@ const breadcrumbs = [
 ];
 
 const regionMeta: Record<string, { label: string; desc: string; gradient: string }> = {
-  visayas: {
-    label: 'Visayas',
-    desc: 'Island-hopping paradise. Heart of Philippine beach culture with the best diving, waterfalls, and mystical islands.',
+  'hong-kong-island': {
+    label: 'Hong Kong Island',
+    desc: 'The financial heart and cultural centre. Victoria Peak, Central nightlife, Wan Chai culture, Stanley waterfront, and Aberdeen harbour.',
     gradient: 'linear-gradient(135deg, #0E4D5C, #0D7377, #14B8A6)',
   },
-  luzon: {
-    label: 'Luzon',
-    desc: 'The main island. Mountains in the north, surfing in the east, culinary capital in Pampanga, history everywhere.',
+  'kowloon': {
+    label: 'Kowloon',
+    desc: 'The densest, most vibrant part of Hong Kong. Night markets, museums, the best dim sum teahouses, and TST waterfront views.',
     gradient: 'linear-gradient(135deg, #78350F, #B45309, #F59E0B)',
   },
-  mindanao: {
-    label: 'Mindanao',
-    desc: 'The road less traveled. World-class surfing, volcanic islands, and Davao\'s durian country.',
+  'new-territories': {
+    label: 'New Territories',
+    desc: 'Wild Hong Kong — the MacLehose Trail, Sai Kung coastal wilderness, UNESCO Geopark hexagonal rocks, and seafood villages.',
     gradient: 'linear-gradient(135deg, #065F46, #059669, #34D399)',
+  },
+  'outlying-islands': {
+    label: 'Outlying Islands',
+    desc: 'Car-free calm. Big Buddha on Lantau, seafood restaurants on Lamma, and the ancient stilt village and pink dolphins at Tai O.',
+    gradient: 'linear-gradient(135deg, #1a1035, #4C1D95, #3730A3)',
   },
 };
 ---
 <BaseLayout
-  title="Destinations — Philippine Island Guides"
-  description="In-depth travel guides to the Philippine islands with real prices, video tours, and perspectives from 23 years of travel. Explore Visayas, Luzon, and Mindanao."
+  title="Destinations — Hong Kong Travel Guides"
+  description="In-depth travel guides to Hong Kong destinations with real prices and honest recommendations. Explore Hong Kong Island, Kowloon, New Territories, and the Outlying Islands."
   breadcrumbs={breadcrumbs}
 >
   <!-- Hero -->
   <header class="dh-hero">
     <video class="dh-hero-video" autoplay muted loop playsinline preload="metadata">
-      <source src="/videos/destinations/el-nido-hero.mp4" type="video/mp4" />
+      <source src="/videos/destinations/hong-kong-hero.mp4" type="video/mp4" />
     </video>
     <div class="dh-hero-gradient" />
     <div class="dh-hero-overlay" />
@@ -67,7 +69,7 @@ const regionMeta: Record<string, { label: string; desc: string; gradient: string
   </div>
 
   <!-- Destination Cards by Region -->
-  {(['visayas', 'luzon', 'mindanao'] as const).map(regionKey => {
+  {(['hong-kong-island', 'kowloon', 'new-territories', 'outlying-islands'] as const).map(regionKey => {
     const dests = regions[regionKey];
     const meta = regionMeta[regionKey];
     if (!dests || dests.length === 0) return null;
@@ -121,7 +123,7 @@ const regionMeta: Record<string, { label: string; desc: string; gradient: string
     <div class="container-content">
       <div class="dh-cta-card">
         <h2>Don't see your destination?</h2>
-        <p>Our AI Trip Planner covers 19 destinations across the Philippines — even ones we haven't written full guides for yet.</p>
+        <p>Our AI Trip Planner covers all 12 Hong Kong destinations — use it to build a custom itinerary with real prices and transport routes.</p>
         <a href="/plan/" class="dh-cta-btn">Plan Your Trip &#10141;</a>
       </div>
     </div>

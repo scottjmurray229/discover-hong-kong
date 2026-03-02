@@ -8,8 +8,8 @@ const breadcrumbs = [
   { name: 'The Finer Things', url: '/finer-things/' },
 ];
 
-const pageTitle = 'The Finer Things — Philippine Beer, Rum, Nightlife & Cigars Guide 2026';
-const pageDescription = 'San Miguel buckets, Tanduay rum (a personal favorite after the Caribbean and Cuba), Manila rooftop bars, karaoke culture, cigars, and what you can bring home.';
+const pageTitle = 'The Finer Things — Hong Kong Cocktail Bars, Beer, Whisky & Nightlife Guide 2026';
+const pageDescription = 'Rooftop bars with harbour views, speakeasies in Central, the craft beer scene in Tap Room, Macallan at the Peninsula Bar, and where to end the night in Hong Kong.';
 
 interface TopicSection {
   id: string;
@@ -23,107 +23,51 @@ const topics: TopicSection[] = [
   {
     id: 'beer',
     icon: '🍺',
-    title: 'Philippine Beer',
+    title: 'Beer in Hong Kong',
     gradient: 'linear-gradient(135deg, #78350F 0%, #D4A574 100%)',
     items: [
-      { label: 'San Miguel Pale Pilsen', text: 'The undisputed king of Philippine beer since 1890. Light, clean, and crushable in the heat. Found at every sari-sari store, restaurant, and beach bar in the country. ₱35–50 ($0.60–0.90 USD) at a store, ₱65–100 ($1.15–1.75 USD) at a bar. Order a "bucket" — six bottles on ice — and you\'re doing it right.' },
-      { label: 'Red Horse', text: 'The 6.9% ABV stallion that fuels Filipino nightlife. It\'s cheap, it\'s strong, and it\'s everywhere. ₱40–60 ($0.70–1.05 USD) at a store, ₱70–120 ($1.25–2.10 USD) at a bar. Red Horse is what you drink at a street-side inuman session when San Miguel isn\'t hitting hard enough. Respect it — it sneaks up on you.' },
-      { label: 'San Miguel Light', text: 'The lighter option at 5% ABV when you\'re day-drinking in 35°C heat and need to pace yourself. ₱45–60 ($0.80–1.05 USD) at a store. Popular with the younger crowd and at resort pools. Not as ubiquitous as Pale Pilsen but available at most restaurants and convenience stores.' },
-      { label: 'San Miguel Super Dry', text: 'San Miguel\'s answer to Japanese dry lagers — crisp, less sweet, slightly higher-end positioning. ₱50–70 ($0.90–1.25 USD) at a store. You\'ll see it more in Manila and Cebu bars than on remote islands. A solid option if Pale Pilsen feels too malty for you.' },
-      { label: 'The Craft Beer Scene', text: 'Philippine craft beer is small but growing fast. <strong>Engkanto</strong> (Laguna) brews solid IPAs and lagers available in Manila grocery stores. <strong>Pedro Brewcrafts</strong> makes a hazy IPA worth seeking out. <strong>Joe\'s Brew</strong> (Makati) was one of the first craft breweries. <strong>Turning Wheels</strong> in Poblacion is a great taproom. Expect ₱200–350 ($3.50–6.20 USD) per pint — 4–5x the price of San Miguel, but the quality is there.' },
-      { label: 'How Filipinos Actually Drink', text: 'The <strong>inuman</strong> (drinking session) is a social institution. A bucket of San Miguel on ice, a plate of <strong>pulutan</strong> (drinking snacks — sisig, chicharon, grilled liempo), and a circle of friends. <strong>Tagay</strong> culture means one glass passed around the group — the <em>tagay master</em> pours, everyone takes a shot in turn. Don\'t refuse a pour — it\'s considered disrespectful. You don\'t need to keep up, but you do need to participate.' },
+      { label: 'San Miguel (Hong Kong)', text: 'San Miguel has been brewed in Hong Kong since 1948 and is still the dominant draught beer in the city. Lighter than its Hong Kong counterpart, it is ubiquitous at street-level dai pai dong, cha chaan tengs, and waterfront seafood restaurants. HKD 25-45 at a local restaurant, HKD 60-90 at a rooftop bar.' },
+      { label: 'Craft Beer Scene', text: 'Hong Kong has a growing craft beer scene. Young Master Ales in Aberdeen is one of the most respected local breweries with excellent ales. Moonzen Brewery in Kwun Tong makes craft beers inspired by Chinese mythology. Craft bars in Sheung Wan and the Tai Ping Shan area offer the best selection. Expect HKD 80-120 per pint.' },
+      { label: 'Tap Room', text: 'The Tap Room bar in Sheung Wan and Draft Land in Wan Chai consistently rank among Hong Kong\'s best craft beer bars. Both rotate 20+ taps with a mix of local and international craft. Knowledgeable staff, food pairings, and an excellent selection of what is new from local Hong Kong breweries.' },
+      { label: 'Beer at the Waterfront', text: 'The Tsim Sha Tsui promenade has several bars and outdoor seating where cold San Miguel and a harbour view cost approximately the same. The Temple Street Night Market area has street-level vendors selling bottles at HKD 20-30. Budget travelers: the 7-Eleven beer-at-the-harbour-steps method is a legitimate Hong Kong tradition.' },
     ],
   },
   {
-    id: 'spirits',
-    icon: '🥃',
-    title: 'Spirits & Cocktails',
-    gradient: 'linear-gradient(135deg, #1A2332 0%, #78350F 100%)',
+    id: 'cocktails',
+    icon: '🍸',
+    title: 'Cocktail Bars & Nightlife',
+    gradient: 'linear-gradient(135deg, #1a1035 0%, #4C1D95 100%)',
     items: [
-      { label: 'Tanduay Rum', text: 'The world\'s best-selling rum by volume — and it\'s Filipino. This is my drink. The regular Tanduay is great for rum and Coke and mixed drinks at just a few bucks a bottle. The <strong>Superior</strong> is the sweet spot — smooth enough to sip over ice but still mixes well. The <strong>15-Year Añejo</strong> is a proper sipping rum, about $10 a bottle, and genuinely impressive over ice. Having tasted my way through the Caribbean, the DR, and Cuba, Tanduay holds its own — and at Philippine prices, there\'s no excuse not to try all three. Squeeze some calamansi into your rum and Coke — it\'s the Philippine lime and it transforms a basic drink.' },
-      { label: 'Whiskey & Scotch', text: 'Johnny Walker Black is the best scotch you can usually find outside the airport or a fancy mall in Manila — and it\'s a serviceable scotch. Grab one (or a better bottle) at the duty-free when you land, because it does not get any better than that in the provinces. <strong>Buy your beer and liquor at a hypermarket</strong> (SM, Robinsons, Puregold) for the best prices. If you really need a good bottle of scotch, bring one from home, but pack it well. I had a bottle of Lagavulin break in my luggage once — crushing from a drink perspective, and I had to get my clothes and bag deep-cleaned (which thankfully didn\'t cost much). Use a <a href="https://www.amazon.com/dp/B00IR0HB3G?tag=discoverphili-20" target="_blank" rel="nofollow sponsored">padded bottle protector</a> or wrap it in your jeans and cushion it well.' },
-      { label: 'Emperador Brandy', text: 'The Philippines is the world\'s largest brandy market — and Emperador is why. Emperador Light outsells most spirits globally. ₱80–150 ($1.40–2.65 USD) per bottle. It\'s the default spirit at Filipino celebrations, mixed with Coke or sipped over ice. The Fundador line (Spanish origin, Philippine-owned) is the step-up for sipping neat.' },
-      { label: 'GSM Blue Gin', text: 'Ginebra San Miguel Blue — "gin bulag" to locals — is the spirit that powers most karaoke sessions. ₱60–100 ($1.05–1.75 USD) per bottle. My twenty-something relatives have a special concoction: a cheap bottle of gin, a pack of Kool-Aid, and a big jug — and it gets the job done for them. I let them have their fun with that and drink my Tanduay on ice, which is too strong for them.' },
-      { label: 'Lambanog (Coconut Spirit)', text: 'Distilled from coconut sap, 40–45% ABV, dangerously smooth. The good stuff comes from Quezon province and Laguna. ₱100–200 ($1.75–3.50 USD) per bottle for commercial brands. <strong>Critical safety warning:</strong> Only buy sealed, commercially produced lambanog from reputable stores. Homemade or unmarked bottles can contain methanol — there are hospitalization cases every year. Stick to brands like Lakan or Mallari.' },
-      { label: 'Tubâ & Rice Liquor', text: 'Tubâ is fermented coconut sap — the Philippines\' original bootleg drink. It\'s mildly alcoholic when fresh (sweet and fizzy) but gets stronger as it ferments. In rural areas and the Visayas, you\'ll find it sold in recycled jugs — sometimes the same plastic containers used for gasoline, so <strong>make sure you know what you\'re drinking</strong>. Rice wine (tapuy) from the Cordillera region is another local spirit worth trying. These aren\'t bar drinks — they\'re the kind of thing you\'re offered at a family gathering or roadside stall. Accept politely, take a sip, and enjoy the experience.' },
-      { label: 'Wine', text: 'Don\'t bother with wine in the Philippines — you\'ll just be disappointed. The selection is limited, the markup is steep, and the storage conditions in tropical heat don\'t do any bottle any favors. If you really need a good bottle of wine, bring one from home and pack it in a <a href="https://www.amazon.com/dp/B0BPQFWKXM?tag=discoverphili-20" target="_blank" rel="nofollow sponsored">padded wine travel bag</a>. Otherwise, save the wine drinking for a country that makes it and enjoy the rum and beer while you\'re here.' },
-      { label: 'Tequila & Tequila Rose', text: 'Tequila is available in the Philippines but finding good tequila is difficult — most of what you\'ll see is bottom-shelf stuff that will give you a headache. Stay away if possible, or pay for it the next day. <strong>Tequila Rose</strong> is a strawberry cream liqueur that\'s popular with younger Filipinos — it tastes pretty good if cream liqueurs are your thing. You\'ll see it at KTV rooms and nightclubs. It\'s not tequila in any meaningful sense, but it goes down easy.' },
+      { label: 'Quinary', text: 'Consistently ranked one of Asia\'s best cocktail bars, Quinary in Central pioneered multi-sensory cocktail making in Hong Kong. The Earl Grey Caviar Martini is famous. Expect HKD 120-160 per cocktail. Reservation recommended.' },
+      { label: 'The Old Man', text: 'Named after Ernest Hemingway, The Old Man in Soho is a world-ranked cocktail bar with literary inspiration. Cocktails named after Hemingway novels, seasonal ingredients, and serious technique. HKD 100-150 per drink. The bar itself is beautiful.' },
+      { label: 'Darkside at Rosewood', text: 'The Peninsula Hotel\'s original bar was legendary; Darkside at Rosewood in Tsim Sha Tsui has a newer claim to the harbour-view bar crown. Floor-to-ceiling windows over Victoria Harbour, exceptional cocktail program, and service at the Rosewood standard. Expect HKD 160-220 per drink.' },
+      { label: 'Rooftop Bars', text: 'Aqua in Tsim Sha Tsui (34th floor), Ozone at the Ritz-Carlton (118th floor, the world\'s highest bar when built), and the Sky Lounge at Sheraton are the landmark rooftop options. Views are extraordinary; prices match (HKD 150-250 per drink). Go at dusk for the best light. Dress code enforced.' },
+      { label: 'LKF (Lan Kwai Fong)', text: 'Hong Kong\'s most famous nightlife district, a cluster of bars and clubs on a steep hill in Central. Busy every weekend, extremely busy on public holidays. The clientele is mixed: expats, finance workers, tourists. Drink prices are moderate (HKD 70-130), energy is high. Best experienced between 10pm and 2am on a Friday.' },
+      { label: 'Wan Chai Bars', text: 'Wan Chai has a more diverse bar scene than LKF. The Pawn (former pawnshop, now restaurant and rooftop bar), The Roundhouse Taproom, and a stretch of Lockhart Road bars offer a range from dive bars to craft cocktail spots. More neighborhood feel, slightly less polished than Central.' },
+    ],
+  },
+  {
+    id: 'whisky',
+    icon: '🥃',
+    title: 'Whisky & Spirits',
+    gradient: 'linear-gradient(135deg, #1565C0 0%, #42A5F5 100%)',
+    items: [
+      { label: 'Hong Kong as a Whisky Hub', text: 'Hong Kong is one of the world\'s great whisky trading cities. The Bonham\'s and Christie\'s whisky auctions held here regularly set world records. Japanese whisky is particularly strong — Hong Kong\'s proximity to Japan and its free port status make it one of the best cities in the world to find allocated Japanese whisky.' },
+      { label: 'The Peninsula Bar', text: 'The Peninsula Hotel\'s bar is one of the great hotel bars of Asia. A Macallan 25 or a glass of Yamazaki 18 in the Peninsula lobby — with live classical music in the afternoon — is a quintessential Hong Kong experience. Expect HKD 300-600+ per dram. Worth it once.' },
+      { label: 'Whisky Merchants', text: 'Ponti Wine Cellars and Jebsen Wines & Spirits are major whisky merchants with exceptional Japanese and Scotch selections. Berry Bros & Rudd has a Hong Kong presence. The Hong Kong International Wine & Spirits Fair in November is worth attending if dates align.' },
+      { label: 'Baijiu', text: 'Chinese white spirits (baijiu) are increasingly found in Hong Kong cocktail bars. Maotai, the premium Chinese spirit, is a significant presence in the city\'s business culture. Many bar programs include Maotai-based cocktails. The flavour is intense and unlike anything in Western spirits culture.' },
     ],
   },
   {
     id: 'nightlife',
     icon: '🌃',
-    title: 'Nightlife Districts',
-    gradient: 'linear-gradient(135deg, #4C1D95 0%, #E8654A 100%)',
+    title: 'Late Night Hong Kong',
+    gradient: 'linear-gradient(135deg, #065F46 0%, #059669 100%)',
     items: [
-      { label: 'Manila: Poblacion, Makati', link: '/destinations/manila/', text: 'The neighborhood that transformed Manila nightlife. A grid of narrow streets packed with rooftop bars, speakeasies, live music venues, and late-night food joints. Start at <strong>Z Hostel Roofdeck</strong> for sunset, hit <strong>The Curator</strong> or <strong>Agimat</strong> for cocktails, then bar-hop until 3am. It\'s walkable, safe, and every block has something new. This is where Manila\'s creative class drinks.' },
-      { label: 'Manila: BGC (Bonifacio Global City)', link: '/destinations/manila/', text: 'Taguig\'s modern district — upscale and polished. <strong>High Street</strong> and <strong>Burgos Circle</strong> have the highest concentration of bars and restaurants. <strong>The Palace</strong> complex has multiple clubs under one roof. More expensive than Poblacion but cleaner and more organized. Best for groups who want a more curated night out. Grab rides are easy here.' },
-      { label: 'Manila: Makati Avenue', link: '/destinations/manila/', text: 'The classic strip. More mainstream than Poblacion, with a mix of sports bars, live music venues, and clubs along Makati Ave and P. Burgos Street. <strong>Handlebar</strong> for live rock, <strong>Time</strong> for late-night dancing. It\'s been the go-to nightlife corridor for decades. Expect a mix of locals, expats, and tourists.' },
-      { label: 'Angeles City', link: '/destinations/clark/', text: 'The nightlife along <strong>Fields Avenue</strong> and <strong>Walking Street</strong> is legendary — loud, neon-lit, and unapologetically no-frills. It\'s a mix of sports bars, live music venues, KTV joints, and restaurants catering to expats and tourists. Not everyone\'s scene, but it\'s been a fixture of Philippine nightlife for decades. The Korean and expat bar scene along <strong>Friendship Highway</strong> is a more laid-back alternative with better food.' },
-      { label: 'Boracay', link: '/destinations/boracay/', text: 'Station 1–3 beachfront bars, D\'Mall nightlife, and fire dancers on the sand at sunset. <strong>Epic</strong> is the biggest club. <strong>Nigi Nigi Nu Noos</strong> for chill beachfront drinks. <strong>Red Pirates</strong> for loud, cheap fun. Peak season (Nov–May) turns White Beach into a full party strip after dark. Off-season is mellow — still great for sunset cocktails.' },
-      { label: 'Puerto Galera', link: '/destinations/puerto-galera/', text: 'Two worlds in one town. <strong>White Beach</strong> has the party strip — beachfront bars with cheap buckets, live music, and fire shows that run until late. <strong>Sabang</strong> is the dive town with a rougher, more expat-heavy bar scene. It\'s a quick ferry ride from Batangas and a popular weekend escape from Manila. The nightlife is low-key compared to Boracay but the drinks are cheaper and the crowd is more relaxed.' },
-      { label: 'Cebu', link: '/destinations/cebu/', text: '<strong>Mango Square</strong> (Mango Avenue) was the place to be 15 years ago but has lost its luster as a good bar hangout — it\'s still there, but the energy has moved on. The <strong>IT Park</strong> food park scene is the newer, more upscale alternative with rooftop bars and live music. <strong>Sugbo Mercado</strong> night market on weekends is the best pre-game — food, beer, and live bands.' },
-      { label: 'Siargao', link: '/destinations/siargao/', text: 'Chill island vibes with a growing bar scene. <strong>Harana Surf Resort</strong> has the best sunset cocktails. <strong>Bravo Beach Resort</strong> for live music and bonfire nights. <strong>Kermit</strong> in General Luna for late-night pizza and drinks. The vibe is barefoot, laid-back, and surfer-friendly — nothing like Manila\'s polished scene. Don\'t expect to stay out past midnight most nights.' },
-    ],
-  },
-  {
-    id: 'karaoke',
-    icon: '🎤',
-    title: 'Karaoke Culture',
-    gradient: 'linear-gradient(135deg, #E8654A 0%, #FB923C 100%)',
-    items: [
-      { label: 'Videoke Is Everywhere', text: 'Karaoke in the Philippines isn\'t something you do on a special occasion — it\'s a daily occurrence. Every neighborhood has a videoke machine. Restaurants, waiting rooms, birthday parties, and random Tuesday afternoons. The machine is called a <strong>videoke</strong> (video + karaoke) and the song catalog is encyclopedic. Coin-operated machines cost ₱5 per song ($0.09 USD). We usually rent large villas that have them built in, but one text from a local and a portable machine shows up in less than an hour — instant party. If you\'re wondering where the closest videoke is, just step outside and you\'ll hear one — it might be a bar, a party, or just a family on a Tuesday. Walk by and you\'ll most likely have a mic in your hand shortly.' },
-      { label: 'KTV Rooms', text: 'For a more private experience, KTV (karaoke TV) rooms in SM malls and entertainment complexes let you rent a room by the hour. ₱200–500/hour ($3.50–8.85 USD) depending on room size. <strong>Red Box</strong> and <strong>Music One</strong> are the big chains. They serve food and drinks — order the beer bucket and pulutan platter. This is how Filipino families celebrate birthdays.' },
-      { label: 'Korean & Japanese KTV vs Local', text: 'Not all KTV is created equal. <strong>Korean and Japanese KTV lounges</strong> are more upscale and exclusive — private rooms with better sound systems, table service, and a more polished atmosphere. They cater to Korean and Japanese expats and businessmen, and some can be pricey or members-only. A <strong>local KTV establishment</strong> is a completely different vibe — louder, looser, cheaper, and more fun. The drinks are basic, the song machines are older, and nobody cares if you can\'t sing. If you\'re looking for the authentic Filipino karaoke experience, go local.' },
-      { label: 'The Unwritten Rules', text: 'Don\'t hog the microphone — one song, then pass it. Applaud everyone, even if they\'re terrible. Never laugh at someone\'s singing. Queue your songs and wait your turn. If someone is clearly emotional during a ballad, let them have their moment. <strong>The "My Way" rule:</strong> In some areas, singing Frank Sinatra\'s "My Way" is genuinely avoided due to real incidents — it\'s half urban legend, half true. Best to skip it.' },
-      { label: 'Singing Is a Love Language', text: 'Filipinos are some of the best singers in the world — and they take it seriously. Don\'t be surprised when a random uncle at a family gathering sounds like he should be on a stage. Singing is how Filipinos express joy, heartbreak, celebration, and connection. If you\'re invited to sing, join in. It doesn\'t matter if you\'re good — what matters is you tried.' },
-      { label: 'Best Karaoke Songs in the Philippines', text: 'The Filipino karaoke canon: <strong>"Anak"</strong> (Freddie Aguilar), <strong>"Nandito Ako"</strong> (Lea Salonga), <strong>"On The Wings of Love"</strong> (Jeffrey Osborne), <strong>"Bohemian Rhapsody"</strong> (Queen), <strong>"I Will Always Love You"</strong> (Whitney Houston), and anything by Journey. If you want instant crowd approval, open with <strong>"Don\'t Stop Believin\'"</strong>. The room will join in by the chorus.' },
-    ],
-  },
-  {
-    id: 'cigars',
-    icon: '🪈',
-    title: 'Philippine Cigars',
-    gradient: 'linear-gradient(135deg, #1A2332 0%, #4A3728 50%, #D4A574 100%)',
-    items: [
-      { label: 'A Surprising Cigar Country', text: 'The Philippines has been growing tobacco since the Spanish colonial era — the Cagayan Valley and Ilocos regions produce high-quality leaves. It\'s not Cuba-level famous, but Filipino cigars offer excellent quality at a fraction of the price. If you\'re a cigar smoker, the Philippines is a hidden gem worth exploring. Beware of Cuban cigars outside the airport — they\'re most likely fake unless you\'re at an upscale establishment and paying a lot.' },
-      { label: 'Tabacalera', text: 'Founded in 1881 during Spanish colonial rule, Tabacalera is the heritage brand. Their cigars are hand-rolled in the Philippines using locally grown tobacco. The <strong>Tabacalera Reserva</strong> line is the one to try — full-bodied with earthy, slightly sweet notes. ₱80–200 ($1.40–3.50 USD) per stick. Available at duty-free shops and select tobacco stores in Manila.' },
-      { label: 'La Flor de la Isabela', text: 'The premium Philippine cigar brand, named after the Isabela province tobacco region. Hand-rolled using aged Philippine and imported wrapper leaves. Their <strong>Gran Corona</strong> and <strong>Robusto</strong> are the standouts. ₱150–350 ($2.65–6.20 USD) per stick. Find them at Manila cigar lounges and high-end hotel shops.' },
-      { label: 'Where to Buy', text: 'Buy your cigars at a <strong>hypermarket or SM/mall</strong> — they carry cigarillos and Churchills at reasonable prices. Cuban cigars can be found at the airport duty-free, but they\'re expensive. The Philippine brands are decent and I prefer the lighter cigars myself. Save the Cuban splurge for the airport if you really want one, but try the local options first — you might be surprised. <strong>Beware of Cuban cigars outside the airport</strong> — they\'re most likely fake unless you\'re at an upscale establishment and paying a lot.' },
-      { label: 'Where to Smoke', text: '<strong>The Bar at The Peninsula Manila</strong> — classic cigar-friendly lounge with a walk-in humidor. <strong>Puro Manila</strong> — dedicated cigar lounge in Makati. <strong>Rambla</strong> (Rockwell) — outdoor seating with a cigar menu. <strong>Firefly Roofdeck</strong> (City of Dreams) — rooftop with a cigar selection. Most upscale hotel bars in Manila, Cebu, and Boracay have cigar menus. Bars with a big patio may let you smoke outside, but always check before cutting your cigar.' },
-      { label: 'Bring the Right Gear', text: 'If you\'re serious about cigars on the road, bring a <a href="https://www.amazon.com/dp/B089QFVWX6?tag=discoverphili-20" target="_blank" rel="nofollow sponsored">travel humidor case</a> to protect your sticks from the tropical humidity and keep them fresh between stops. A <a href="https://www.amazon.com/dp/B07WFBC8X8?tag=discoverphili-20" target="_blank" rel="nofollow sponsored">butane torch lighter</a> handles the wind better than matches — essential on rooftops and beachfront bars. And don\'t forget a <a href="https://www.amazon.com/dp/B07D1FPQJF?tag=discoverphili-20" target="_blank" rel="nofollow sponsored">cigar cutter</a> — the house cutters at most lounges are dull.' },
-    ],
-  },
-  {
-    id: 'gear',
-    icon: '🎒',
-    title: 'Gear for Doing It Right',
-    gradient: 'linear-gradient(135deg, #0E4D5C 0%, #0D7377 100%)',
-    items: [
-      { label: 'DJI Mini 4 Pro (Drone)', text: 'The Chocolate Hills from above, El Nido\'s limestone karsts at dawn, Tubbataha Reef from 400 feet — the Philippines rewards aerial photography unlike almost anywhere else on earth. The <a href="https://www.amazon.com/dp/B0CFF1SJ3P?tag=discoverphili-20" target="_blank" rel="nofollow sponsored">DJI Mini 4 Pro</a> weighs under 250g (often below registration thresholds), folds into a jacket pocket, and shoots 4K HDR. Register with CAAP and check permit requirements for specific national parks and protected marine areas — Tubbataha requires advance authorization.' },
-      { label: 'Peak Design Travel Tripod', text: 'The <a href="https://www.amazon.com/dp/B085BQS6K4?tag=discoverphili-20" target="_blank" rel="nofollow sponsored">Peak Design Travel Tripod</a> collapses to the size of a water bottle and sets up in seconds — essential for low-light sunset shots at White Beach Boracay, long-exposure temple photography, and self-portraits on remote beaches where there\'s no one to hand your camera to. Carbon fiber version is worth the upgrade if you\'re carrying it in a day bag.' },
-      { label: 'Sony WH-1000XM5', text: 'Manila to Cebu to Siargao is two flights. Getting to Batanes or Camiguin adds another puddle-jumper — the Philippines requires hopping multiple regional aircraft, and the turboprop cabins are loud. <a href="https://www.amazon.com/dp/B09XS7JWHH?tag=discoverphili-20" target="_blank" rel="nofollow sponsored">Sony WH-1000XM5 headphones</a> have the best noise canceling in the market and fold flat. The long-haul from North America — 14–17 hours — makes them non-negotiable for the first leg before you even touch down.' },
-      { label: 'iROCKER Inflatable SUP', text: 'Siargao\'s Cloud 9 area and Palawan\'s lagoons are perfect stand-up paddleboard water — flat, warm, and uncrowded at dawn. An <a href="https://www.amazon.com/dp/B08N5NLV7K?tag=discoverphili-20" target="_blank" rel="nofollow sponsored">iROCKER All-Around 11\' inflatable SUP</a> deflates into a backpack. Skip the $60/day resort rental — over a week in Palawan, you\'ll have paid for the board twice over and own it for every future trip.' },
-      { label: 'Manta Sleep Mask', text: 'The Manila red-eye home departs late and arrives at your US connection exhausted. A <a href="https://www.amazon.com/dp/B07PRG2CQY?tag=discoverphili-20" target="_blank" rel="nofollow sponsored">Manta sleep mask</a> has contoured eye cups that don\'t press on your eyes — you can actually REM sleep in economy. The molded design also works on overnight ferry cabins between Manila and Cebu when the corridor lights stay on all night.' },
-      { label: 'Compression Socks', text: '<a href="https://www.amazon.com/dp/B089DRF9WM?tag=discoverphili-20" target="_blank" rel="nofollow sponsored">Sockwell compression socks</a> are essential for the transpacific flight — 14+ hours in a seat will cause visible ankle swelling without them. They also help on long island-hopping days that involve multiple boat rides and walking tours. The wool blend handles tropical humidity without overheating.' },
-      { label: 'Flypal Inflatable Foot Rest', text: 'On the 14–17 hour flight from North America to Manila, a <a href="https://www.amazon.com/dp/B074T9CP81?tag=discoverphili-20" target="_blank" rel="nofollow sponsored">Flypal inflatable foot rest</a> turns the floor space under the seat ahead into a reclined sleeping position. Combined with the sleep mask and compression socks, this is the economy-class kit that gets you off the plane feeling human. Deflates to a stuff-sack size.' },
-      { label: 'Anker 735 GaN Charger', text: 'One <a href="https://www.amazon.com/dp/B09C5RG6KV?tag=discoverphili-20" target="_blank" rel="nofollow sponsored">Anker 735 GaN 65W charger</a> handles laptop, phone, and camera simultaneously. Essential for drone photographers managing batteries on a resort that has two outlets — and it\'s dual-voltage so it works on Philippines 220V with no adapter.' },
-      { label: 'BAGSMART Electronics Organizer', text: 'A <a href="https://www.amazon.com/dp/B017SKRWL4?tag=discoverphili-20" target="_blank" rel="nofollow sponsored">BAGSMART electronics organizer</a> keeps drone cables, SD cards, chargers, and adapters in one flat case — it\'s the difference between spending 10 minutes hunting for your GoPro cable at 5am before a sunrise boat and finding it immediately.' },
-      { label: 'Apple AirTag 4-Pack', text: 'An <a href="https://www.amazon.com/dp/B0D54JZTHY?tag=discoverphili-20" target="_blank" rel="nofollow sponsored">Apple AirTag 4-pack</a> tracks your checked bag, camera bag, day bag, and the bag with your drone. Bags do get separated on the domestic hops between Manila, Cebu, and regional airports — with an AirTag in each one, you know where everything is before you leave the gate.' },
-    ],
-  },
-  {
-    id: 'customs',
-    icon: '🛃',
-    title: 'Customs & Duty-Free Rules',
-    gradient: 'linear-gradient(135deg, #1565C0 0%, #42A5F5 100%)',
-    items: [
-      { label: 'Bringing Alcohol INTO the Philippines', text: 'You can bring <strong>2 bottles, max 1.5 liters total</strong> into the Philippines duty-free. That\'s roughly two standard 750ml bottles — mix and match two bottles of wine or your favorite spirit on the way in. Anything over that gets taxed.' },
-      { label: 'Bringing Alcohol BACK to the USA', text: '<strong>1 liter of alcohol duty-free</strong> per person aged 21+. That\'s one bottle. You can bring more, but you\'ll owe duty and taxes on anything over 1 liter — usually $2–5 per additional bottle depending on the type. I bring back a bottle of Tanduay 15-Year for each member of the family traveling — at $10 a bottle, it\'s the best souvenir deal in the Philippines.' },
-      { label: 'Cigars Back to the USA', text: 'You can bring back <strong>up to 100 cigars</strong> (non-Cuban origin) duty-free to the United States. Philippine cigars qualify since they\'re locally produced. That\'s a generous allowance — enough to stock your humidor for months at Philippine prices. Keep the receipts and declare them honestly at customs.' },
-      { label: 'NAIA Duty-Free Shopping', text: 'Manila\'s Ninoy Aquino International Airport has duty-free shops <strong>after immigration on departure</strong>. Tanduay rum, lambanog, and Emperador brandy are available at decent prices — but honestly, they\'re still more expensive than a local grocery store. The duty-free is convenient if you forgot to buy at the store, but not a deal. Wine and imported spirits are where duty-free actually saves you money.' },
-      { label: 'The Smart Strategy', text: 'Buy your Tanduay, lambanog, and local spirits at <strong>SM Supermarket</strong> or <strong>Robinsons</strong> during your trip — prices are 30–50% less than duty-free. Wrap bottles in clothes inside your checked bag or use a <a href="https://www.amazon.com/dp/B0BPQFWKXM?tag=discoverphili-20" target="_blank" rel="nofollow sponsored">padded wine travel bag</a> designed for checked luggage — holds 4–6 bottles safely. We\'ve never had a bottle break using one of these. Also consider <a href="https://www.amazon.com/dp/B00IR0HB3G?tag=discoverphili-20" target="_blank" rel="nofollow sponsored">reusable wine bottle protector sleeves</a> as extra insurance for individual bottles.' },
-      { label: 'What NOT to Bring Home', text: 'Don\'t try to bring home fresh calamansi fruit (agricultural restriction) — buy the concentrate instead. Don\'t bring unmarked lambanog bottles; stick to commercially sealed brands. Homemade or decanted spirits in unmarked containers will get flagged at TSA and CBP. If you\'re bringing back more than $800 worth of goods total (not just alcohol), you\'ll need to fill out a customs declaration form.' },
+      { label: '24-Hour Cha Chaan Tengs', text: 'Many Hong Kong cha chaan tengs never close. At 3am in Mong Kok, you can get instant noodles in superior broth with luncheon meat and a fried egg alongside night-shift workers, students, and taxi drivers. This is the most authentic late-night Hong Kong experience available. HKD 30-55 per bowl.' },
+      { label: 'Temple Street Night Market', text: 'Temple Street in Yau Ma Tei comes alive after dark. Fortune tellers, Cantonese opera performances, and street food vendors. Open until midnight or later. The street food stalls serve curry fish balls, clay pot rice, and seafood. One of Hong Kong\'s most atmospheric evening destinations.' },
+      { label: 'Mong Kok at Midnight', text: 'The Mong Kok markets (Ladies Market, Sneaker Street, the flower market) wind down after 11pm, but the streets stay active. Night food stalls, dessert shops, and the general density of life in one of the world\'s most densely populated places. Walking these streets at midnight is a genuinely unique experience.' },
+      { label: 'Symphony of Lights', text: 'Every night at 8pm, 44 buildings on both sides of Victoria Harbour light up in a synchronized show. Watch from the TST promenade or from the Star Ferry. Free. The show lasts about 12 minutes. Arrive 20 minutes early for a waterfront spot.' },
     ],
   },
 ];
@@ -140,7 +84,7 @@ const topics: TopicSection[] = [
     <div class="ft-hero-noise"></div>
     <div class="ft-hero-content">
       <h1 class="ft-hero-title">The Finer Things</h1>
-      <p class="ft-hero-subtitle">San Miguel buckets on ice, Tanduay rum — one of my favorites after tasting my way through the Caribbean, the DR, and Cuba — Manila rooftop cocktails, karaoke that never stops, and Philippine cigars that cost less than a beer back home — plus exactly what you can bring through customs.</p>
+      <p class="ft-hero-subtitle">Rooftop bars with harbour views, craft beer in Sheung Wan, a Macallan 25 at the Peninsula Bar, and where to end the night — everything you need to drink and explore Hong Kong like you’ve been here before.</p>
       <div class="ft-hero-meta">
         <div class="ft-hero-meta-item">
           <span class="ft-hero-meta-label">Topics</span>
@@ -168,7 +112,7 @@ const topics: TopicSection[] = [
   <section class="ft-personal ft-reveal">
     <div class="container-content">
       <blockquote class="ft-personal-quote">
-        <p>Everything in the Philippines is tiered, and the price difference between tiers is negligible by US standards. They say San Miguel has a waterfall brewing system — San Mig Light on top, San Miguel in the middle, and whatever falls to the bottom is Red Horse, because you never know how strong one might be. They're all good — I'm a pilsner guy who's sampled his way through Germany and the Czech Republic, and they're best served ice cold. San Mig Light is my go-to for the tropical climate. But Philippine drinking culture isn't about what's in the glass — it's about who's holding the other one. I've made great friends over a cold beer there.</p>
+        <p>Everything in the Hong Kong is tiered, and the price difference between tiers is negligible by US standards. They say San Miguel has a waterfall brewing system — San Mig Light on top, San Miguel in the middle, and whatever falls to the bottom is Red Horse, because you never know how strong one might be. They're all good — I'm a pilsner guy who's sampled his way through Germany and the Czech Republic, and they're best served ice cold. San Mig Light is my go-to for the tropical climate. But Hong Kong drinking culture isn't about what's in the glass — it's about who's holding the other one. I've made great friends over a cold beer there.</p>
         <cite>— Scott</cite>
       </blockquote>
     </div>
@@ -185,12 +129,12 @@ const topics: TopicSection[] = [
         <div class="ft-quickfact-divider"></div>
         <div class="ft-quickfact">
           <span class="ft-quickfact-label">Beer (Store)</span>
-          <span class="ft-quickfact-value">₱35–50</span>
+          <span class="ft-quickfact-value">HKD 25–45</span>
         </div>
         <div class="ft-quickfact-divider"></div>
         <div class="ft-quickfact">
-          <span class="ft-quickfact-label">Cocktail (Manila)</span>
-          <span class="ft-quickfact-value">₱300–500</span>
+          <span class="ft-quickfact-label">Cocktail (Central)</span>
+          <span class="ft-quickfact-value">HKD 120–160</span>
         </div>
         <div class="ft-quickfact-divider"></div>
         <div class="ft-quickfact">
@@ -254,13 +198,13 @@ const topics: TopicSection[] = [
         <h2 class="ft-protips-heading">Scott's Pro Tips</h2>
         <div class="scott-tips">
           <ul>
-            <li><strong>Happy Hours:</strong> Happy hours are everywhere in the Philippines — you buy a beer or drink for a dollar instead of two. Poblacion bars are the best value with cocktails dropping to ₱200–250 ($3.50–4.40 USD). Some resort bars in Boracay and Siargao do sunset specials too.</li>
-            <li><strong>Beer Buckets:</strong> If you're with a group, go for the beer buckets — it's customary. San Miguel is ₱35–50 at a store, ₱65–100 at a local bar, ₱120–180 at a resort, and ₱200+ at a beachfront club. Know the markup before you sit down. The best value is always at the neighborhood carinderia with a bucket of Pale Pilsen and a plate of pulutan.</li>
-            <li><strong>Safety at Night:</strong> Always walk on well-lit streets and use Grab — it brings you exactly where you need to go. I've never had an issue in the Philippines, although I had a few nerves walking down a dark street in Ermita on my way to the boardwalk one time — you could hear people talking on their stoops but couldn't really see them. Don't flash cash or expensive phones, and Poblacion and BGC are the safest nightlife districts in Manila.</li>
-            <li><strong>Tagay Etiquette:</strong> When someone offers you a pour from the communal glass, accept it. Take a sip, wipe the rim, and pass it back. Refusing is considered rude. If you're done drinking, just say "pass" on your next turn — no one will judge you for that.</li>
-            <li><strong>Lambanog Warning:</strong> Don't drink lambanog from unmarked bottles, home distillers, or random market stalls. Stick to commercial brands like Lakan or Mallari. Methanol contamination from unregulated production is a real risk — hospitalization cases happen every year. This is not a joke.</li>
-            <li><strong>Best Value Night Out:</strong> San Miguel Pale Pilsen + sisig + chicharon at a local carinderia. Total cost: ₱300–500 ($5.30–8.85 USD) for a full evening. That's the authentic Filipino drinking experience — no rooftop needed. Drink in moderation, be merry, and you'll have yourself a blast.</li>
-            <li><strong>Bringing Bottles Home:</strong> Pack your spirits in the center of your checked bag wrapped in clothes. For extra protection, use a <a href="https://www.amazon.com/dp/B00IR0HB3G?tag=discoverphili-20" target="_blank" rel="nofollow sponsored">wine bottle protector sleeve</a> — they absorb impact and seal if a bottle cracks. We've flown dozens of bottles home this way with zero losses.</li>
+            <li><strong>Happy Hours:</strong> Happy hours are common across Hong Kong — many bars in Wan Chai and Sheung Wan run deals from 5–8pm. Craft beer bars in Sheung Wan often drop pints to HKD 50–70. LKF bars are busy enough that happy hours are shorter, but they exist.</li>
+            <li><strong>Group Drinking:</strong> San Miguel is HKD 20–30 at a 7-Eleven, HKD 40–60 at a local dai pai dong, HKD 60–90 at a bar, and HKD 120+ at a rooftop. Know the markup before you sit down. The best value is always a cold beer at the Tsim Sha Tsui waterfront steps as the harbour lights come on.</li>
+            <li><strong>Safety at Night:</strong> Hong Kong is one of the safest cities in Asia for nightlife. Walk anywhere, use the MTR late — trains run until around 1am. Wan Chai and LKF are the busiest districts; pickpocketing in dense crowds is the main risk. Don't flash expensive phones or cameras. Grab and taxi are both reliable and metered.</li>
+            <li><strong>Bar Etiquette:</strong> At craft beer bars in Sheung Wan, it's normal to ask the bartender what's new on tap — they're knowledgeable and enjoy talking about it. At hotel bars like the Peninsula, dress code applies: no shorts or sandals. At LKF bars, arrive before 11pm on Fridays or expect queues.</li>
+            <li><strong>Baijiu Warning:</strong> If someone offers you a Maotai toast in a business context, it's culturally important to accept. But baijiu is extremely strong (40–60% ABV) and the flavour is unlike anything in Western spirits. Pace yourself — sipping is fine. Avoid cheap unlabelled spirits at tourist market stalls.</li>
+            <li><strong>Best Value Night Out:</strong> San Miguel from a 7-Eleven + curry fish balls from a street stall at the Temple Street Night Market. Total cost: HKD 60–100 ($8–13 USD) for a full evening. That's the authentic Hong Kong night out — no rooftop needed. Find a spot on the TST waterfront steps and watch Victoria Harbour light up.</li>
+            <li><strong>Bringing Bottles Home:</strong> Pack your spirits in the center of your checked bag wrapped in clothes. For extra protection, use a <a href="https://www.amazon.com/dp/B00IR0HB3G?tag=discoverhk-20" target="_blank" rel="nofollow sponsored">wine bottle protector sleeve</a> — they absorb impact and seal if a bottle cracks. We've flown dozens of bottles home this way with zero losses.</li>
           </ul>
         </div>
       </div>
@@ -286,13 +230,13 @@ const topics: TopicSection[] = [
   <!-- Email Capture -->
   <div class="container-content ft-reveal" style="padding-bottom: var(--space-6);">
     <EmailCapture
-      leadMagnet="Get Our Free Philippine Nightlife Guide"
-      description="Bars, beer, spirits, and nightlife across the Philippines — packed into one PDF."
+      leadMagnet="Get Our Free Hong Kong Nightlife Guide"
+      description="Bars, beer, spirits, and nightlife across the Hong Kong — packed into one PDF."
       bullets={[
-        'Best bars in Manila, Boracay, Cebu, and Siargao',
-        'Complete guide to Philippine beer, rum, and spirits',
+        'Best bars in Wan Chai, LKF, Sheung Wan, and TST waterfront',
+        'Complete guide to Hong Kong beer, whisky, and cocktails',
         'Customs rules — what you can bring home',
-        'Karaoke etiquette and local drinking customs',
+        'Cantonese toasting etiquette and local bar culture',
       ]}
       guideTag="pillar-finer-things"
     />

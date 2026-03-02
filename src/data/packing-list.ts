@@ -1,151 +1,150 @@
-// packing-list.ts — Philippines-specific packing config
+// packing-list.ts — Hong Kong-specific packing config
 // Merges with packing-base.ts universal items at runtime
 
 import type { PackingItem, PackingConfig, GearRecommendation } from './packing-base';
 
 // ─────────────────────────────────────────────────────────────────────────────
-// PHILIPPINES DESTINATION ESSENTIALS (unique to this country)
+// HONG KONG DESTINATION ESSENTIALS (unique to this destination)
 // ─────────────────────────────────────────────────────────────────────────────
-export const PHILIPPINES_ESSENTIALS: PackingItem[] = [
+export const HK_ESSENTIALS: PackingItem[] = [
   {
-    id: 'ph-sunscreen',
-    name: 'Reef-Safe Mineral Sunscreen',
+    id: 'hk-octopus',
+    name: 'Octopus Card (Top Up at Airport)',
     category: 'destination',
-    description: 'Marine park rangers at El Nido, Tubbataha, and Apo Island will turn you away with chemical sunscreen. Zinc oxide only.',
+    description: 'The single most essential item for Hong Kong. Works on MTR, trams, buses, ferries, and most convenience stores. Buy at the Airport Express counter on arrival and charge with HKD 300.',
     essential: true,
     climate: ['tropical', 'coastal'],
-    amazonSearchFallback: 'reef+safe+mineral+sunscreen+zinc+oxide',
-    affiliatePrice: '$12–22',
-    localAlternative: 'Available in Manila and Cebu malls but expensive — bring from home',
+    amazonSearchFallback: 'octopus+card+hong+kong+travel',
+    affiliatePrice: 'HKD 150 deposit',
+    localAlternative: 'Available at every MTR station and the airport',
   },
   {
-    id: 'ph-drybag',
-    name: 'Waterproof Dry Bag (20L)',
+    id: 'hk-layers',
+    name: 'Light Jacket / Layers',
     category: 'destination',
-    description: 'Island hopping means everything rides in open bangkas. One wave, one rogue splash from a spray — your electronics are gone without this.',
+    description: 'October to March can be surprisingly cold — air conditioning in malls and restaurants is aggressively set to near-freezing year-round. A lightweight packable jacket is useful in all seasons.',
     essential: true,
     climate: ['tropical', 'coastal'],
-    amazonSearchFallback: 'dry+bag+20l+waterproof+island+hopping',
-    affiliatePrice: '$18–35',
-    localAlternative: 'Available at outdoor shops in El Nido and Coron but quality varies',
+    amazonSearchFallback: 'packable+lightweight+jacket+travel',
+    affiliatePrice: '$30-60',
+    localAlternative: 'Available everywhere in Hong Kong',
   },
   {
-    id: 'ph-seasick',
-    name: 'Seasickness Medicine',
+    id: 'hk-shoes',
+    name: 'Comfortable Walking Shoes',
     category: 'destination',
-    description: 'Typhoon season means rough swells on every inter-island crossing. Dramamine or Bonine, taken 1 hour before boarding. In calm dry season, optional — but bangkas can still rock.',
-    essential: true,
-    seasons: ['rainy', 'shoulder'],
-    amazonSearchFallback: 'dramamine+seasickness+motion+sickness+tablets',
-    affiliatePrice: '$5–12',
-    localAlternative: 'Meclizine available at Mercury Drug for about ₱5/tab',
-  },
-  {
-    id: 'ph-phoneholder',
-    name: 'Waterproof Phone Pouch',
-    category: 'destination',
-    description: 'Underground rivers, waterfalls, snorkeling — your phone touches water every single day in the Philippines.',
+    description: 'Hong Kong involves serious walking — hills, escalators, and market streets. If hiking the MacLehose Trail or Dragon\'s Back, bring proper hiking shoes. For urban exploration, well-fitted trainers are fine.',
     essential: true,
     climate: ['tropical', 'coastal'],
-    amazonSearchFallback: 'waterproof+phone+pouch+neck+lanyard',
-    affiliatePrice: '$10–20',
-    localAlternative: 'Available at dive shops in El Nido and Boracay',
+    amazonSearchFallback: 'comfortable+walking+shoes+travel',
+    affiliatePrice: '$60-120',
+    localAlternative: 'Available throughout Hong Kong',
   },
   {
-    id: 'ph-phrases',
-    name: 'Filipino Phrase Card / App',
+    id: 'hk-adapter',
+    name: 'Type G Power Adapter',
     category: 'destination',
-    description: '"Salamat" (thank you), "Kuya/Ate" (respectful address), "Magkano?" (how much?) — basic phrases open doors and unlock smiles.',
+    description: 'Hong Kong uses Type G plugs (the same 3-pin square plugs as the UK) at 220V/50Hz. Essential if your home country uses different plugs.',
+    essential: true,
+    climate: ['tropical', 'coastal'],
+    amazonSearchFallback: 'type+g+uk+power+adapter+travel',
+    affiliatePrice: '$10-15',
+    localAlternative: 'Available at convenience stores and electronics shops',
+  },
+  {
+    id: 'hk-phrases',
+    name: 'Cantonese Phrase App',
+    category: 'destination',
+    description: '"M goi" (excuse me / thank you for service), "Do je" (thank you for a gift), "Gei do cheen?" (how much?) — basic Cantonese phrases get a warm response even in tourist areas.',
     essential: false,
-    localAlternative: 'Google Translate works everywhere with signal — download Filipino offline pack',
+    localAlternative: 'Google Translate works well — download Cantonese offline pack',
   },
 ];
 
 // ─────────────────────────────────────────────────────────────────────────────
-// GEAR WE RECOMMEND — Philippines (4-6 curated items for GearRecommendations component)
+// GEAR WE RECOMMEND — Hong Kong (4-6 curated items for GearRecommendations component)
 // ─────────────────────────────────────────────────────────────────────────────
-export const PHILIPPINES_GEAR_RECOMMENDATIONS: GearRecommendation[] = [
+export const HK_GEAR_RECOMMENDATIONS: GearRecommendation[] = [
   {
-    id: 'gr-ph-sunscreen',
-    name: 'Reef-Safe Mineral Sunscreen',
-    reason: 'Marine park rangers at El Nido will turn you away with chemical sunscreen. Coral-safe is mandatory — and the coral here is worth protecting.',
-    amazonSearchFallback: 'reef+safe+mineral+sunscreen',
-    affiliatePrice: '~$14',
+    id: 'gr-hk-shoes',
+    name: 'Comfortable Walking Shoes',
+    reason: 'Hong Kong averages 10-15km of walking per day. Hills, stairs, and market streets. The right shoes make or break the trip.',
+    amazonSearchFallback: 'comfortable+travel+walking+shoes',
+    affiliatePrice: '~$75',
   },
   {
-    id: 'gr-ph-drybag',
-    name: 'Dry Bag (20L)',
-    reason: 'Island hopping means your stuff rides in open bangka boats. One wave and your phone is gone. This is the single most important gear item for the Philippines.',
-    amazonSearchFallback: 'dry+bag+20l+waterproof',
-    affiliatePrice: '~$22',
+    id: 'gr-hk-jacket',
+    name: 'Packable Down Jacket',
+    reason: 'Air conditioning in Hong Kong is set to sub-zero in every mall, restaurant, and MTR carriage. Even in summer, you need layers the moment you step inside.',
+    amazonSearchFallback: 'packable+down+jacket+lightweight',
+    affiliatePrice: '~$55',
   },
   {
-    id: 'gr-ph-towel',
-    name: 'Quick-Dry Travel Towel',
-    reason: "Beach resorts provide towels. Island-hopping boats, waterfall hikes, and homestays don't. Pack one that dries in 30 minutes in the sun.",
-    amazonSearchFallback: 'quick+dry+microfiber+travel+towel',
-    affiliatePrice: '~$18',
+    id: 'gr-hk-daypack',
+    name: 'Lightweight Daypack (20L)',
+    reason: 'A full day in Hong Kong — dim sum, hiking, ferry, night market — means carrying water, layers, and your day\'s purchases. A packable daypack is essential.',
+    amazonSearchFallback: 'lightweight+packable+daypack+20l',
+    affiliatePrice: '~$30',
   },
   {
-    id: 'gr-ph-phoneholder',
-    name: 'Waterproof Phone Pouch',
-    reason: 'Underground rivers. Waterfall hikes. Snorkel trips. Bangka spray. Your phone sees water daily here. ₱500 of protection for a $1,000 device.',
-    amazonSearchFallback: 'waterproof+phone+pouch+lanyard',
+    id: 'gr-hk-adapter',
+    name: 'Type G Power Adapter',
+    reason: 'Hong Kong uses UK-style plugs. Buy a good adapter before you leave home — airport versions are overpriced.',
+    amazonSearchFallback: 'type+g+uk+power+adapter',
     affiliatePrice: '~$12',
   },
   {
-    id: 'gr-ph-repellent',
-    name: 'DEET Insect Repellent',
-    reason: 'Dengue is real in the Philippines — cases spike after typhoon season. DEET works. Natural alternatives with citronella do not in tropical humidity.',
-    amazonSearchFallback: 'deet+30+percent+insect+repellent',
-    affiliatePrice: '~$9',
+    id: 'gr-hk-waterbottle',
+    name: 'Insulated Water Bottle',
+    reason: 'Hong Kong tap water is safe to drink. Bring an insulated bottle and refill at MTR stations and hotels. Saves money and reduces plastic.',
+    amazonSearchFallback: 'insulated+water+bottle+travel',
+    affiliatePrice: '~$25',
   },
 ];
 
 // ─────────────────────────────────────────────────────────────────────────────
-// PHILIPPINES SITE CONFIG
+// HONG KONG SITE CONFIG
 // ─────────────────────────────────────────────────────────────────────────────
-export const PHILIPPINES_CONFIG: PackingConfig = {
-  sitePrefix: 'dph',
-  destination: 'Philippines',
+export const HK_CONFIG: PackingConfig = {
+  sitePrefix: 'dhk',
+  destination: 'Hong Kong',
   climate: ['tropical', 'coastal'],
-  currency: 'PHP',
-  plugType: 'Type A/B/C',
+  currency: 'HKD',
+  plugType: 'Type G',
   plugVoltage: '220V',
-  affiliateTag: 'discoverphili-20',
-  destinationEssentials: PHILIPPINES_ESSENTIALS,
-  gearRecommendations: PHILIPPINES_GEAR_RECOMMENDATIONS,
+  affiliateTag: 'discoveringhk-20',
+  destinationEssentials: HK_ESSENTIALS,
+  gearRecommendations: HK_GEAR_RECOMMENDATIONS,
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
-// FAQ ITEMS for packing-list.astro
+// Universal alias — imported as SITE_CONFIG in packing-list.astro
 // ─────────────────────────────────────────────────────────────────────────────
-// Universal alias — copied to all sites, import SITE_CONFIG in PackingList.astro
-export const SITE_CONFIG = PHILIPPINES_CONFIG;
+export const SITE_CONFIG = HK_CONFIG;
 
-export const PHILIPPINES_PACKING_FAQS = [
+export const HK_PACKING_FAQS = [
   {
-    question: 'What should I pack for the Philippines?',
-    answer: 'The essentials are reef-safe sunscreen, a dry bag for island hopping, insect repellent (DEET-based for dengue protection), a waterproof phone pouch, and seasickness medicine for boat transfers. Our interactive checklist above covers 60+ items across 7 categories, customized for the Philippines\' tropical climate.',
+    question: 'What should I pack for Hong Kong?',
+    answer: 'The essentials are comfortable walking shoes, a light jacket for air-conditioned spaces, a Type G power adapter, and layers for October-March. An Octopus card (bought on arrival) handles all transport. Our interactive checklist above covers 60+ items across 7 categories, customized for Hong Kong.',
   },
   {
-    question: 'Do I need bug spray in the Philippines?',
-    answer: 'Yes — DEET-based insect repellent is essential. Dengue fever is endemic in the Philippines with peaks after typhoon season (October–December). Use at least 20–30% DEET on exposed skin, especially at dusk and dawn. Natural alternatives with citronella are not effective in tropical humidity.',
+    question: 'What power adapter do I need for Hong Kong?',
+    answer: 'Hong Kong uses Type G plugs (the same 3-pin square plugs as the UK) at 220V/50Hz. If you are traveling from the USA, you will need a Type G adapter. Most modern electronics (phones, laptops, cameras) handle 100-240V automatically — check the label. Older single-voltage devices need a voltage converter.',
   },
   {
-    question: 'What power adapter do I need for the Philippines?',
-    answer: 'The Philippines uses Type A and Type B plugs (the same flat 2-pin and 3-pin plugs as the USA) at 220V/60Hz. American devices work without an adapter, but check your device\'s voltage rating — most modern phones, laptops, and cameras handle 110–240V automatically. Older single-voltage devices will need a converter.',
+    question: 'Do I need to bring cash to Hong Kong?',
+    answer: 'Credit cards are accepted at hotels, larger restaurants, and most shops. However, the traditional teahouses in Jordan and Mong Kok, wet market stalls, and street food vendors are cash-only. Bring HKD 500-1,000 in cash for the first day. ATMs are everywhere — HSBC and Hang Seng charge no fees for international cards at many locations.',
   },
   {
-    question: 'Can I buy toiletries in the Philippines?',
-    answer: 'Yes — basic toiletries are available everywhere at SM, Robinsons, and Mercury Drug. Bring your own reef-safe sunscreen (hard to find locally and expensive), DEET insect repellent, and any prescription medications. Everything else — shampoo, toothpaste, deodorant, flip-flops — buy locally and save luggage space.',
+    question: 'What should I wear in Hong Kong?',
+    answer: 'Light, breathable clothing for the heat and humidity from April to October. A light jacket is essential year-round for aggressive air conditioning. October to March can be genuinely cold (10-15 degrees C in January) — bring a proper warm layer. Smart casual is fine for most restaurants. One slightly nicer outfit for a harbour-view dinner is worth packing.',
   },
   {
-    question: 'How many outfits should I pack for the Philippines?',
-    answer: 'For a 7-day trip: 4 lightweight shirts, 2–3 shorts, 1 pair of long pants (for temples, nicer restaurants), 2 swimsuits. Laundry is cheap everywhere — ₱100–150/kg for wash-and-fold, usually same day. For 14 days, pack the same and use laundry every 4–5 days rather than doubling your clothes.',
+    question: 'How many outfits should I pack for Hong Kong?',
+    answer: 'For a 7-day trip: 4-5 lightweight shirts, 2-3 trousers or skirts, one smart casual outfit, comfortable walking shoes, and one pair of hiking shoes if you plan the MacLehose Trail or Dragon\'s Back. Laundry services are available at most hotels and laundromats throughout the city.',
   },
   {
-    question: 'What should I NOT bring to the Philippines?',
-    answer: 'Skip the hair dryer (every hotel has one), heavy cotton clothing (stays wet in humidity for hours), expensive jewelry (theft risk in crowds), and large amounts of cash beyond what you need for a few days. Also leave the physical guidebook — Google Maps and offline apps are more useful and up-to-date.',
+    question: 'What should I NOT bring to Hong Kong?',
+    answer: 'Skip excessive cash (ATMs everywhere), heavy clothing if visiting April-September, and items that can be bought cheaply locally. Electronics, clothing, and toiletries are all available in Hong Kong at competitive prices. The city is one of the world\'s great shopping destinations — leave room in your bag for what you find there.',
   },
 ];

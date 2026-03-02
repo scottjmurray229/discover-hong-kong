@@ -8,15 +8,12 @@ import { destinationVideoMap } from '../data/destination-videos';
 import scottImg from '../images/scott-murray.jpg';
 import jeniceImg from '../images/jenice-murray.jpg';
 
-const destinations = await getCollection('destinations', (entry) => {
-  // Exclude translated files (tl/ subdirectory) from English homepage
-  return !entry.id.startsWith('tl/');
-});
+const destinations = await getCollection('destinations');
 const allDests = destinations;
 
 // Blog posts — latest 3 non-draft
 const allBlogPosts = await getCollection('blog', (entry) => {
-  return !entry.id.startsWith('tl/') && !entry.data.draft;
+  return !entry.data.draft;
 });
 const latestPosts = allBlogPosts.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()).slice(0, 3);
 
@@ -28,49 +25,18 @@ const destMap = new Map(allDests.map(d => [String(d.slug || d.id), d]));
 
 // Map lat/lng coordinates for all destinations
 const geoMarkers: { slug: string; label: string; lat: number; lng: number }[] = [
-  { slug: 'batanes', label: 'Batanes', lat: 18.5, lng: 121.97 },
-  { slug: 'pagudpud', label: 'Pagudpud', lat: 18.5569, lng: 120.789 },
-  { slug: 'laoag', label: 'Laoag', lat: 18.198, lng: 120.5936 },
-  { slug: 'vigan', label: 'Vigan', lat: 17.5747, lng: 120.3869 },
-  { slug: 'la-union', label: 'La Union', lat: 16.6159, lng: 120.3209 },
-  { slug: 'sagada', label: 'Sagada', lat: 17.0833, lng: 120.9 },
-  { slug: 'mt-pulag', label: 'Mt. Pulag', lat: 16.587, lng: 120.8894 },
-  { slug: 'banaue', label: 'Banaue', lat: 16.914, lng: 121.057 },
-  { slug: 'baguio', label: 'Baguio', lat: 16.4023, lng: 120.596 },
-  { slug: 'baler', label: 'Baler', lat: 15.7594, lng: 121.5603 },
-  { slug: 'zambales', label: 'Zambales', lat: 15.5081, lng: 120.069 },
-  { slug: 'clark', label: 'Clark', lat: 15.186, lng: 120.5464 },
-  { slug: 'subic', label: 'Subic', lat: 14.7943, lng: 120.2622 },
-  { slug: 'manila', label: 'Manila', lat: 14.5995, lng: 120.9842 },
-  { slug: 'laguna', label: 'Laguna', lat: 14.2691, lng: 121.4113 },
-  { slug: 'tagaytay', label: 'Tagaytay', lat: 14.1153, lng: 120.9621 },
-  { slug: 'bataan', label: 'Bataan', lat: 14.6417, lng: 120.4818 },
-  { slug: 'puerto-galera', label: 'P. Galera', lat: 13.5113, lng: 120.9553 },
-  { slug: 'batangas', label: 'Batangas', lat: 13.7565, lng: 121.0583 },
-  { slug: 'marinduque', label: 'Marinduque', lat: 13.4017, lng: 121.9694 },
-  { slug: 'caramoan', label: 'Caramoan', lat: 13.7681, lng: 123.8611 },
-  { slug: 'legazpi', label: 'Legazpi', lat: 13.1391, lng: 123.7438 },
-  { slug: 'donsol', label: 'Donsol', lat: 12.9083, lng: 123.5958 },
-  { slug: 'iloilo', label: 'Iloilo', lat: 10.692, lng: 122.5706 },
-  { slug: 'guimaras', label: 'Guimaras', lat: 10.5928, lng: 122.6325 },
-  { slug: 'boracay', label: 'Boracay', lat: 11.9674, lng: 121.9248 },
-  { slug: 'biliran', label: 'Biliran', lat: 11.5833, lng: 124.4667 },
-  { slug: 'samar', label: 'Samar', lat: 11.5, lng: 125.0 },
-  { slug: 'tacloban', label: 'Tacloban', lat: 11.2543, lng: 125.0 },
-  { slug: 'coron', label: 'Coron', lat: 12.0054, lng: 120.2027 },
-  { slug: 'el-nido', label: 'El Nido', lat: 11.1784, lng: 119.393 },
-  { slug: 'cuyo', label: 'Cuyo', lat: 10.8517, lng: 121.0108 },
-  { slug: 'puerto-princesa', label: 'P. Princesa', lat: 9.7392, lng: 118.7353 },
-  { slug: 'bacolod', label: 'Bacolod', lat: 10.684, lng: 122.9563 },
-  { slug: 'malapascua', label: 'Malapascua', lat: 11.3233, lng: 124.1114 },
-  { slug: 'sipalay', label: 'Sipalay', lat: 9.7476, lng: 122.4681 },
-  { slug: 'dumaguete', label: 'Dumaguete', lat: 9.3068, lng: 123.3054 },
-  { slug: 'bohol', label: 'Bohol', lat: 9.65, lng: 123.85 },
-  { slug: 'cebu', label: 'Cebu', lat: 10.3157, lng: 123.8854 },
-  { slug: 'siargao', label: 'Siargao', lat: 9.8686, lng: 126.049 },
-  { slug: 'camiguin', label: 'Camiguin', lat: 9.1733, lng: 124.7289 },
-  { slug: 'siquijor', label: 'Siquijor', lat: 9.2, lng: 123.51 },
-  { slug: 'davao', label: 'Davao', lat: 7.0707, lng: 125.6087 },
+  { slug: 'victoria-peak', label: 'Victoria Peak', lat: 22.2759, lng: 114.1455 },
+  { slug: 'central', label: 'Central', lat: 22.2819, lng: 114.1577 },
+  { slug: 'wan-chai', label: 'Wan Chai', lat: 22.2793, lng: 114.1722 },
+  { slug: 'causeway-bay', label: 'Causeway Bay', lat: 22.2800, lng: 114.1840 },
+  { slug: 'aberdeen', label: 'Aberdeen', lat: 22.2490, lng: 114.1510 },
+  { slug: 'stanley', label: 'Stanley', lat: 22.2193, lng: 114.2135 },
+  { slug: 'tsim-sha-tsui', label: 'Tsim Sha Tsui', lat: 22.2970, lng: 114.1722 },
+  { slug: 'mong-kok', label: 'Mong Kok', lat: 22.3193, lng: 114.1694 },
+  { slug: 'sai-kung', label: 'Sai Kung', lat: 22.3826, lng: 114.2707 },
+  { slug: 'lantau-island', label: 'Lantau Island', lat: 22.2611, lng: 113.9442 },
+  { slug: 'lamma-island', label: 'Lamma Island', lat: 22.2110, lng: 114.1240 },
+  { slug: 'tai-o', label: 'Tai O', lat: 22.2535, lng: 113.8640 },
 ];
 
 // Build enriched marker data for map
@@ -79,27 +45,27 @@ const gmapMarkers = geoMarkers.map(m => {
   return {
     slug: m.slug, label: m.label, lat: m.lat, lng: m.lng,
     hasVideo: !!dest?.data.heroVideo,
-    region: dest?.data.region || 'luzon',
+    region: dest?.data.region || 'hong-kong-island',
     url: `/destinations/${m.slug}/`,
     status: dest?.data.heroVideo ? 'Guide Available' : 'Guide Coming Soon',
   };
 });
 // Show all destinations that exist in the collection
-const featuredSlugs = ['siquijor', 'cebu', 'bohol', 'dumaguete', 'boracay', 'el-nido', 'siargao', 'tacloban', 'samar', 'biliran', 'iloilo', 'guimaras', 'legazpi', 'donsol', 'laguna', 'batangas', 'puerto-galera', 'clark', 'manila', 'subic', 'puerto-princesa', 'batanes', 'camiguin', 'coron', 'davao', 'laoag', 'vigan', 'sagada', 'bacolod', 'tagaytay', 'malapascua', 'caramoan', 'zambales', 'baler', 'pagudpud', 'la-union', 'cuyo', 'banaue', 'sipalay', 'baguio', 'bataan'];
+const featuredSlugs = ['victoria-peak', 'tsim-sha-tsui', 'mong-kok', 'lantau-island', 'central', 'wan-chai', 'aberdeen', 'sai-kung', 'stanley', 'causeway-bay', 'lamma-island', 'tai-o'];
 
 // Content pillar links
 const pillarLinks = [
-  { icon: '🤿', label: 'Snorkeling', desc: 'Best spots in the Philippines', url: '/snorkeling-philippines/' },
-  { icon: '🎉', label: 'Festivals', desc: 'Celebrations & events', url: '/festivals/' },
-  { icon: '🍴', label: 'Food & Cuisine', desc: 'Regional food guides', url: '/cuisine/' },
-  { icon: '🏛️', label: 'WWII Heritage', desc: 'Historical sites', url: '/history/' },
-  { icon: '🥃', label: 'The Finer Things', desc: 'Bars, rum & nightlife', url: '/finer-things/' },
+  { icon: '🍜', label: 'Dim Sum Guide', desc: 'Yum cha, har gow & more', url: '/dim-sum-guide/' },
+  { icon: '🥾', label: 'Hiking Hong Kong', desc: 'MacLehose Trail & beyond', url: '/hiking-hong-kong/' },
+  { icon: '⛵', label: 'Hong Kong Islands', desc: 'Lamma, Lantau, Cheung Chau', url: '/hong-kong-islands/' },
+  { icon: '🏮', label: 'Night Markets', desc: 'Temple Street & Mong Kok', url: '/night-markets/' },
+  { icon: '📋', label: 'Practical Guide', desc: 'Octopus card, MTR & tips', url: '/practical/' },
   { icon: '🗺️', label: 'AI Trip Planner', desc: 'Build your itinerary', url: '/plan/' },
 ];
 ---
 <BaseLayout
-  title="Discover Philippines — Travel Guides by Scott & Jenice"
-  description="Your immersive guide to the Philippine islands — cinematic video, local tips, and honest recommendations from 23 years of travel."
+  title="Discovering Hong Kong — Travel Guides by Scott & Jenice"
+  description="Your complete guide to Hong Kong — harbour views, dim sum, hiking trails, and honest recommendations from people who keep coming back."
 >
   <!-- ============================================================
        HERO — 100vh cinematic with video background
@@ -113,15 +79,15 @@ const pillarLinks = [
       playsinline
       preload="metadata"
     >
-      <source src="/videos/destinations/boracay-hero-full.mp4" type="video/mp4" />
+      <source src="/videos/destinations/hong-kong-hero-full.mp4" type="video/mp4" />
     </video>
     <div class="hp-hero-gradient" />
     <div class="hp-hero-overlay" />
     <div class="hp-hero-noise" />
 
     <div class="hp-hero-content">
-      <h1 class="hp-hero-title">The Philippines Through Our Eyes</h1>
-      <p class="hp-hero-subtitle">We're Scott and Jenice — an American planner and his Filipina wife from Pampanga. These are the islands we keep coming back to, the food we actually eat, and the prices we actually paid.</p>
+      <h1 class="hp-hero-title">Hong Kong Through Our Eyes</h1>
+      <p class="hp-hero-subtitle">We're Scott and Jenice — we've spent weeks in Hong Kong across multiple trips. These are the neighbourhoods we keep returning to, the dim sum we actually order, and the prices we actually paid.</p>
       <div class="hp-hero-actions">
         <a href="#map" class="hp-btn hp-btn--primary">Explore the Map</a>
         <a href="/plan/" class="hp-btn hp-btn--secondary">Plan Your Trip</a>
@@ -142,15 +108,15 @@ const pillarLinks = [
           <div class="hp-trust-person-info">
             <div class="hp-trust-person-stats">
               <div class="hp-trust-stat">
-                <span class="hp-trust-number">2003</span>
+                <span class="hp-trust-number">2007</span>
                 <span class="hp-trust-label">First Trip</span>
               </div>
               <div class="hp-trust-stat">
-                <span class="hp-trust-number">20+</span>
+                <span class="hp-trust-number">10+</span>
                 <span class="hp-trust-label">Return Trips</span>
               </div>
             </div>
-            <p class="hp-trust-quote">"My first trip changed my life."</p>
+            <p class="hp-trust-quote">"Hong Kong is one of the world's great cities."</p>
           </div>
         </a>
         <a href="/about/jenice/" class="hp-trust-person hp-trust-link">
@@ -158,11 +124,11 @@ const pillarLinks = [
           <div class="hp-trust-person-info">
             <div class="hp-trust-person-stats">
               <div class="hp-trust-stat">
-                <span class="hp-trust-number">Filipina</span>
-                <span class="hp-trust-label">Raised in Pampanga</span>
+                <span class="hp-trust-number">Loves</span>
+                <span class="hp-trust-label">Hong Kong dim sum</span>
               </div>
             </div>
-            <p class="hp-trust-quote">"My home is where my heart is, and it is called the Philippines. <em>Tuloy po kayo</em> — welcome!"</p>
+            <p class="hp-trust-quote">"The har gow alone is worth the trip."</p>
           </div>
         </a>
       </div>
@@ -170,13 +136,13 @@ const pillarLinks = [
   </section>
 
   <!-- ============================================================
-       PLAN YOUR ROUTE — Interactive Philippines map
+       PLAN YOUR ROUTE — Interactive Hong Kong map
        ============================================================ -->
   <section class="hp-immersive-header">
     <div class="hp-immersive-gradient" style="background: linear-gradient(160deg, #091e2f 0%, #0c3547 35%, #0D7377 65%, #091e2f 100%);" />
     <div class="hp-immersive-content">
       <h2 class="hp-immersive-title">Plan Your Route</h2>
-      <p class="hp-immersive-text">Click any island to explore. Use our AI trip planner to build a custom itinerary with real prices, transport options, and local tips.</p>
+      <p class="hp-immersive-text">Click any destination to explore. Use our AI trip planner to build a custom itinerary with real prices, transport options, and local tips.</p>
       <a href="/plan/" class="hp-btn hp-btn--primary hp-btn--header">Plan Your Trip with AI &#10141;</a>
     </div>
   </section>
@@ -185,7 +151,7 @@ const pillarLinks = [
     <div class="container-content">
       <div class="hp-map-layout">
 
-        <!-- PHILIPPINES MAP -->
+        <!-- HONG KONG MAP -->
         <div class="hp-map-container" id="hpMapContainer">
           <div class="hp-map-tooltip" id="hpMapTooltip">
             <div class="hp-map-tooltip-name" id="hpTooltipName"></div>
@@ -201,71 +167,40 @@ const pillarLinks = [
 
         <!-- REGION CARDS -->
         <div class="hp-region-cards">
-          <div class="hp-region-card" data-region="luzon">
-            <div class="hp-region-card-header"><div class="hp-region-card-name">Luzon</div><div class="hp-region-card-count">23 destinations</div></div>
-            <p class="hp-region-card-desc">The main island. Skip Manila, fly into Clark. Mountains in the north, surfing in the east, history everywhere.</p>
+          <div class="hp-region-card" data-region="hong-kong-island">
+            <div class="hp-region-card-header"><div class="hp-region-card-name">Hong Kong Island</div><div class="hp-region-card-count">6 destinations</div></div>
+            <p class="hp-region-card-desc">The financial heart and cultural centre. Victoria Peak, Central nightlife, Wan Chai culture, Stanley waterfront.</p>
             <div class="hp-region-tags">
-              <a class="hp-dest-chip hp-chip-video" href="/destinations/clark/">Clark</a>
-              <a class="hp-dest-chip hp-chip-video" href="/destinations/manila/">Manila</a>
-              <a class="hp-dest-chip hp-chip-video" href="/destinations/laoag/">Laoag</a>
-              <a class="hp-dest-chip hp-chip-video" href="/destinations/vigan/">Vigan</a>
-              <a class="hp-dest-chip hp-chip-video" href="/destinations/sagada/">Sagada</a>
-              <a class="hp-dest-chip hp-chip-video" href="/destinations/legazpi/">Legazpi</a>
-              <a class="hp-dest-chip hp-chip-video" href="/destinations/donsol/">Donsol</a>
-              <a class="hp-dest-chip hp-chip-video" href="/destinations/tagaytay/">Tagaytay</a>
-              <a class="hp-dest-chip" href="/destinations/baguio/">Baguio</a>
-              <a class="hp-dest-chip" href="/destinations/baler/">Baler</a>
-              <a class="hp-dest-chip" href="/destinations/banaue/">Banaue</a>
-              <a class="hp-dest-chip" href="/destinations/bataan/">Bataan</a>
-              <a class="hp-dest-chip" href="/destinations/batanes/">Batanes</a>
-              <a class="hp-dest-chip" href="/destinations/batangas/">Batangas</a>
-              <a class="hp-dest-chip" href="/destinations/caramoan/">Caramoan</a>
-              <a class="hp-dest-chip" href="/destinations/laguna/">Laguna</a>
-              <a class="hp-dest-chip" href="/destinations/la-union/">La Union</a>
-              <a class="hp-dest-chip" href="/destinations/marinduque/">Marinduque</a>
-              <a class="hp-dest-chip" href="/destinations/mt-pulag/">Mt. Pulag</a>
-              <a class="hp-dest-chip" href="/destinations/pagudpud/">Pagudpud</a>
-              <a class="hp-dest-chip" href="/destinations/puerto-galera/">Puerto Galera</a>
-              <a class="hp-dest-chip" href="/destinations/subic/">Subic</a>
-              <a class="hp-dest-chip" href="/destinations/zambales/">Zambales</a>
+              <a class="hp-dest-chip" href="/destinations/victoria-peak/">Victoria Peak</a>
+              <a class="hp-dest-chip" href="/destinations/central/">Central</a>
+              <a class="hp-dest-chip" href="/destinations/wan-chai/">Wan Chai</a>
+              <a class="hp-dest-chip" href="/destinations/causeway-bay/">Causeway Bay</a>
+              <a class="hp-dest-chip" href="/destinations/aberdeen/">Aberdeen</a>
+              <a class="hp-dest-chip" href="/destinations/stanley/">Stanley</a>
             </div>
           </div>
-          <div class="hp-region-card" data-region="visayas">
-            <div class="hp-region-card-header"><div class="hp-region-card-name">Visayas</div><div class="hp-region-card-count">13 destinations</div></div>
-            <p class="hp-region-card-desc">Island-hopping paradise. Heart of Philippine beach culture with best diving, waterfalls, and mystical islands.</p>
+          <div class="hp-region-card" data-region="kowloon">
+            <div class="hp-region-card-header"><div class="hp-region-card-name">Kowloon</div><div class="hp-region-card-count">2 destinations</div></div>
+            <p class="hp-region-card-desc">The densest, most vibrant part of Hong Kong. Markets, museums, harbour views, and the best dim sum teahouses.</p>
             <div class="hp-region-tags">
-              <a class="hp-dest-chip hp-chip-video" href="/destinations/cebu/">Cebu</a>
-              <a class="hp-dest-chip hp-chip-video" href="/destinations/bohol/">Bohol</a>
-              <a class="hp-dest-chip hp-chip-video" href="/destinations/siquijor/">Siquijor</a>
-              <a class="hp-dest-chip hp-chip-video" href="/destinations/dumaguete/">Dumaguete</a>
-              <a class="hp-dest-chip hp-chip-video" href="/destinations/boracay/">Boracay</a>
-              <a class="hp-dest-chip hp-chip-video" href="/destinations/iloilo/">Iloilo</a>
-              <a class="hp-dest-chip hp-chip-video" href="/destinations/bacolod/">Bacolod</a>
-              <a class="hp-dest-chip hp-chip-video" href="/destinations/malapascua/">Malapascua</a>
-              <a class="hp-dest-chip" href="/destinations/guimaras/">Guimaras</a>
-              <a class="hp-dest-chip" href="/destinations/sipalay/">Sipalay</a>
-              <a class="hp-dest-chip" href="/destinations/biliran/">Biliran</a>
-              <a class="hp-dest-chip" href="/destinations/samar/">Samar</a>
-              <a class="hp-dest-chip" href="/destinations/tacloban/">Tacloban</a>
+              <a class="hp-dest-chip" href="/destinations/tsim-sha-tsui/">Tsim Sha Tsui</a>
+              <a class="hp-dest-chip" href="/destinations/mong-kok/">Mong Kok</a>
             </div>
           </div>
-          <div class="hp-region-card" data-region="palawan">
-            <div class="hp-region-card-header"><div class="hp-region-card-name">Palawan</div><div class="hp-region-card-count">4 destinations</div></div>
-            <p class="hp-region-card-desc">The Last Frontier. Dramatic limestone cliffs, hidden lagoons, clearest water on the planet.</p>
+          <div class="hp-region-card" data-region="new-territories">
+            <div class="hp-region-card-header"><div class="hp-region-card-name">New Territories</div><div class="hp-region-card-count">1 destination</div></div>
+            <p class="hp-region-card-desc">Wild Hong Kong. The MacLehose Trail, Sai Kung coast, UNESCO Geopark hexagonal rocks, and seafood by the water.</p>
             <div class="hp-region-tags">
-              <a class="hp-dest-chip hp-chip-video" href="/destinations/el-nido/">El Nido</a>
-              <a class="hp-dest-chip hp-chip-video" href="/destinations/coron/">Coron</a>
-              <a class="hp-dest-chip hp-chip-video" href="/destinations/puerto-princesa/">Puerto Princesa</a>
-              <a class="hp-dest-chip" href="/destinations/cuyo/">Cuyo</a>
+              <a class="hp-dest-chip" href="/destinations/sai-kung/">Sai Kung</a>
             </div>
           </div>
-          <div class="hp-region-card" data-region="mindanao">
-            <div class="hp-region-card-header"><div class="hp-region-card-name">Mindanao</div><div class="hp-region-card-count">3 destinations</div></div>
-            <p class="hp-region-card-desc">The road less traveled. World-class surfing in Siargao, volcanic islands in Camiguin, Davao's durian country.</p>
+          <div class="hp-region-card" data-region="outlying-islands">
+            <div class="hp-region-card-header"><div class="hp-region-card-name">Outlying Islands</div><div class="hp-region-card-count">3 destinations</div></div>
+            <p class="hp-region-card-desc">Car-free calm. Big Buddha on Lantau, seafood on Lamma, stilt houses and pink dolphins at Tai O.</p>
             <div class="hp-region-tags">
-              <a class="hp-dest-chip hp-chip-video" href="/destinations/siargao/">Siargao</a>
-              <a class="hp-dest-chip hp-chip-video" href="/destinations/davao/">Davao</a>
-              <a class="hp-dest-chip hp-chip-video" href="/destinations/camiguin/">Camiguin</a>
+              <a class="hp-dest-chip" href="/destinations/lantau-island/">Lantau Island</a>
+              <a class="hp-dest-chip" href="/destinations/lamma-island/">Lamma Island</a>
+              <a class="hp-dest-chip" href="/destinations/tai-o/">Tai O</a>
             </div>
           </div>
         </div>
@@ -329,7 +264,7 @@ const pillarLinks = [
       <div class="hp-immersive-gradient" style="background: linear-gradient(160deg, #1A2332 0%, #2C5F2D 35%, #0D7377 65%, #1A2332 100%);" />
       <div class="hp-immersive-content">
         <h2 class="hp-immersive-title">Latest from the Blog</h2>
-        <p class="hp-immersive-text">Stories, tips, and travel memories from 23 years of Philippines adventures.</p>
+        <p class="hp-immersive-text">Stories, tips, and travel guides from our Hong Kong trips.</p>
       </div>
     </section>
 
@@ -385,12 +320,12 @@ const pillarLinks = [
         <div class="hp-proof-card">
           <h3 class="hp-proof-headline">Real Prices</h3>
           <p class="hp-proof-subhead">"Every price is one we paid"</p>
-          <p class="hp-proof-detail">&#8369;150 sisig at Aling Lucing's. &#8369;1,700/day car rental in Clark. We verify every number on-site.</p>
+          <p class="hp-proof-detail">HKD 120-250 for a full yum cha lunch in Jordan. HKD 25 for the Star Ferry. We verify every number on-site.</p>
         </div>
         <div class="hp-proof-card">
-          <h3 class="hp-proof-headline">Family Connections</h3>
-          <p class="hp-proof-subhead">"Jenice grew up 15 minutes from Clark"</p>
-          <p class="hp-proof-detail">Her brothers, her mom's birthday lechon, the Korean BBQ her family loves. This isn't research — it's lived experience.</p>
+          <h3 class="hp-proof-headline">Multiple Visits</h3>
+          <p class="hp-proof-subhead">"We keep coming back"</p>
+          <p class="hp-proof-detail">Ten-plus trips across different seasons. We know the difference between October hiking weather and August typhoon season.</p>
         </div>
         <div class="hp-proof-card">
           <h3 class="hp-proof-headline">No Sponsored Content</h3>
@@ -408,27 +343,27 @@ const pillarLinks = [
     <div class="hp-immersive-gradient" style="background: linear-gradient(160deg, #0E4D5C 0%, #0D7377 40%, #14B8A6 70%, #064E3B 100%);" />
     <div class="hp-immersive-content">
       <h2 class="hp-immersive-title">Your Guides</h2>
-      <p class="hp-immersive-text">An American travel planner and his Kapampangan wife — 23 years, 20+ trips, and a toddler who's already island-hopping.</p>
+      <p class="hp-immersive-text">An American travel planner and his wife — multiple trips to Hong Kong, real prices, and no sponsored content.</p>
     </div>
   </section>
 
   <section class="hp-guides reveal">
     <div class="container-content">
-      <p class="hp-guides-intro">Most Philippines travel advice comes from bloggers who visited for two weeks. We've been doing this since 2003 — back when Clark airport weighed passengers before boarding and Grab didn't exist. Between Scott's logistics obsession and Jenice's family roots in Pampanga, we cover angles no single travel writer can.</p>
+      <p class="hp-guides-intro">Most Hong Kong travel content covers the same five tourist stops. We go deeper — the Jordan dim sum teahouse with no English menu, the MacLehose Trail coastal sections, the Tai O stilt houses at low tide. Between Scott's planning obsession and Jenice's eye for the local experience, we cover angles the guidebooks miss.</p>
       <div class="hp-guides-grid">
         <a class="hp-guide-card" href="/about/scott/">
           <Image src={scottImg} alt="Scott Murray" class="hp-guide-avatar" width={72} height={72} format="webp" loading="lazy" />
           <h3>Scott Murray</h3>
-          <p class="hp-guide-stat">20+ trips since 2003</p>
+          <p class="hp-guide-stat">10+ trips to Hong Kong</p>
           <p class="hp-guide-role">Logistics, Route Planning & Budget</p>
-          <p class="hp-guide-bio">Ferry schedules, budget breakdowns, and the practical stuff that makes or breaks a Philippines trip.</p>
+          <p class="hp-guide-bio">MTR routes, ferry schedules, budget breakdowns, and the practical stuff that makes or breaks a Hong Kong trip.</p>
         </a>
         <a class="hp-guide-card" href="/about/jenice/">
           <Image src={jeniceImg} alt="Jenice Murray" class="hp-guide-avatar" width={72} height={72} format="webp" loading="lazy" />
           <h3>Jenice Murray</h3>
-          <p class="hp-guide-stat">Born in Bulacan, raised in Pampanga</p>
+          <p class="hp-guide-stat">Food & culture specialist</p>
           <p class="hp-guide-role">Culture, Food & Local Knowledge</p>
-          <p class="hp-guide-bio">The insider perspective on food, customs, language, and the things guidebooks never mention.</p>
+          <p class="hp-guide-bio">The dim sum ordering strategy, Cantonese tea etiquette, and the things guidebooks never tell you.</p>
         </a>
       </div>
     </div>
@@ -441,7 +376,7 @@ const pillarLinks = [
     <div class="hp-immersive-gradient" style="background: linear-gradient(160deg, #1a1035 0%, #4C1D95 35%, #3730A3 65%, #1A2332 100%);" />
     <div class="hp-immersive-content">
       <h2 class="hp-immersive-title">Explore by Interest</h2>
-      <p class="hp-immersive-text">Snorkeling circuits, festival calendars, regional food guides, and WWII heritage trails.</p>
+      <p class="hp-immersive-text">Dim sum guides, hiking circuits, island hopping, night market tours, and practical transport tips.</p>
     </div>
   </section>
 
@@ -466,13 +401,13 @@ const pillarLinks = [
     <div class="hp-immersive-gradient" style="background: linear-gradient(160deg, #78350F 0%, #B45309 35%, #D97706 65%, #1A2332 100%);" />
     <div class="hp-immersive-content">
       <h2 class="hp-immersive-title">Start Planning</h2>
-      <p class="hp-immersive-text">Get our free Philippines travel checklist — ferry routes, packing lists, and budget tips we wish we'd had on trip one.</p>
+      <p class="hp-immersive-text">Get our free Hong Kong travel checklist — MTR tips, Octopus card setup, packing lists, and budget guides.</p>
     </div>
   </section>
 
   <section class="hp-email reveal">
     <div class="container-content">
-      <EmailCapture leadMagnet="Free Philippines Travel Checklist" />
+      <EmailCapture leadMagnet="Free Hong Kong Travel Checklist" />
     </div>
   </section>
 
@@ -536,12 +471,12 @@ const pillarLinks = [
     if (!mapEl || typeof L === 'undefined') return;
 
     var map = L.map(mapEl, {
-      center: [12.0, 122.5],
-      zoom: 6,
+      center: [22.32, 114.15],
+      zoom: 11,
       scrollWheelZoom: false,
-      minZoom: 5,
-      maxZoom: 12,
-      maxBounds: [[4, 115], [22, 130]],
+      minZoom: 9,
+      maxZoom: 15,
+      maxBounds: [[22.0, 113.7], [22.6, 114.5]],
       zoomControl: false,
       attributionControl: false,
     });
@@ -611,15 +546,12 @@ const pillarLinks = [
       allMarkers.push(marker);
     });
 
-    // Palawan slugs (region=luzon in data but shown in Palawan card)
-    var palawanSlugs = ['el-nido', 'coron', 'cuyo', 'puerto-princesa'];
-
     // Region card interaction
     var regionBounds = {
-      luzon: [[13, 119.5], [21, 126]],
-      visayas: [[9, 121], [12.5, 126]],
-      palawan: [[8.5, 117.5], [13, 121.5]],
-      mindanao: [[5.5, 120], [10.5, 127]],
+      'hong-kong-island': [[22.19, 114.09], [22.32, 114.24]],
+      'kowloon': [[22.29, 114.14], [22.35, 114.22]],
+      'new-territories': [[22.32, 114.18], [22.50, 114.35]],
+      'outlying-islands': [[22.18, 113.82], [22.32, 114.18]],
     };
 
     function resetMarkers() {
@@ -638,9 +570,7 @@ const pillarLinks = [
       card.addEventListener('mouseenter', function() {
         var r = card.dataset.region || '';
         allMarkers.forEach(function(mk) {
-          var inRegion = (r === 'palawan')
-            ? palawanSlugs.indexOf(mk._slug) !== -1
-            : mk._region === r;
+          var inRegion = mk._region === r;
           if (inRegion) {
             mk.setIcon(makeCircle(
               mk._data.hasVideo ? '#E8654A' : '#ffffff',

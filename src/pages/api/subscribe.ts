@@ -6,16 +6,18 @@ import { hasMxRecords, signEmailCookie } from '../../lib/email-cookie';
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const GUIDE_NAMES: Record<string, string> = {
-  'destination-siquijor': 'Siquijor Travel Guide',
-  'destination-cebu': 'Cebu Travel Guide',
-  'destination-boracay': 'Boracay Travel Guide',
-  'destination-el-nido': 'El Nido Travel Guide',
-  'destination-clark': 'Clark & Pampanga Travel Guide',
-  'destination-coron': 'Coron Travel Guide',
-  'destination-bohol': 'Bohol Travel Guide',
-  'destination-siargao': 'Siargao Travel Guide',
-  'destination-dumaguete': 'Dumaguete Travel Guide',
-  'destination-puerto-princesa': 'Puerto Princesa Travel Guide',
+  'destination-victoria-peak': 'Victoria Peak Travel Guide',
+  'destination-tsim-sha-tsui': 'Tsim Sha Tsui Travel Guide',
+  'destination-mong-kok': 'Mong Kok Travel Guide',
+  'destination-lantau-island': 'Lantau Island Travel Guide',
+  'destination-central': 'Central District Travel Guide',
+  'destination-wan-chai': 'Wan Chai Travel Guide',
+  'destination-aberdeen': 'Aberdeen Travel Guide',
+  'destination-sai-kung': 'Sai Kung Travel Guide',
+  'destination-stanley': 'Stanley Travel Guide',
+  'destination-causeway-bay': 'Causeway Bay Travel Guide',
+  'destination-lamma-island': 'Lamma Island Travel Guide',
+  'destination-tai-o': 'Tai O Travel Guide',
 };
 
 function getGuideName(tag: string): string {
@@ -30,12 +32,12 @@ function buildWelcomeEmail(guideName: string): string {
   <div style="max-width:560px;margin:0 auto;padding:40px 24px;">
     <div style="background:white;border-radius:16px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
       <div style="background:linear-gradient(135deg,#0D7377,#14B8A6);padding:32px 28px;text-align:center;">
-        <h1 style="color:white;font-size:24px;margin:0 0 8px;">Discover Philippines</h1>
+        <h1 style="color:white;font-size:24px;margin:0 0 8px;">Discovering Hong Kong</h1>
         <p style="color:rgba(255,255,255,0.85);font-size:14px;margin:0;">Your ${guideName} is on the way</p>
       </div>
       <div style="padding:28px;">
         <p style="color:#1A2332;font-size:16px;line-height:1.65;margin:0 0 16px;">
-          Salamat! You're now part of the Discover Philippines community.
+          Welcome! You're now part of the Discovering Hong Kong community.
         </p>
         <p style="color:#4A5568;font-size:15px;line-height:1.65;margin:0 0 16px;">
           We're putting together your <strong>${guideName}</strong> with real prices, tested itineraries, and local tips from our trips. We'll send it to you as soon as it's ready.
@@ -44,7 +46,7 @@ function buildWelcomeEmail(guideName: string): string {
           In the meantime, start exploring:
         </p>
         <div style="text-align:center;margin-bottom:24px;">
-          <a href="https://discoverphilippines.info/destinations/" style="display:inline-block;background:#0D7377;color:white;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:600;font-size:15px;">Browse All Destinations</a>
+          <a href="https://discoveringhongkong.info/destinations/" style="display:inline-block;background:#0D7377;color:white;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:600;font-size:15px;">Browse All Destinations</a>
         </div>
         <p style="color:#94A3B8;font-size:13px;line-height:1.5;margin:0;text-align:center;">
           Real travel guides from real trips — Scott &amp; Jenice
@@ -52,8 +54,8 @@ function buildWelcomeEmail(guideName: string): string {
       </div>
     </div>
     <p style="color:#94A3B8;font-size:11px;text-align:center;margin:20px 0 0;line-height:1.5;">
-      You're receiving this because you signed up at discoverphilippines.info.<br>
-      <a href="https://discoverphilippines.info/legal/privacy/" style="color:#94A3B8;">Privacy Policy</a>
+      You're receiving this because you signed up at discoveringhongkong.info.<br>
+      <a href="https://discoveringhongkong.info/legal/privacy/" style="color:#94A3B8;">Privacy Policy</a>
     </p>
   </div>
 </body>
@@ -68,9 +70,9 @@ async function sendWelcomeEmail(apiKey: string, to: string, guideName: string): 
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      from: 'Discover Philippines <hello@discoverphilippines.info>',
+      from: 'Discovering Hong Kong <hello@discoveringhongkong.info>',
       to: [to],
-      subject: `Your ${guideName} — Welcome to Discover Philippines`,
+      subject: `Your ${guideName} — Welcome to Discovering Hong Kong`,
       html: buildWelcomeEmail(guideName),
     }),
   });
