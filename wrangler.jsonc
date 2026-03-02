@@ -16,8 +16,8 @@
 "d1_databases": [
     {
       "binding": "DB",
-      "database_name": "trip-planner-cache-ph",
-      "database_id": "a2c631d9-8e4d-4b2e-a335-e2ed55f96bfa"
+      "database_name": "discover-hk-db",
+      "database_id": "1680005f-6b4a-49ec-bc88-6b72429c5120"
     }
   ]
 }
