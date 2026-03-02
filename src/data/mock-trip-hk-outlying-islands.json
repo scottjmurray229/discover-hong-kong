@@ -1,0 +1,185 @@
+{
+  "name": "7-Day Hong Kong and Outlying Islands",
+  "subtitle": "HK Island and Kowloon to Lantau to Sai Kung to Lamma Island",
+  "dates": "Oct 15 to Oct 21, 2026",
+  "days": [
+    {
+      "day": 1,
+      "date": "Thu, Oct 15",
+      "title": "Arrival and Victoria Peak",
+      "location": "Hong Kong Island",
+      "items": [
+        {
+          "id": "d1-1",
+          "time": "2:00 PM",
+          "icon": "airplane",
+          "type": "transport",
+          "title": "Arrive Hong Kong International Airport (HKG)",
+          "detail": "Airport Express train from HKG to Hong Kong Station (Central) takes 24 minutes. HKD 115 per person. Octopus card can be used on all MTR, bus, tram, and ferry services throughout the trip.",
+          "directions": "Follow Airport Express signs from arrivals hall. Train departs every 10 minutes.",
+          "status": "confirmed",
+          "lat": 22.308,
+          "lng": 113.9185
+        },
+        {
+          "id": "d1-2",
+          "time": "5:30 PM",
+          "icon": "mountain",
+          "type": "activity",
+          "title": "Peak Tram - Victoria Peak Sunset",
+          "detail": "Board the iconic Peak Tram at Garden Road terminus. HKD 88 return. Sky Terrace 428 (additional HKD 49) offers the best 360 panorama. Arrive before sunset for the best experience.",
+          "directions": "MTR to Central, Exit J2, then 5 min walk to Peak Tram Lower Terminus on Garden Road.",
+          "status": "confirmed",
+          "lat": 22.2759,
+          "lng": 114.1455
+        },
+        {
+          "id": "d1-3",
+          "time": "8:00 PM",
+          "icon": "fork",
+          "type": "food",
+          "title": "Dinner in SoHo",
+          "detail": "SoHo (South of Hollywood Road) has excellent restaurants across all price points. Elgin Street and Staunton Street have great international dining. HKD 150-300 per person.",
+          "directions": "Mid-Levels Escalator from Central to SoHo.",
+          "status": "confirmed",
+          "lat": 22.2839,
+          "lng": 114.1512
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "date": "Wed, Oct 21",
+      "title": "Lamma Island and Departure",
+      "location": "Outlying Islands",
+      "items": [
+        {
+          "id": "d7-1",
+          "time": "10:00 AM",
+          "icon": "ferry",
+          "type": "transport",
+          "title": "Ferry to Lamma Island - Yung Shue Wan",
+          "detail": "Ferry from Central Pier 4 to Yung Shue Wan on Lamma Island. HKD 24-30 each way, 25 minutes.",
+          "directions": "Central Ferry Piers on Connaught Road Central near IFC. Pier 4 is for Lamma (Yung Shue Wan).",
+          "status": "confirmed",
+          "lat": 22.211,
+          "lng": 114.124
+        },
+        {
+          "id": "d7-2",
+          "time": "12:30 PM",
+          "icon": "shrimp",
+          "type": "food",
+          "title": "Seafood Lunch at Sok Kwu Wan",
+          "detail": "Sok Kwu Wan has outdoor seafood restaurants right on the waterfront. Order steamed fish, salt and pepper squid, typhoon shelter crab. HKD 120-300 per person.",
+          "directions": "Walk the Lamma Family Trail from Yung Shue Wan to Sok Kwu Wan (1 hour). Restaurants are at the trail end.",
+          "status": "confirmed",
+          "lat": 22.206,
+          "lng": 114.129
+        }
+      ]
+    }
+  ],
+  "weather": [
+    {
+      "day": "Thu",
+      "icon": "sunny",
+      "high": 29,
+      "low": 23,
+      "rain": 10
+    },
+    {
+      "day": "Fri",
+      "icon": "sunny",
+      "high": 30,
+      "low": 24,
+      "rain": 5
+    },
+    {
+      "day": "Sat",
+      "icon": "cloudy",
+      "high": 28,
+      "low": 23,
+      "rain": 15
+    },
+    {
+      "day": "Sun",
+      "icon": "sunny",
+      "high": 29,
+      "low": 24,
+      "rain": 8
+    },
+    {
+      "day": "Mon",
+      "icon": "sunny",
+      "high": 30,
+      "low": 23,
+      "rain": 5
+    },
+    {
+      "day": "Tue",
+      "icon": "sunny",
+      "high": 28,
+      "low": 22,
+      "rain": 10
+    },
+    {
+      "day": "Wed",
+      "icon": "cloudy",
+      "high": 27,
+      "low": 22,
+      "rain": 20
+    }
+  ],
+  "contacts": [
+    {
+      "icon": "emergency",
+      "name": "Hong Kong Emergency",
+      "role": "Police/Fire/Ambulance",
+      "phone": "999"
+    },
+    {
+      "icon": "hospital",
+      "name": "Queen Mary Hospital",
+      "role": "Major hospital HK Island",
+      "phone": "+852 2255 3838"
+    }
+  ],
+  "group": [
+    {
+      "id": "scott",
+      "name": "Scott",
+      "avatar": "person",
+      "role": "host",
+      "color": "#0D7377"
+    },
+    {
+      "id": "jenice",
+      "name": "Jenice",
+      "avatar": "person2",
+      "role": "editor",
+      "color": "#E8654A"
+    }
+  ],
+  "notifications": [
+    {
+      "id": 1,
+      "type": "weather",
+      "text": "October is peak season in HK - low humidity, clear skies, ideal for hiking and outdoor activities.",
+      "time": "1 day ago",
+      "read": false
+    }
+  ],
+  "changeLog": [
+    {
+      "id": 1,
+      "type": "added",
+      "by": "scott",
+      "time": "2 days ago",
+      "title": "Sharp Island kaito",
+      "detail": "Added afternoon ferry to Sharp Island on Day 6 - the tombolo sandbar is unmissable.",
+      "day": 6,
+      "synced": true
+    }
+  ]
+}

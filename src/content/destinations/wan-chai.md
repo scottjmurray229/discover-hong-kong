@@ -1,0 +1,103 @@
+---
+title: Wan Chai
+description: "Between Central's finance and Causeway Bay's shopping lies Wan Chai — heritage temples, wet markets, arts venues, and Hong Kong's most storied bar strip."
+heroVideo: ""
+heroImage: ""
+tagline: "Old Hong Kong Meets Modern Arts Hub"
+region: hong-kong-island
+bestMonths:
+  - October
+  - November
+  - December
+  - January
+  - February
+  - March
+budgetPerDay:
+  backpacker: 60
+  midRange: 160
+  luxury: 450
+gettingThere: "MTR Wan Chai station (Island Line). Historic tram from Central (HKD 3 flat fare). Star Ferry from Tsim Sha Tsui East Ferry Terminal."
+essentials:
+  - icon: "🚇"
+    label: "Getting There"
+    value: "MTR Wan Chai station (Island Line, Exit A3 for markets, Exit A5 for Star Ferry pier). Tram from Central is HKD 3 flat fare — most atmospheric option."
+  - icon: "🚋"
+    label: "Getting Around"
+    value: "Walk most of Wan Chai. Historic double-decker trams run along the north coast road for HKD 3."
+  - icon: "💰"
+    label: "Daily Budget"
+    value: "HKD 200-500 ($25-65 USD) per person. Lockhart Road bars can add up quickly."
+  - icon: "🎨"
+    label: "Arts and Culture"
+    value: "Hong Kong Arts Centre, Hong Kong Academy for Performing Arts, and gallery spaces are free or low-cost entry."
+highlights:
+  - title: "Blue House Heritage Cluster"
+    icon: "🏠"
+    image: ""
+  - title: "Wan Chai Wet Market"
+    icon: "🥬"
+    image: ""
+  - title: "Hong Kong Arts Centre"
+    icon: "🎨"
+    image: ""
+  - title: "Star Street Boutiques"
+    icon: "✨"
+    image: ""
+  - title: "Lockhart Road Nightlife"
+    icon: "🍺"
+    image: ""
+  - title: "Pak Tai Temple"
+    icon: "⛩️"
+    image: ""
+gradientColors: "from-amber-900 via-orange-800 to-yellow-700"
+relatedDestinations:
+  - central
+  - causeway-bay
+  - victoria-peak
+faqItems:
+  - question: "What is the Blue House in Wan Chai?"
+    answer: "The Blue House is a heritage building cluster on Stone Nullah Lane consisting of four interconnected shophouses dating from the 1920s, painted a distinctive blue. It survived demolition and now houses a community museum, resident families, and a heritage restaurant. The surrounding area preserves older Hong Kong street life."
+  - question: "Is Wan Chai still known for nightlife?"
+    answer: "Yes, though it has evolved. Lockhart Road remains an active bar strip popular with expats and visitors. The area is less rough than its historical reputation suggested, but still lively on Thursday-Saturday evenings. Star Street and Wan Chai South have a more sophisticated wine bar and restaurant scene."
+  - question: "What is Star Street in Wan Chai?"
+    answer: "Star Street is a small, quiet enclave south of the main Wan Chai MTR area with an upmarket village feel. It has boutique cafes, wine bars, florists, concept stores, and upscale restaurants. It is one of the nicer areas for a leisurely lunch in Wan Chai."
+  - question: "What is the Wan Chai Wet Market?"
+    answer: "The Wan Chai Market (Bowrington Road Cooked Food Market) is a traditional Hong Kong wet market on two floors — fresh produce, live seafood, and cooked food stalls serving local breakfast and lunch. It is a genuine local market and a good place to eat cheaply: HKD 30-60 for a bowl of congee or noodles."
+  - question: "How do I get to Wan Chai from Central?"
+    answer: "The tram (HKD 3) is the most atmospheric option — board at any Central tram stop on Queensway going east. MTR is faster (one stop, Island Line). Walking along the waterfront from the Star Ferry Terminal takes about 20 minutes."
+  - question: "What arts events happen in Wan Chai?"
+    answer: "The Hong Kong Arts Centre on Harbour Road has year-round exhibitions, film screenings, and performances. The Hong Kong Convention and Exhibition Centre hosts major events. The Academy for Performing Arts has regular student and professional performances at low cost."
+  - question: "Where should I eat in Wan Chai?"
+    answer: "The Bowrington Road market has the most authentic cheap local food. Star Street has good mid-range restaurants. For a quick local lunch, look for cha chaan tengs on Johnston Road or Hennessy Road for milk tea and egg toast."
+  - question: "What is Pak Tai Temple and is it worth visiting?"
+    answer: "Pak Tai Temple on Stone Nullah Lane (near the Blue House) is dedicated to the Supreme Emperor of the Dark Heaven, a Taoist deity. It is one of Wan Chai's oldest temples with fine carved stone figures and a large bronze bell. Worth 20-30 minutes if you are in the Blue House area."
+affiliatePicks:
+  - name: "Find Hotels in Wan Chai"
+    type: "hotel"
+    price: "From HKD 700/night"
+    personalNote: "Wan Chai hotels offer better value than Central with equal MTR access. The area is walkable to both Central and Causeway Bay."
+    affiliateUrl: "https://www.booking.com/searchresults.html?ss=Wan+Chai+Hong+Kong&aid=2778866"
+  - name: "Hong Kong Tram Tour (Klook)"
+    type: "activity"
+    price: "HKD 80-150"
+    personalNote: "The historic Hong Kong tramway runs the full length of HK Island's north shore. Hop-on hop-off tram tickets let you cover Wan Chai, Causeway Bay, and beyond at your own pace."
+    affiliateUrl: "https://www.klook.com/en-HK/search/result/?query=Hong+Kong+tram+tour&aid=112015"
+  - name: "Hong Kong Heritage Walk (Traveloka)"
+    type: "tour"
+    price: "From HKD 280"
+    personalNote: "Walking tours of Wan Chai heritage sites including the Blue House, wet market, and old temples give excellent context for this layer of the city."
+    affiliateUrl: "https://traveloka.prf.hn/click/camref:1100l5F6Fa/creativeref:1011l160645"
+lastVerified: 2026-03-02
+contentStatus: published
+draft: false
+---
+
+Wan Chai sits between Central's financial towers and Causeway Bay's shopping madness, and it contains the most layered version of Hong Kong — colonial architecture beside glass towers, wet markets alongside wine bars, Pak Tai Temple on the same street as the city's main conference centre.
+
+The Blue House on Stone Nullah Lane is the best-preserved example of old Wan Chai shophouse architecture. The distinctive blue paint and timber balconies would look right in a 1930s photograph, and some of the families living in the upper floors have been there for generations. The ground-floor museum (free) tells the story of the neighbourhood through oral histories and old photographs.
+
+The Bowrington Road Cooked Food Market is two floors of local market life. Downstairs is a fresh wet market of vegetables, seafood, and meat. Upstairs, the cooked food stalls open from dawn for congee, yau zha gwai (fried dough sticks), and noodles for HKD 25-40. It is exactly the kind of place that disappears in cities that modernise too quickly, and Hong Kong has preserved it.
+
+The historic tram — Hong Kong's double-decker electric trams running since 1904 — rumbles along the north coast road for a flat HKD 3. Boarding at any Central stop heading east and riding through Wan Chai is one of the cheapest and most enjoyable ways to see the old layer of the city at pavement level.
+
+Star Street, tucked south of the Convention Centre area, offers a quiet contrast — a pocket of boutique restaurants, wine bars, and flower shops that feels more like a European neighbourhood than anything you might expect to find in Wan Chai.

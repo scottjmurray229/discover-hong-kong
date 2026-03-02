@@ -1,0 +1,389 @@
+{
+  "destinations": {
+    "victoria-peak": {
+      "title": "Victoria Peak",
+      "tagline": "The Iconic Rooftop of Hong Kong Island",
+      "region": "hong-kong-island",
+      "bestMonths": [
+        "Oct",
+        "Nov",
+        "Dec",
+        "Jan",
+        "Feb",
+        "Mar"
+      ],
+      "budgetPerDay": {
+        "backpacker": 60,
+        "midRange": 150,
+        "luxury": 400
+      },
+      "gettingThere": "Take the Peak Tram from Lower Peak Tram Terminus (Garden Road). Bus 15 from Central Exchange Square or taxi.",
+      "highlights": [
+        "Peak Tram historic funicular ride",
+        "Sky Terrace 428 panoramic views",
+        "Victoria Peak Garden walks",
+        "Lugard Road circular hike"
+      ],
+      "essentials": {
+        "gettingAround": "Peak Tram or Bus 15 from Central.",
+        "airport": "Hong Kong International Airport (HKG)",
+        "currency": "HKD (Hong Kong Dollar)",
+        "language": "Cantonese, English"
+      }
+    },
+    "tsim-sha-tsui": {
+      "title": "Tsim Sha Tsui",
+      "tagline": "The Heart of Kowloon Golden Mile",
+      "region": "kowloon",
+      "bestMonths": [
+        "Oct",
+        "Nov",
+        "Dec",
+        "Jan",
+        "Feb",
+        "Mar"
+      ],
+      "budgetPerDay": {
+        "backpacker": 70,
+        "midRange": 180,
+        "luxury": 500
+      },
+      "gettingThere": "MTR to Tsim Sha Tsui station (Tsuen Wan Line). Star Ferry from Central Pier 7.",
+      "highlights": [
+        "Avenue of Stars waterfront promenade",
+        "Symphony of Lights show",
+        "Star Ferry harbour crossing",
+        "Hong Kong Museum of History",
+        "Kowloon Park"
+      ],
+      "essentials": {
+        "gettingAround": "MTR is fastest. Star Ferry for atmosphere.",
+        "airport": "Hong Kong International Airport (HKG)",
+        "currency": "HKD (Hong Kong Dollar)",
+        "language": "Cantonese, English"
+      }
+    },
+    "mong-kok": {
+      "title": "Mong Kok",
+      "tagline": "The Worlds Most Densely Packed Urban Grid",
+      "region": "kowloon",
+      "bestMonths": [
+        "Oct",
+        "Nov",
+        "Dec",
+        "Jan",
+        "Feb",
+        "Mar"
+      ],
+      "budgetPerDay": {
+        "backpacker": 50,
+        "midRange": 120,
+        "luxury": 300
+      },
+      "gettingThere": "MTR Mong Kok station (Kwun Tong Line or Tsuen Wan Line).",
+      "highlights": [
+        "Ladies Market clothing and souvenirs",
+        "Flower Market Road",
+        "Goldfish Market",
+        "Bird Garden Yuen Po Street",
+        "Langham Place mall"
+      ],
+      "essentials": {
+        "gettingAround": "Walk - Mong Kok is dense and walkable.",
+        "airport": "Hong Kong International Airport (HKG)",
+        "currency": "HKD (Hong Kong Dollar)",
+        "language": "Cantonese, English"
+      }
+    },
+    "lantau-island": {
+      "title": "Lantau Island",
+      "tagline": "Big Buddha Tai O and Tranquil Beaches",
+      "region": "outlying-islands",
+      "bestMonths": [
+        "Oct",
+        "Nov",
+        "Dec",
+        "Jan",
+        "Feb",
+        "Mar"
+      ],
+      "budgetPerDay": {
+        "backpacker": 60,
+        "midRange": 150,
+        "luxury": 350
+      },
+      "gettingThere": "MTR to Tung Chung then Ngong Ping 360 cable car. Ferry from Central Pier 6 to Mui Wo (35 min).",
+      "highlights": [
+        "Tian Tan Big Buddha 34-metre bronze statue",
+        "Po Lin Monastery",
+        "Ngong Ping 360 cable car",
+        "Tai O fishing village stilt houses",
+        "Lantau Trail hiking",
+        "Cheung Sha Beach"
+      ],
+      "essentials": {
+        "gettingAround": "Cable car or bus 23 to Big Buddha. Bus 11 to Tai O from Tung Chung.",
+        "airport": "Hong Kong International Airport (HKG)",
+        "currency": "HKD (Hong Kong Dollar)",
+        "language": "Cantonese, English"
+      }
+    },
+    "central": {
+      "title": "Central District",
+      "tagline": "Asias Financial Hub with Colonial Character",
+      "region": "hong-kong-island",
+      "bestMonths": [
+        "Oct",
+        "Nov",
+        "Dec",
+        "Jan",
+        "Feb",
+        "Mar"
+      ],
+      "budgetPerDay": {
+        "backpacker": 80,
+        "midRange": 200,
+        "luxury": 600
+      },
+      "gettingThere": "MTR Central station. Star Ferry from TST. Airport Express to Hong Kong Station.",
+      "highlights": [
+        "Central-Mid-Levels Escalator",
+        "HSBC and Bank of China towers",
+        "PMQ design market",
+        "Lan Kwai Fong bar hub",
+        "IFC Mall"
+      ],
+      "essentials": {
+        "gettingAround": "Walk most of Central. Mid-Levels Escalator for uphill access.",
+        "airport": "Hong Kong International Airport (HKG)",
+        "currency": "HKD (Hong Kong Dollar)",
+        "language": "Cantonese, English"
+      }
+    },
+    "wan-chai": {
+      "title": "Wan Chai",
+      "tagline": "Old Hong Kong Meets Modern Arts Hub",
+      "region": "hong-kong-island",
+      "bestMonths": [
+        "Oct",
+        "Nov",
+        "Dec",
+        "Jan",
+        "Feb",
+        "Mar"
+      ],
+      "budgetPerDay": {
+        "backpacker": 60,
+        "midRange": 160,
+        "luxury": 450
+      },
+      "gettingThere": "MTR Wan Chai station (Island Line). Tram from Central. Ferry from TST East Pier.",
+      "highlights": [
+        "Hong Kong Convention and Exhibition Centre",
+        "Wan Chai Market wet market",
+        "Blue House heritage cluster",
+        "Star Street boutiques",
+        "Lockhart Road bar strip"
+      ],
+      "essentials": {
+        "gettingAround": "Walk from Central via tram or MTR.",
+        "airport": "Hong Kong International Airport (HKG)",
+        "currency": "HKD (Hong Kong Dollar)",
+        "language": "Cantonese, English"
+      }
+    },
+    "aberdeen": {
+      "title": "Aberdeen",
+      "tagline": "Typhoon Shelter Floating Villages and Fresh Seafood",
+      "region": "hong-kong-island",
+      "bestMonths": [
+        "Oct",
+        "Nov",
+        "Dec",
+        "Jan",
+        "Feb",
+        "Mar"
+      ],
+      "budgetPerDay": {
+        "backpacker": 50,
+        "midRange": 130,
+        "luxury": 300
+      },
+      "gettingThere": "Bus 70 or 72 from Exchange Square Central.",
+      "highlights": [
+        "Aberdeen Typhoon Shelter floating restaurants",
+        "Sampan tour of harbour",
+        "Aberdeen Wholesale Fish Market",
+        "Aberdeen Country Park hiking",
+        "Ocean Park nearby"
+      ],
+      "essentials": {
+        "gettingAround": "Bus from Central or Causeway Bay. No MTR direct.",
+        "airport": "Hong Kong International Airport (HKG)",
+        "currency": "HKD (Hong Kong Dollar)",
+        "language": "Cantonese, English"
+      }
+    },
+    "sai-kung": {
+      "title": "Sai Kung",
+      "tagline": "Hong Kongs Outdoor Playground and Seafood Capital",
+      "region": "new-territories",
+      "bestMonths": [
+        "Oct",
+        "Nov",
+        "Dec",
+        "Jan",
+        "Feb",
+        "Mar"
+      ],
+      "budgetPerDay": {
+        "backpacker": 60,
+        "midRange": 140,
+        "luxury": 300
+      },
+      "gettingThere": "MTR to Diamond Hill (Kwun Tong Line), then minibus 1A or bus 92 to Sai Kung Town.",
+      "highlights": [
+        "Sai Kung Waterfront choose-your-seafood restaurants",
+        "MacLehose Trail Stages 1-4",
+        "Sharp Island kayaking",
+        "High Island Reservoir UNESCO Geopark",
+        "Hoi Ha Wan Marine Park snorkeling"
+      ],
+      "essentials": {
+        "gettingAround": "Kaito ferry to outlying beaches. Bike rental along waterfront.",
+        "airport": "Hong Kong International Airport (HKG)",
+        "currency": "HKD (Hong Kong Dollar)",
+        "language": "Cantonese, English"
+      }
+    },
+    "stanley": {
+      "title": "Stanley",
+      "tagline": "Colonial Charm Market Stalls and Beachside Bars",
+      "region": "hong-kong-island",
+      "bestMonths": [
+        "Oct",
+        "Nov",
+        "Dec",
+        "Jan",
+        "Feb",
+        "Mar"
+      ],
+      "budgetPerDay": {
+        "backpacker": 50,
+        "midRange": 130,
+        "luxury": 300
+      },
+      "gettingThere": "Bus 6, 6A, or 260 from Exchange Square Central. Bus 73 from Aberdeen.",
+      "highlights": [
+        "Stanley Market souvenirs silk art",
+        "Murray House colonial building",
+        "Stanley Main Beach",
+        "Tin Hau Temple",
+        "Stanley Plaza waterfront"
+      ],
+      "essentials": {
+        "gettingAround": "Walk the market and waterfront.",
+        "airport": "Hong Kong International Airport (HKG)",
+        "currency": "HKD (Hong Kong Dollar)",
+        "language": "Cantonese, English"
+      }
+    },
+    "causeway-bay": {
+      "title": "Causeway Bay",
+      "tagline": "Shopping Capital and Japanese Street Food Mecca",
+      "region": "hong-kong-island",
+      "bestMonths": [
+        "Oct",
+        "Nov",
+        "Dec",
+        "Jan",
+        "Feb",
+        "Mar"
+      ],
+      "budgetPerDay": {
+        "backpacker": 70,
+        "midRange": 180,
+        "luxury": 500
+      },
+      "gettingThere": "MTR Causeway Bay station (Island Line). Tram from Central or Wan Chai.",
+      "highlights": [
+        "Times Square and SOGO shopping",
+        "Victoria Park largest city park",
+        "Noon Day Gun ceremony",
+        "Jardines Crescent wet market",
+        "Japanese dining streets",
+        "Happy Valley Racecourse"
+      ],
+      "essentials": {
+        "gettingAround": "Walk - Causeway Bay is compact.",
+        "airport": "Hong Kong International Airport (HKG)",
+        "currency": "HKD (Hong Kong Dollar)",
+        "language": "Cantonese, English"
+      }
+    },
+    "lamma-island": {
+      "title": "Lamma Island",
+      "tagline": "Seafood Village Life No Cars and Laid-Back Beaches",
+      "region": "outlying-islands",
+      "bestMonths": [
+        "Oct",
+        "Nov",
+        "Dec",
+        "Jan",
+        "Feb",
+        "Mar"
+      ],
+      "budgetPerDay": {
+        "backpacker": 50,
+        "midRange": 110,
+        "luxury": 250
+      },
+      "gettingThere": "Ferry from Central Pier 4 to Yung Shue Wan (25 min) or Sok Kwu Wan (35 min). HKD 20-30 each way.",
+      "highlights": [
+        "Yung Shue Wan village bohemian cafes and seafood",
+        "Sok Kwu Wan outdoor seafood restaurants",
+        "Hung Shing Ye Beach",
+        "Lamma Island Family Trail 1 hour walk",
+        "Power Station Beach"
+      ],
+      "essentials": {
+        "gettingAround": "Walk between villages. No cars on island.",
+        "airport": "Hong Kong International Airport (HKG)",
+        "currency": "HKD (Hong Kong Dollar)",
+        "language": "Cantonese, English"
+      }
+    },
+    "tai-o": {
+      "title": "Tai O",
+      "tagline": "Ancient Stilt Village and Pink Dolphin Gateway",
+      "region": "outlying-islands",
+      "bestMonths": [
+        "Oct",
+        "Nov",
+        "Dec",
+        "Jan",
+        "Feb",
+        "Mar"
+      ],
+      "budgetPerDay": {
+        "backpacker": 40,
+        "midRange": 100,
+        "luxury": 200
+      },
+      "gettingThere": "From Tung Chung: Bus 11 (40 minutes). From Mui Wo: Bus 1 (60 minutes).",
+      "highlights": [
+        "Stilt house community over tidal channels",
+        "Tai O Heritage Hotel former police station",
+        "Pink dolphin boat tour",
+        "Shrimp paste and dried seafood market",
+        "Kwan Tai Temple"
+      ],
+      "essentials": {
+        "gettingAround": "Walk the village - entirely pedestrian.",
+        "airport": "Hong Kong International Airport (HKG)",
+        "currency": "HKD (Hong Kong Dollar)",
+        "language": "Cantonese, English"
+      }
+    }
+  }
+}
