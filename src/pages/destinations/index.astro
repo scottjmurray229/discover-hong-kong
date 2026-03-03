@@ -90,7 +90,8 @@ const regionMeta: Record<string, { label: string; desc: string; gradient: string
                 const { title, tagline, region, budgetPerDay } = dest.data;
                 const slug = dest.slug || dest.id;
                 const gradientVar = `var(--gradient-${title.toLowerCase()}, var(--gradient-homepage))`;
-                const videoSrc = videoMap[slug] || '';
+                const videoData = videoMap[slug];
+                const videoSrc = (typeof videoData === 'string' ? videoData : videoData?.preview || videoData?.hero) || '';
                 const posterSrc = videoSrc ? videoSrc.replace('/destinations/', '/destinations/posters/').replace('.mp4', '.jpg') : '';
                 return (
                   <a href={`/destinations/${slug}/`} class="dh-card">

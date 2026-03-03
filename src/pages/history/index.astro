@@ -143,6 +143,31 @@ const timeline: TimelineEvent[] = [
     era: 'contemporary',
   },
 ];
+
+const eraGradients: Record<string, string> = {
+  colonial: 'linear-gradient(135deg, #78350F, #B45309)',
+  wartime: 'linear-gradient(135deg, #7F1D1D, #B91C1C)',
+  modern: 'linear-gradient(135deg, #1e3a5f, #2563EB)',
+  contemporary: 'linear-gradient(135deg, #065F46, #059669)',
+};
+
+const eraLabels: Record<string, string> = {
+  colonial: 'Colonial Era',
+  wartime: 'Japanese Occupation',
+  modern: 'Post-War & Growth',
+  contemporary: 'Modern Hong Kong',
+};
+
+const ww2CardVideos: string[] = [];
+
+const wwiiMapMarkers = [
+  { lat: 22.280, lng: 114.158, title: 'Battle of Hong Kong (Central)', date: 'Dec 1941', location: 'Central, Hong Kong Island', color: '#B91C1C', url: '/history/' },
+  { lat: 22.307, lng: 114.173, title: 'Sham Shui Po POW Camp', date: '1942–1945', location: 'Sham Shui Po, Kowloon', color: '#B91C1C', url: '/history/' },
+  { lat: 22.264, lng: 114.140, title: 'Stanley Military Cemetery', date: '1941–1945', location: 'Stanley, Hong Kong Island', color: '#7F1D1D', url: '/destinations/stanley/' },
+  { lat: 22.295, lng: 114.172, title: 'Tsim Sha Tsui Clock Tower', date: '1842–1997', location: 'Tsim Sha Tsui, Kowloon', color: '#B45309', url: '/destinations/tsim-sha-tsui/' },
+  { lat: 22.282, lng: 114.159, title: 'Government House', date: '1855–present', location: 'Central, Hong Kong Island', color: '#B45309', url: '/destinations/central/' },
+  { lat: 22.279, lng: 114.162, title: 'Museum of History', date: 'Colonial–present', location: 'Tsim Sha Tsui, Kowloon', color: '#2563EB', url: '/destinations/tsim-sha-tsui/' },
+];
 ---
 <BaseLayout
   title={pageTitle}
@@ -476,12 +501,12 @@ const timeline: TimelineEvent[] = [
     if (!mapEl || typeof L === 'undefined') return;
 
     var map = L.map(mapEl, {
-      center: [12.0, 122.5],
-      zoom: 6,
+      center: [22.3, 114.17],
+      zoom: 11,
       scrollWheelZoom: false,
-      minZoom: 5,
-      maxZoom: 12,
-      maxBounds: [[4, 115], [22, 130]],
+      minZoom: 9,
+      maxZoom: 16,
+      maxBounds: [[22.1, 113.8], [22.6, 114.5]],
       zoomControl: false,
       attributionControl: false,
     });

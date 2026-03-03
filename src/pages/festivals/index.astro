@@ -9,6 +9,22 @@ const breadcrumbs = [
   { name: 'Festival Calendar', url: '/festivals/' },
 ];
 
+const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+const festCardVideos: Record<string, string> = {};
+const fallbackVideos: string[] = [];
+const festGenericClips: string[] = [];
+const monthGradients = ['linear-gradient(135deg,#0D7377,#095456)','linear-gradient(135deg,#1a5276,#2e86ab)','linear-gradient(135deg,#117a65,#1abc9c)','linear-gradient(135deg,#1a5276,#40e0d0)','linear-gradient(135deg,#0D7377,#11969B)','linear-gradient(135deg,#d4a017,#e67e22)','linear-gradient(135deg,#c0392b,#e74c3c)','linear-gradient(135deg,#8e44ad,#9b59b6)','linear-gradient(135deg,#0D7377,#095456)','linear-gradient(135deg,#d35400,#e67e22)','linear-gradient(135deg,#1a5276,#2980b9)','linear-gradient(135deg,#c0392b,#922b21)'];
+
+const festMapMarkers = [
+  { lat: 22.290, lng: 114.172, label: 'Victoria Harbour', color: '#E8654A', festivals: [{ month: 'Jan', name: 'Chinese New Year Fireworks' }, { month: 'Jun', name: 'Dragon Boat Festival' }] },
+  { lat: 22.282, lng: 114.192, label: 'Victoria Park', color: '#0D7377', festivals: [{ month: 'Jan', name: 'CNY Flower Market' }, { month: 'Sep', name: 'Mid-Autumn Festival' }] },
+  { lat: 22.209, lng: 114.029, label: 'Cheung Chau', color: '#8e44ad', festivals: [{ month: 'May', name: 'Bun Festival' }] },
+  { lat: 22.295, lng: 114.172, label: 'Tsim Sha Tsui', color: '#1a5276', festivals: [{ month: 'Dec', name: 'Christmas Lights' }] },
+  { lat: 22.281, lng: 114.155, label: 'Lan Kwai Fong', color: '#c0392b', festivals: [{ month: 'Oct', name: 'Halloween' }] },
+  { lat: 22.279, lng: 114.190, label: 'Tai Hang', color: '#d4a017', festivals: [{ month: 'Sep', name: 'Fire Dragon Dance' }] },
+  { lat: 22.280, lng: 114.158, label: 'Central', color: '#117a65', festivals: [{ month: 'Aug', name: 'Hungry Ghost Festival' }] },
+];
+
 const pageTitle = 'Hong Kong Festival Calendar 2026';
 const pageDescription = 'From Chinese New Year harbour fireworks to Mid-Autumn lanterns in Victoria Park — time your Hong Kong trip to the celebrations that define the city.';
 
@@ -426,12 +442,12 @@ const festivals = [
     if (!mapEl || typeof L === 'undefined') return;
 
     var map = L.map(mapEl, {
-      center: [12.0, 122.5],
-      zoom: 6,
+      center: [22.3, 114.17],
+      zoom: 11,
       scrollWheelZoom: false,
-      minZoom: 5,
-      maxZoom: 12,
-      maxBounds: [[4, 115], [22, 130]],
+      minZoom: 9,
+      maxZoom: 16,
+      maxBounds: [[22.1, 113.8], [22.6, 114.5]],
       zoomControl: false,
       attributionControl: false,
     });
