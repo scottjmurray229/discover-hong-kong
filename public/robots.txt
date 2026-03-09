@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://discoveringhongkong.info/sitemap-index.xml
+Sitemap: https://discoveringhongkong.info/video-sitemap.xml
