@@ -112,7 +112,7 @@ export const HK_CONFIG: PackingConfig = {
   currency: 'HKD',
   plugType: 'Type G',
   plugVoltage: '220V',
-  affiliateTag: 'discoveringhk-20',
+  affiliateTag: 'discoverphili-20',
   destinationEssentials: HK_ESSENTIALS,
   gearRecommendations: HK_GEAR_RECOMMENDATIONS,
 };
