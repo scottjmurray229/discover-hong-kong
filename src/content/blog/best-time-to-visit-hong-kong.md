@@ -2,6 +2,7 @@
 title: "Best Time to Visit Hong Kong: Month-by-Month Guide"
 description: "When to book your Hong Kong trip — the cool dry season, typhoon season realities, Chinese New Year crowds, and the month most visitors miss entirely."
 pubDate: 2026-03-01
+dateModified: 2026-03-08
 author: "Scott"
 tags:
   - practical

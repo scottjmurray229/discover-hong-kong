@@ -2,6 +2,7 @@
 title: "7-Day Hong Kong Itinerary: Islands, Markets, and Harbour Views"
 description: "A week in Hong Kong covering Victoria Peak, TST waterfront, Mong Kok night markets, Lantau Big Buddha, Sai Kung hiking, and a full Lamma Island seafood day."
 pubDate: 2026-03-01
+dateModified: 2026-03-08
 author: "Jenice"
 tags:
   - itinerary

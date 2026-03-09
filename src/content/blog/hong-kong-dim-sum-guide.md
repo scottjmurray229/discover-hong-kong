@@ -2,6 +2,7 @@
 title: "Hong Kong Dim Sum Guide: What to Order, Where to Go, and How Yum Cha Works"
 description: "A complete guide to dim sum in Hong Kong — from har gow to cheung fun, the etiquette of yum cha, the best neighbourhoods for a proper dim sum lunch, and what to skip."
 pubDate: 2026-03-01
+dateModified: 2026-03-08
 author: "Jenice"
 tags:
   - food

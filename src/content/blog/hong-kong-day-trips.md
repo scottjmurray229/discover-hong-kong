@@ -2,6 +2,7 @@
 title: "Hong Kong Day Trips: Lantau Island, Cheung Chau, Sai Kung, and Lamma"
 description: "The four best day trips from central Hong Kong — what to do, how long to spend, how to get there, and how to sequence them across a week-long visit."
 pubDate: 2026-03-08
+dateModified: 2026-03-08
 author: "Jenice"
 tags:
   - hong-kong

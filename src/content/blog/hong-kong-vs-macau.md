@@ -2,6 +2,7 @@
 title: "Hong Kong vs Macau: Which Should You Visit (Or Do Both)?"
 description: "Comparing Hong Kong and Macau — what each does best, how long to spend in each, and why most visitors should do both on the same trip."
 pubDate: 2026-03-08
+dateModified: 2026-03-08
 author: "Jenice"
 tags:
   - hong-kong
