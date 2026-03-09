@@ -113,6 +113,20 @@ export const HK_CONFIG: PackingConfig = {
   plugType: 'Type G',
   plugVoltage: '220V',
   affiliateTag: 'discoverphili-20',
+  seasons: [
+    { value: 'spring', label: 'Spring (Mar–May)' },
+    { value: 'summer', label: 'Summer (Jun–Aug)' },
+    { value: 'fall', label: 'Autumn (Sep–Nov)' },
+    { value: 'winter', label: 'Winter (Dec–Feb)' },
+  ],
+  activities: [
+    { value: 'temples', label: 'Temples & Shrines', icon: '⛩️' },
+    { value: 'hiking', label: 'Hiking', icon: '🥾' },
+    { value: 'skiing', label: 'Skiing', icon: '⛷️' },
+    { value: 'city-walk', label: 'City Exploring', icon: '🚶' },
+    { value: 'photography', label: 'Photography', icon: '📸' },
+    { value: 'nightlife', label: 'Nightlife', icon: '🍹' },
+  ],
   destinationEssentials: HK_ESSENTIALS,
   gearRecommendations: HK_GEAR_RECOMMENDATIONS,
 };
