@@ -3,6 +3,7 @@ title: Wan Chai
 description: "Between Central's finance and Causeway Bay's shopping lies Wan Chai — heritage temples, wet markets, arts venues, and Hong Kong's most storied bar strip."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Wan Chai wet market and golden Hopewell Centre tower, Hong Kong"
 tagline: "Where old Hong Kong markets survive alongside the contemporary arts district — the Wan Chai wet market at 7am, the Hong Kong Arts Centre, heritage blue Cantonese shophouses on Stone Nullah Lane, and Lockhart Road's storied bar strip that appeared in the 1984 James Clavell novel. One of HK's most layered neighborhoods."
 region: hong-kong-island
 bestMonths:

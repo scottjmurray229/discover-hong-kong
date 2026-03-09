@@ -3,6 +3,7 @@ title: Lamma Island
 description: "Hong Kong's laid-back outlying island — no cars, a 1-hour village trail, Hung Shing Ye Beach, and legendary outdoor seafood restaurants at Sok Kwu Wan."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Seafood restaurant waterfront and fishing boats at Yung Shue Wan, Lamma Island, Hong Kong"
 tagline: "30 minutes by ferry from Aberdeen, no cars, and a 1-hour walking trail between the two main villages. The outdoor seafood restaurants at Sok Kwu Wan serve fresh local catch at tables over the water — whole steamed grouper, garlic prawns, and cold Tsingtao on the harbour as the day ferries sail past."
 region: outlying-islands
 bestMonths:

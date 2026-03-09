@@ -3,6 +3,7 @@ title: Aberdeen
 description: "Hong Kong's oldest fishing harbour — sampan tours through the typhoon shelter, floating seafood restaurants, and the gateway to the south side."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Typhoon shelter junks and seafood restaurants in Aberdeen Harbour, Hong Kong"
 tagline: "Aberdeen Harbour still holds hundreds of sampans and junks — take a local lady's sampan tour through the typhoon shelter for HKD 80 and see the floating village from water level. The Jumbo Kingdom floating restaurant closed but Aberdeen's working-harbour character remains authentic in ways Central has long forgotten."
 region: hong-kong-island
 bestMonths:
