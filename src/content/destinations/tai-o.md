@@ -3,6 +3,14 @@ title: Tai O
 description: "Hong Kong's most distinctive fishing village — stilted houses over tidal channels, shrimp paste markets, pink dolphin boat tours, and the heritage Tai O police station."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "HKD (Hong Kong Dollar)"
+  plugType: "G (Type G), 220V"
+  language: "Cantonese, English"
+  bestTime: "October to December (autumn)"
+  visaInfo: "90–180 day visa-free for most nationalities"
+  timeZone: "UTC+8 (Hong Kong Time)"
+  emergencyNumber: "999"
 heroAlt: "Tai O stilted fishing village over the tidal channel, Lantau Island, Hong Kong"
 tagline: "Tai O is the Hong Kong that the rest of the city replaced — a fishing village of houses on stilts over tidal channels, shrimp paste drying in the sun, and narrow lanes where the pace hasn't changed in generations. The boat tours for Chinese white dolphins (pink when adult) run daily and sometimes deliver."
 region: outlying-islands

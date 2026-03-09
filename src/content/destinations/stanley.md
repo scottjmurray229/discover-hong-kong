@@ -3,6 +3,14 @@ title: Stanley
 description: "A colonial-era fishing village turned expat haven on the south side of Hong Kong Island — market stalls, a bay beach, Murray House, and waterfront bars."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "HKD (Hong Kong Dollar)"
+  plugType: "G (Type G), 220V"
+  language: "Cantonese, English"
+  bestTime: "October to December (autumn)"
+  visaInfo: "90–180 day visa-free for most nationalities"
+  timeZone: "UTC+8 (Hong Kong Time)"
+  emergencyNumber: "999"
 heroAlt: "Stanley Market alleyways and Murray House colonial building on the waterfront, Hong Kong"
 tagline: "The south side's most relaxed neighborhood — Stanley Market's covered lanes sell reasonably priced clothing and trinkets, Murray House was dismantled stone by stone and rebuilt here from Central, and the waterfront bars fill on Sunday afternoons with the kind of crowd that has nowhere else they need to be."
 region: hong-kong-island

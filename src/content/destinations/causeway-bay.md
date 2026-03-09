@@ -3,6 +3,14 @@ title: Causeway Bay
 description: "Hong Kong Island's shopping capital — Times Square, SOGO, Victoria Park, the Noon Day Gun, and some of the city's best Japanese food outside Japan."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "HKD (Hong Kong Dollar)"
+  plugType: "G (Type G), 220V"
+  language: "Cantonese, English"
+  bestTime: "October to December (autumn)"
+  visaInfo: "90–180 day visa-free for most nationalities"
+  timeZone: "UTC+8 (Hong Kong Time)"
+  emergencyNumber: "999"
 heroAlt: "Times Square shopping center and tram on Hennessy Road, Causeway Bay, Hong Kong"
 tagline: "Times Square, SOGO, and Hysan Place pack more retail into fewer blocks than almost anywhere in Asia — but the best reason to come is the food. The side streets around Lockhart Road and Sugar Street have some of HK's best Japanese restaurants outside Japan, and Victoria Park's morning tai chi and Sunday market are free and excellent."
 region: hong-kong-island

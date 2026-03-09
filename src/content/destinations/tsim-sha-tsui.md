@@ -3,6 +3,14 @@ title: Tsim Sha Tsui
 description: "Kowloon's waterfront crown jewel — the Avenue of Stars, Symphony of Lights, Star Ferry, and the best harbour view in Asia."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "HKD (Hong Kong Dollar)"
+  plugType: "G (Type G), 220V"
+  language: "Cantonese, English"
+  bestTime: "October to December (autumn)"
+  visaInfo: "90–180 day visa-free for most nationalities"
+  timeZone: "UTC+8 (Hong Kong Time)"
+  emergencyNumber: "999"
 heroAlt: "Tsim Sha Tsui promenade and glittering Hong Kong Island skyline at night, Kowloon"
 tagline: "The Avenue of Stars runs along the Tsim Sha Tsui waterfront with the most dramatic skyline view in Asia — best at 8pm for the Symphony of Lights laser show. The Star Ferry crossing to Central costs HKD 2.70 and is one of the world's great short journeys. The Peninsula Hotel lobby tea is a Hong Kong institution."
 region: kowloon

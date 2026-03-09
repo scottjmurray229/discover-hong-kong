@@ -3,6 +3,14 @@ title: Central District
 description: "Hong Kong's financial and cultural heart — colonial towers, the Mid-Levels Escalator, Lan Kwai Fong, and the Star Ferry terminus."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "HKD (Hong Kong Dollar)"
+  plugType: "G (Type G), 220V"
+  language: "Cantonese, English"
+  bestTime: "October to December (autumn)"
+  visaInfo: "90–180 day visa-free for most nationalities"
+  timeZone: "UTC+8 (Hong Kong Time)"
+  emergencyNumber: "999"
 heroAlt: "HSBC Hong Kong headquarters and colonial Former Legislative Council Building, Central, Hong Kong"
 tagline: "Hong Kong's financial heart where Norman Foster's HSBC headquarters faces I.M. Pei's Bank of China in permanent architectural conversation. Ride the world's longest outdoor escalator through SoHo's restaurant district, drink at Man Mo Temple's incense-clouded altar, and take the HKD 2.70 Star Ferry to Kowloon at dusk."
 region: hong-kong-island

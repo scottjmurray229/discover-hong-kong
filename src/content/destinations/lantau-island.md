@@ -3,6 +3,14 @@ title: Lantau Island
 description: "Hong Kong's largest island — home to the Big Buddha, Tai O stilt village, the airport, and the longest beach in the territory."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "HKD (Hong Kong Dollar)"
+  plugType: "G (Type G), 220V"
+  language: "Cantonese, English"
+  bestTime: "October to December (autumn)"
+  visaInfo: "90–180 day visa-free for most nationalities"
+  timeZone: "UTC+8 (Hong Kong Time)"
+  emergencyNumber: "999"
 heroAlt: "Giant Tian Tan Buddha statue emerging from misty Lantau Island, Hong Kong"
 tagline: "Hong Kong's largest island holds the 34-metre Tian Tan Buddha on a mountain plateau, the fishing village of Tai O on stilts over tidal channels, and Cheung Sha's long, nearly empty beach. Take the Ngong Ping 360 cable car for the aerial approach to the Buddha — it's 25 minutes of harbors and hills."
 region: outlying-islands

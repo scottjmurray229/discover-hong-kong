@@ -3,6 +3,14 @@ title: Mong Kok
 description: "The world's densest urban grid packed with night markets, Flower Market, Goldfish Market, and the electric energy of old Kowloon."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "HKD (Hong Kong Dollar)"
+  plugType: "G (Type G), 220V"
+  language: "Cantonese, English"
+  bestTime: "October to December (autumn)"
+  visaInfo: "90–180 day visa-free for most nationalities"
+  timeZone: "UTC+8 (Hong Kong Time)"
+  emergencyNumber: "999"
 heroAlt: "Neon-lit flower market and crowded street stalls of Mong Kok, Hong Kong"
 tagline: "The most densely populated square kilometre on earth — Ladies' Market, Flower Market, Goldfish Market, and Fa Yuen Street all crammed into blocks where 43,000 people live per square kilometre. The best dai pai dong street food in Hong Kong is found in Mong Kok's back alleys at midnight."
 region: kowloon
