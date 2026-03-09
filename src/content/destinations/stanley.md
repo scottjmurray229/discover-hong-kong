@@ -3,7 +3,7 @@ title: Stanley
 description: "A colonial-era fishing village turned expat haven on the south side of Hong Kong Island — market stalls, a bay beach, Murray House, and waterfront bars."
 heroVideo: ""
 heroImage: ""
-tagline: "Colonial Charm, Market Stalls, and Beachside Bars"
+tagline: "The south side's most relaxed neighborhood — Stanley Market's covered lanes sell reasonably priced clothing and trinkets, Murray House was dismantled stone by stone and rebuilt here from Central, and the waterfront bars fill on Sunday afternoons with the kind of crowd that has nowhere else they need to be."
 region: hong-kong-island
 bestMonths:
   - October

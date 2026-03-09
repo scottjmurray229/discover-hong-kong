@@ -3,7 +3,7 @@ title: Central District
 description: "Hong Kong's financial and cultural heart — colonial towers, the Mid-Levels Escalator, Lan Kwai Fong, and the Star Ferry terminus."
 heroVideo: ""
 heroImage: ""
-tagline: "Asia's Financial Hub with Colonial Character"
+tagline: "Hong Kong's financial heart where Norman Foster's HSBC headquarters faces I.M. Pei's Bank of China in permanent architectural conversation. Ride the world's longest outdoor escalator through SoHo's restaurant district, drink at Man Mo Temple's incense-clouded altar, and take the HKD 2.70 Star Ferry to Kowloon at dusk."
 region: hong-kong-island
 bestMonths:
   - October

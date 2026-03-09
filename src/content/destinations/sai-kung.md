@@ -3,7 +3,7 @@ title: Sai Kung
 description: "Hong Kong's outdoor playground in the New Territories — the MacLehose Trail, UNESCO geopark hexagonal rocks, seafood waterfront, and island kayaking."
 heroVideo: ""
 heroImage: ""
-tagline: "Hong Kong's Outdoor Playground and Seafood Capital"
+tagline: "The New Territories' wild coastline — the MacLehose Trail runs 100km through Sai Kung's hills, the UNESCO Geopark's hexagonal volcanic rock columns are extraordinary, and the waterfront promenade's floating seafood restaurants let you pick your fish live from the tanks. Hong Kong's best day out for non-urban souls."
 region: new-territories
 bestMonths:
   - October

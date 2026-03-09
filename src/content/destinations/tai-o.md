@@ -3,7 +3,7 @@ title: Tai O
 description: "Hong Kong's most distinctive fishing village — stilted houses over tidal channels, shrimp paste markets, pink dolphin boat tours, and the heritage Tai O police station."
 heroVideo: ""
 heroImage: ""
-tagline: "Ancient Stilt Village and Pink Dolphin Gateway"
+tagline: "Tai O is the Hong Kong that the rest of the city replaced — a fishing village of houses on stilts over tidal channels, shrimp paste drying in the sun, and narrow lanes where the pace hasn't changed in generations. The boat tours for Chinese white dolphins (pink when adult) run daily and sometimes deliver."
 region: outlying-islands
 bestMonths:
   - October

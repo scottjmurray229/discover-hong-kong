@@ -3,7 +3,7 @@ title: Mong Kok
 description: "The world's densest urban grid packed with night markets, Flower Market, Goldfish Market, and the electric energy of old Kowloon."
 heroVideo: ""
 heroImage: ""
-tagline: "The World's Most Densely Packed Urban Grid"
+tagline: "The most densely populated square kilometre on earth — Ladies' Market, Flower Market, Goldfish Market, and Fa Yuen Street all crammed into blocks where 43,000 people live per square kilometre. The best dai pai dong street food in Hong Kong is found in Mong Kok's back alleys at midnight."
 region: kowloon
 bestMonths:
   - October

@@ -3,7 +3,7 @@ title: Victoria Peak
 description: "Hong Kong's most iconic viewpoint — 552 metres above the harbour with the world's most photographed skyline at your feet."
 heroVideo: ""
 heroImage: ""
-tagline: "The Iconic Rooftop of Hong Kong Island"
+tagline: "The harbour view from 552 metres is the definitive Hong Kong image — ranks of skyscrapers falling to the water with Kowloon behind. Take the Peak Tram for the ride (it tilts at 27 degrees and you think you're going to fall backwards), walk the 3.5km Peak Circle trail at dawn, and skip the tourist tower altogether — the platform view is free."
 region: hong-kong-island
 bestMonths:
   - October
