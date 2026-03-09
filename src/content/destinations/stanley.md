@@ -71,26 +71,52 @@ faqItems:
     answer: "The Dragon's Back trail (Shek O Country Park) is the most accessible hike near Stanley. The ridge walk offers panoramic views of the South China Sea. Most hikers start at To Tei Wan (Bus 9 from Shau Kei Wan MTR) and finish at Shek O beach. The reverse start near Stanley is also possible."
   - question: "When is the best time to visit Stanley?"
     answer: "October to March — clear skies, low humidity, and comfortable temperatures for walking the market and sitting outside. Avoid July and August when typhoon season and high humidity make outdoor activities uncomfortable. Weekday mornings are the least crowded time at the market."
+  - question: "Is Stanley safe for tourists?"
+    answer: "Stanley is extremely safe — it is one of Hong Kong's most relaxed neighbourhoods with a large expat residential community. The main thing to be aware of is the winding mountain bus road between Central and Stanley — hold on to the handles on the upper deck."
+  - question: "What is Stanley famous for?"
+    answer: "Stanley is famous for its market (silk scarves, Chinese art, casual clothing), Murray House (a colonial building moved stone-by-stone from Central and reassembled here in 1998), the Tin Hau Temple (one of Hong Kong's oldest), the beach, and its relaxed waterfront bar-restaurant scene."
+  - question: "Is Hong Kong worth visiting with a trip to Stanley?"
+    answer: "Yes — Stanley rounds out a Hong Kong trip by showing a side of the city that most visitors miss: the south side, the mountain pass, the colonial atmosphere, the slower pace. A half-day combining Stanley with Aberdeen and Repulse Bay is one of the best itinerary moves you can make on a visit of five or more days."
+  - question: "How do I get from Hong Kong Airport to Stanley?"
+    answer: "Take the Airport Express to Central (24 min), then Bus 6 or 260 from Exchange Square Bus Terminal to Stanley (30–40 min). Total journey is about 60–70 minutes. A taxi from the airport directly to Stanley would be around HKD 350–450 including the tunnel toll."
 affiliatePicks:
   - name: "Find Hotels near Stanley or Repulse Bay"
     type: "hotel"
     price: "From HKD 800/night"
     personalNote: "Most visitors day-trip Stanley from Central or Wan Chai hotels. Repulse Bay has a few upscale hotel options (The Repulse Bay) if you want a south-side base."
     affiliateUrl: "https://www.booking.com/searchresults.html?ss=Stanley+Hong+Kong&aid=2778866"
-  - name: "Stanley Market and South Island Tour (Klook)"
+  - name: "Stanley Market and South Island Half-Day Tour (Klook)"
     type: "activity"
     price: "HKD 280-420"
-    personalNote: "Half-day tours combining Stanley with Aberdeen and the south side of HK Island are a good option for visitors with limited time."
+    personalNote: "Half-day tours combining Stanley with Aberdeen and the south side of HK Island are a good option for visitors with limited time who want the bus ride, market, and sampan experience in one go."
     affiliateUrl: "https://www.klook.com/en-HK/search/result/?query=Stanley+Market+Hong+Kong+tour&aid=112015"
-  - name: "South HK Island Tour (Traveloka)"
+  - name: "Hong Kong South Side and Stanley Day Trip (GetYourGuide)"
     type: "tour"
-    price: "From HKD 300"
-    personalNote: "Guided tours of the south side covering Stanley, Repulse Bay, and Aberdeen give good coverage with transport arranged."
-    affiliateUrl: "https://traveloka.prf.hn/click/camref:1100l5F6Fa/creativeref:1011l160645"
+    price: "From HKD 310"
+    personalNote: "Guided south HK Island tours covering Stanley Market, Murray House, Repulse Bay, and Aberdeen give context for the colonial history and fishing culture of this side of the island."
+    affiliateUrl: "https://www.getyourguide.com/hong-kong-l7/stanley-repulse-bay-south-island-tc24/?partner_id=3VYNY1C"
+  - name: "Compact Travel Umbrella + Silk Scarf Packing Cube (Amazon)"
+    type: "gear"
+    price: "USD 12-22"
+    personalNote: "Stanley Market is famous for silk scarves — a packing cube keeps purchases flat and wrinkle-free. A compact umbrella handles the south-side weather, which can turn quickly."
+    affiliateUrl: "https://www.amazon.com/s?k=travel+packing+cubes+compact+umbrella&tag=discovermore09-20"
+scottTips:
+  - title: "Logistics — Getting to Stanley"
+    content: "Bus 6 or 260 from Exchange Square Bus Terminal, Central takes 30–40 minutes over the mountain pass to Stanley (HKD 7–10). Sit on the upper deck right-hand side going outbound for the best views over Wong Nai Chung Gap. Bus 73 connects Aberdeen to Stanley in about 20 minutes."
+  - title: "Best Time to Visit"
+    content: "October to March — clear, cool, and comfortable for outdoor market browsing and the bus ride over the pass. Weekday mornings are the least crowded at the market. Avoid July and August when humidity and typhoon risk make the outdoor experience uncomfortable."
+  - title: "Getting Around the South Side"
+    content: "Stanley itself is compact and walkable — market to Murray House to the beach takes 15 minutes on foot. Bus 73 connects to Aberdeen and Repulse Bay. No MTR on the south side; buses are the only public option."
+  - title: "Money and Budget"
+    content: "Stanley is affordable for Hong Kong. Bus from Central is HKD 7–10. Market shopping is negotiable. Waterfront bar-restaurant lunch runs HKD 120–200/person. Classified wine bar is a step up at HKD 200–350. A half-day costs HKD 200–400/person all in."
+  - title: "Local Culture"
+    content: "Stanley has a colonial atmosphere unlike anywhere else in Hong Kong — Murray House was literally moved stone by stone from Central to be preserved here. The Tin Hau Temple is one of the oldest in Hong Kong. The European expat community here is visible; Stanley has a slightly different social character than urban Kowloon."
 lastVerified: 2026-03-02
 contentStatus: published
 draft: false
 ---
+
+Stanley is the most relaxed face of Hong Kong — a bay on the south side of the island where the mountains press to the sea, the light has a clarity the north side rarely manages, and the pace is measurably slower than Central or Mong Kok. The market, colonial Murray House, and a beachside bar strip make it one of the best half-day escapes from urban Hong Kong. Budget HKD 200–400/person for a satisfying half-day including bus, market browsing, and a waterfront lunch. The bus ride over the mountain pass is itself worth the HKD 7–10 fare.
 
 Stanley is Hong Kong's most relaxed neighbourhood, tucked around a bay on the south side of the island where the mountains press close to the sea and the light has a clarity that the north side rarely manages. The bus ride over the mountain pass from Central — winding through residential Mid-Levels, climbing through wooded country park, then descending with the South China Sea suddenly in view — is itself part of why Stanley feels like a different city.
 
@@ -98,4 +124,6 @@ Stanley Market occupies a covered laneway near the waterfront and sells an eclec
 
 Murray House at Stanley Plaza is a genuine colonial anomaly. The original building was constructed in 1844 as military officers' quarters in Central. When the site was acquired for development in 1982, someone had the foresight to number each stone of the facade and reassemble the entire structure here in 1998. The three-storey colonnaded building now houses restaurants and shops, with outdoor seating on the plaza facing Stanley Bay.
 
-The tin Hau Temple on Stanley Main Street is one of Hong Kong's oldest, dedicated to the goddess of the sea and patroness of fishermen. The incense is perpetually lit and the interior is dark and dense with hanging offerings. Behind the temple, the old cemetery contains some of the earliest European graves in Hong Kong, some dating to the 1840s.
+The Tin Hau Temple on Stanley Main Street is one of Hong Kong's oldest, dedicated to the goddess of the sea and patroness of fishermen. The incense is perpetually lit and the interior is dark and dense with hanging offerings. Behind the temple, the old cemetery contains some of the earliest European graves in Hong Kong, some dating to the 1840s.
+
+{{< immersive-break-inline videoSrc="/videos/destinations/stanley-hero.mp4" >}}

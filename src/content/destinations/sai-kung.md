@@ -72,26 +72,52 @@ faqItems:
     answer: "Hoi Ha Wan Marine Park has some of the best snorkeling in Hong Kong with healthy coral and abundant fish. The park is on the north coast of Sai Kung peninsula. Access requires a private vehicle or arranged transport from Sai Kung Town (no public bus). Best visited on a weekday when it is less crowded."
   - question: "What hiking gear do I need for Sai Kung?"
     answer: "Good hiking boots or trail running shoes, sun protection (hat and sunscreen), and 2 litres of water per person minimum. The terrain can be rocky and exposed. A rain jacket is wise as weather changes quickly. No need for technical gear on Stage 1 — but do not hike in flip-flops."
+  - question: "Is Sai Kung safe?"
+    answer: "Sai Kung is very safe — it is a local residential and recreational area. The main safety considerations are on the trails: bring adequate water (dehydration on exposed MacLehose sections is the real risk), check weather before hiking, and let someone know your route. The waterfront town and pier area are completely safe."
+  - question: "Is Sai Kung worth the trip from Hong Kong?"
+    answer: "Yes — Sai Kung is one of the most rewarding full-day experiences in Hong Kong. The combination of dramatic coastal hiking, UNESCO Geopark geology, and outstanding live seafood lunch makes it unlike anything in the urban core. Most visitors are surprised that such accessible wilderness exists this close to one of the world's densest cities."
+  - question: "How do I get to Hong Kong for a Sai Kung trip?"
+    answer: "Fly into Hong Kong International Airport on Lantau, take the Airport Express to Hong Kong Station (24 min), then MTR to Diamond Hill (Kwun Tong Line, about 20 min), then Green Minibus 1A to Sai Kung Town (25 min). The whole journey from the airport takes under 90 minutes."
+  - question: "What language is spoken in Sai Kung?"
+    answer: "Cantonese is the primary language. English is understood at the waterfront restaurants, kaito boat operators, and the main visitor facilities. For negotiating live seafood prices and kaito fares, basic communication in English with pointing works fine."
 affiliatePicks:
   - name: "Find Hotels in Sai Kung or Tseung Kwan O"
     type: "hotel"
     price: "From HKD 600/night"
     personalNote: "Most visitors day-trip Sai Kung from Kowloon or HK Island hotels. If you want a base in the area, Tseung Kwan O has newer hotels on the MTR line with easy access."
     affiliateUrl: "https://www.booking.com/searchresults.html?ss=Sai+Kung+Hong+Kong&aid=2778866"
-  - name: "Sai Kung Hiking and Kayak Tour (Klook)"
+  - name: "Sai Kung Kayak and Snorkel Tour (Klook)"
     type: "activity"
     price: "HKD 350-600"
-    personalNote: "Guided kayaking tours around the Sai Kung islands are excellent for seeing the coastline from the water. Some tours combine kayaking with snorkeling and a hike."
+    personalNote: "Guided kayaking tours around the Sai Kung islands are excellent for seeing the coastline from the water. Some tours combine kayaking with snorkeling and a hike to the hexagonal rock columns."
     affiliateUrl: "https://www.klook.com/en-HK/search/result/?query=Sai+Kung+kayak+tour&aid=112015"
-  - name: "Sai Kung Country Park Tour (Traveloka)"
+  - name: "Sai Kung Geopark and MacLehose Trail Hike (GetYourGuide)"
     type: "tour"
     price: "From HKD 380"
-    personalNote: "Guided day trips to Sai Kung that include the Geopark, hiking, and seafood lunch are good value for covering the highlights efficiently."
-    affiliateUrl: "https://traveloka.prf.hn/click/camref:1100l5F6Fa/creativeref:1011l160645"
+    personalNote: "Guided hiking tours to the High Island Reservoir Geopark and MacLehose Trail Stage 1 are the best way to see the hexagonal rock columns with someone who knows the route and the geology."
+    affiliateUrl: "https://www.getyourguide.com/hong-kong-l7/sai-kung-hiking-geopark-tour-tc24/?partner_id=3VYNY1C"
+  - name: "Hiking Shoes + Trekking Poles + Water Bottle (Amazon)"
+    type: "gear"
+    price: "USD 25-60"
+    personalNote: "MacLehose Trail Stage 1 is rocky and exposed — proper trail shoes are non-negotiable. Bring at least 2L of water per person. Lightweight trekking poles help on the descent to Long Ke Wan beach."
+    affiliateUrl: "https://www.amazon.com/s?k=lightweight+hiking+shoes+trekking+poles&tag=discovermore09-20"
+scottTips:
+  - title: "Logistics — Getting to Sai Kung"
+    content: "MTR to Diamond Hill (Kwun Tong Line), then Green Minibus 1A from Exit C2 to Sai Kung Town (25 min, HKD 11). Buses go less frequently. Total journey from Kowloon is 50–70 minutes. Octopus card works on the minibus."
+  - title: "Best Time to Visit"
+    content: "October to April for hiking — cool, clear, and low humidity. The Geopark hexagonal rock columns are visible year-round but summer haze reduces visibility on the reservoir. Avoid hiking in typhoon season. Seafood is good year-round but the waterfront is more pleasant in cool weather."
+  - title: "Getting Around Sai Kung"
+    content: "Sai Kung Town itself is walkable. For Pak Tam Chung (MacLehose trailhead), take Bus 94 or 96R from Sai Kung Town. Kaito boats serve Sharp Island and surrounding beaches from the main pier. Taxis run within the peninsula but get expensive for remote trailheads."
+  - title: "Money and Budget"
+    content: "A Sai Kung day runs HKD 300–600/person. Waterfront seafood lunch is HKD 200–400/person (the main expense — pick fish by weight and agree the price first). Kaito to Sharp Island is HKD 20–30 each way. Hiking itself is free."
+  - title: "Local Culture"
+    content: "Sai Kung waterfront seafood is a very specific Hong Kong experience — choose your catch from live tanks, specify the cooking method, and eat at a plastic table facing the water. It is completely informal and completely delicious. The MacLehose Trail is Hong Kong's most serious hiking infrastructure, used by locals for fitness as much as recreation."
 lastVerified: 2026-03-02
 contentStatus: published
 draft: false
 ---
+
+Sai Kung is Hong Kong's outdoor answer to the city's density — a UNESCO Global Geopark of hexagonal volcanic columns, 100km of MacLehose Trail, and a waterfront of live-seafood restaurants that constitutes one of the territory's best lunches. It is 50–70 minutes from Kowloon by MTR and minibus, costs HKD 300–600/person for a full day including seafood, and is the sharpest possible contrast with the urban Hong Kong most visitors know. Hiking gear is essential; flip-flops are a mistake.
 
 Sai Kung is the green escape that most visitors to Hong Kong do not know exists. Thirty kilometres from the Kowloon waterfront, the peninsula unfolds into forested mountains, empty beaches, and a UNESCO Global Geopark of such geological improbability that it looks designed rather than evolved.
 
@@ -100,3 +126,5 @@ The MacLehose Trail Stage 1 from Pak Tam Chung is the most dramatic coastal hike
 The Sai Kung waterfront is a different experience entirely — a row of seafood restaurants with live tanks outside, where you choose your catch and specify how you want it cooked. Steamed fish with ginger and spring onion, salt and pepper prawns, garlic butter scallops, and typhoon shelter crab (chilli and garlic fried crab) are the staples. The lunch extends naturally into the afternoon on a sunny October day.
 
 Kaito boats from the pier serve the outlying islands and beaches. Sharp Island takes ten minutes and has a tombolo sandbar, clear water, and good snorkeling at the reef edge. Pak Sha Wan (Hebe Haven) to the south has a marina and a different character — yacht clubs and waterside restaurants frequented by sailors.
+
+{{< immersive-break-inline videoSrc="/videos/destinations/sai-kung-hero.mp4" >}}

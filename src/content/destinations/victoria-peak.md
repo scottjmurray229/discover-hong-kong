@@ -68,26 +68,54 @@ faqItems:
     answer: "Yes — the Galleria has multiple restaurants and cafes from fast food to sit-down. The Peak Lookout (historic colonial building nearby) is good for a mid-range meal. Prices are higher than Central due to the location."
   - question: "What is the queue like for the Peak Tram?"
     answer: "Weekends and public holidays can mean 30-60 minute queues. Weekday afternoons after 2pm are much quieter. Consider booking online (slight premium) to use the pre-booked queue which is usually shorter."
+  - question: "Is Hong Kong worth visiting?"
+    answer: "Yes, unequivocally — and Victoria Peak makes the case clearly. The harbour view from 552 metres, looking down on one of the world's most dramatic urban skylines, is one of the singular travel experiences in Asia. The city below offers extraordinary food, a world-class transit system, remarkable cultural layering, and day trips to islands and country parks. First-time visitors almost universally wish they had booked more days."
+  - question: "Is Hong Kong safe?"
+    answer: "Very safe. Victoria Peak is a prestige residential area and completely secure at any hour. The tram runs until late evening. The Lugard Road circular walk at dusk or after dark is pleasant and safe. The city overall has one of the lowest violent crime rates in Asia."
+  - question: "Best time to visit Victoria Peak?"
+    answer: "October to February for the clearest skies and best views. Summer brings cloud and haze that frequently obscures the view entirely. Arrive 30–45 minutes before sunset on a clear October or November day for the best possible experience — golden hour followed by city lights."
+  - question: "How do I get from the airport to Victoria Peak?"
+    answer: "Airport Express to Hong Kong Station (24 min, HKD 115), then exit toward Central MTR and walk 5 minutes to Garden Road Peak Tram terminus. Total journey from airport to the Peak Tram is about 35–40 minutes. A taxi directly to the Garden Road tram terminus costs approximately HKD 300."
+  - question: "How many days do you need in Hong Kong?"
+    answer: "Victoria Peak is typically a first or second day priority — do it early in your trip for orientation. A week in Hong Kong allows you to return at a different time of day: once for the daytime view, once for sunset and night lights. The view is different enough at each hour to warrant both visits."
 affiliatePicks:
   - name: "Find Hotels near Central MTR"
     type: "hotel"
     price: "From HKD 800/night"
     personalNote: "Stay in Central or Wan Chai for easy Peak Tram access and the best base for HK Island exploration."
     affiliateUrl: "https://www.booking.com/searchresults.html?ss=Central+Hong+Kong&aid=2778866"
-  - name: "Victoria Peak Tram Ticket (Klook)"
+  - name: "Victoria Peak Tram Priority Ticket (Klook)"
     type: "activity"
     price: "HKD 88-137"
-    personalNote: "Booking the tram + Sky Terrace combo in advance on Klook often saves time in the queue."
+    personalNote: "Klook's Peak Tram + Sky Terrace combo often includes priority boarding, which can save 30–60 minutes on weekends. Worth booking in advance for any visit."
     affiliateUrl: "https://www.klook.com/en-HK/search/result/?query=Victoria+Peak+Tram&aid=112015"
-  - name: "Hong Kong City Tour (Traveloka)"
+  - name: "Victoria Peak Sunset and Night Tour (GetYourGuide)"
     type: "tour"
-    price: "From HKD 350"
-    personalNote: "Half-day tours that combine Victoria Peak with Central and Star Ferry are a good intro to the city."
-    affiliateUrl: "https://traveloka.prf.hn/click/camref:1100l5F6Fa/creativeref:1011l160645"
+    price: "From HKD 320"
+    personalNote: "Guided sunset tours to Victoria Peak that include the Lugard Road circular walk, Sky Terrace entry, and a guide who explains the city's layout below are a great orientation for first-time visitors."
+    affiliateUrl: "https://www.getyourguide.com/hong-kong-l7/victoria-peak-sunset-tour-tc24/?partner_id=3VYNY1C"
+  - name: "Lightweight Camera Tripod + ND Filter (Amazon)"
+    type: "gear"
+    price: "USD 25-45"
+    personalNote: "Victoria Peak at dusk is one of the world's great photography locations. A lightweight travel tripod and an ND filter for golden hour long exposures are worth the pack weight. The Lugard Road path has wide, stable paving suitable for tripod use."
+    affiliateUrl: "https://www.amazon.com/s?k=lightweight+travel+tripod+ND+filter+photography&tag=discovermore09-20"
+scottTips:
+  - title: "Logistics — Getting to the Peak"
+    content: "Peak Tram from Garden Road terminus (MTR Central Exit J2, then 5-minute walk) — HKD 88 return. Bus 15 from Exchange Square is HKD 10 but misses the funicular experience. Book tram tickets online via Klook for priority boarding at weekends."
+  - title: "Best Time to Visit"
+    content: "October to March for clearest skies. Arrive 30–45 minutes before sunset — golden hour views are extraordinary, then stay for the city lights. Avoid rainy summer days when cloud and haze eliminate the view entirely. Weekday afternoons after 2pm have the shortest queues."
+  - title: "Getting Around the Peak"
+    content: "Lugard Road circular walk (3.5km, 45 minutes, flat) is free and delivers continuous harbour views — better than the terrace in many ways. The Galleria has restaurants and cafes. Take Bus 15 down for a different perspective on the island's hillside residential enclaves."
+  - title: "Money and Budget"
+    content: "Peak Tram return is HKD 88. Sky Terrace 428 adds HKD 49. Galleria restaurants run HKD 80–200/person. The Lugard Road walk and free viewing platform are no-cost alternatives. A full Peak visit runs HKD 150–300/person depending on dining."
+  - title: "Local Culture"
+    content: "Victoria Peak has been the prestige residential address in Hong Kong since British colonial times — the highest altitude, the coolest temperatures, the clearest air. The mansions along Lugard Road and Peak Road are some of the most valuable real estate in the world. The Peak Tram itself has been running since 1888 and is as much a symbol of the city as the harbour view it delivers."
 lastVerified: 2026-03-02
 contentStatus: published
 draft: false
 ---
+
+Victoria Peak is the single most visited site in Hong Kong and earns the status completely — 552 metres above the harbour, the view of the city's skyline compressed against jungle-covered hills with Kowloon spreading beyond is simply one of the great urban views on earth. The Peak Tram costs HKD 88 return and has been running since 1888. The Lugard Road circular walk (free, 45 minutes) delivers continuous harbour views that beat any viewing platform. Come at dusk, stay for the city lights.
 
 Victoria Peak rises 552 metres above Hong Kong harbour, and from its summit, you look down on one of the world's greatest urban spectacles — a wall of skyscrapers pressing against jungle-covered hills, with the neon waterway of Victoria Harbour separating Hong Kong Island from Kowloon. We have visited at sunrise, noon, and well past midnight, and the view never stops being extraordinary.
 
@@ -98,3 +126,5 @@ At the top, Sky Terrace 428 is the highest viewing platform on Hong Kong Island 
 The Lugard Road circular walk (3.5km, flat, 45 minutes) is the best free activity on the peak. The paved path hugs the contour of the mountain and delivers continuous harbour views that beat anything you see from the terrace, with fewer crowds. Combine with the Harlech Road section for a complete loop. The walking route is accessible year-round and particularly beautiful in clear October through February weather.
 
 For the descent, many visitors take the tram back but we prefer Bus 15 along the winding mountain road — it drops you at Exchange Square with a different perspective of the island's luxury residential enclaves and the way this city carves itself into steep terrain.
+
+{{< immersive-break-inline videoSrc="/videos/destinations/victoria-peak-hero.mp4" >}}

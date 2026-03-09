@@ -71,6 +71,16 @@ faqItems:
     answer: "Temple Street is a 15-minute walk north from TST (or one MTR stop to Jordan). It runs nightly from about 5pm-midnight with clothing, accessories, jade, and food stalls, plus fortune tellers and informal Cantonese opera performances."
   - question: "What museums are in Tsim Sha Tsui?"
     answer: "The Hong Kong Museum of History is excellent and often free (normally HKD 10). The Hong Kong Space Museum is next to the Avenue of Stars. The Hong Kong Cultural Centre hosts performances. The Hong Kong Museum of Art is also on the TST waterfront."
+  - question: "Is Hong Kong safe?"
+    answer: "Hong Kong is extremely safe — one of the lowest violent crime rates in Asia. Pickpocketing exists in crowded areas like Temple Street Night Market and Mong Kok, so keep bags closed. Traffic drives on the left, so look right when crossing. The MTR and public transport are very secure."
+  - question: "Is Hong Kong worth visiting?"
+    answer: "Absolutely. Hong Kong is one of the world's great cities — the harbour skyline, the density and energy, the food culture (dim sum, hawker centres, Michelin restaurants), the contrast between urban intensity and the outlying islands and country parks. It rewards every type of traveller from food tourists to hikers to architecture enthusiasts."
+  - question: "How much does Hong Kong cost per day?"
+    answer: "Budget travellers can manage on HKD 300–500/day using cha chaan tengs, dai pai dongs, and the HKD 3 tram. Mid-range visitors spend HKD 800–1,500/day with a decent hotel, restaurant meals, and attraction entry. Luxury has no ceiling. The transport system is inexpensive — Octopus card fare for a full day of MTR travel rarely exceeds HKD 50."
+  - question: "What language do they speak in Hong Kong?"
+    answer: "Cantonese is the language of Hong Kong. English is widely spoken in hotels, tourist areas, and the MTR system. 'Lei ho' (hello) and 'm̀h gōi' (thank you for service) in Cantonese are always appreciated. Note that Cantonese is distinct from Mandarin — do not assume they are the same."
+  - question: "What is Tsim Sha Tsui famous for?"
+    answer: "Tsim Sha Tsui is famous for the Victoria Harbour skyline view from its waterfront promenade, the Avenue of Stars, the nightly Symphony of Lights show, the Star Ferry crossing, and the Peninsula Hotel. It is Kowloon's premier destination area and the single best location in Hong Kong for harbour photography."
 affiliatePicks:
   - name: "Find Hotels in Tsim Sha Tsui"
     type: "hotel"
@@ -82,21 +92,41 @@ affiliatePicks:
     price: "HKD 180-350"
     personalNote: "Watching the Symphony of Lights from a harbour cruise boat is a step up from the promenade. Several operators offer dinner cruises or cocktail cruises timed to the 8pm show."
     affiliateUrl: "https://www.klook.com/en-HK/search/result/?query=Symphony+Lights+cruise+Hong+Kong&aid=112015"
-  - name: "Kowloon City Tour (Traveloka)"
+  - name: "Hong Kong Harbour Night Cruise (GetYourGuide)"
     type: "tour"
-    price: "From HKD 280"
-    personalNote: "Guided tours of TST and Kowloon that include the Night Market, Temple Street, and harbour viewing are good for first-time visitors."
-    affiliateUrl: "https://traveloka.prf.hn/click/camref:1100l5F6Fa/creativeref:1011l160645"
+    price: "From HKD 220"
+    personalNote: "A harbour cruise from TST timed for the 8pm Symphony of Lights is one of the best evening experiences in Hong Kong. GetYourGuide has several options from junk boats to modern cruisers."
+    affiliateUrl: "https://www.getyourguide.com/hong-kong-l7/hong-kong-night-cruise-harbour-tc24/?partner_id=3VYNY1C"
+  - name: "Compact Travel Umbrella + Type G Adapter (Amazon)"
+    type: "gear"
+    price: "USD 12-20"
+    personalNote: "Hong Kong weather can turn fast. A compact umbrella fits in any daypack and costs nothing in convenience. Type G adapters (UK-style, three rectangular pins) are essential — every socket in Hong Kong uses this standard."
+    affiliateUrl: "https://www.amazon.com/s?k=compact+travel+umbrella+type+G+adapter&tag=discovermore09-20"
+scottTips:
+  - title: "Logistics — Octopus Card and Getting Here"
+    content: "Buy an Octopus card at the airport ($150 HKD deposit) and tap in and out of everything — MTR, buses, Star Ferry. From the airport, take the Airport Express to Hong Kong Station then the Tsuen Wan Line to Tsim Sha Tsui — about 35 minutes total. The Macau ferry terminal at Tsim Sha Tsui East runs TurboJet and Cotai Jet services to Macau (~HKD 200, 1 hour)."
+  - title: "Best Time to Visit"
+    content: "October to December is peak season for a reason — clear skies, pleasant temperatures, no typhoons. Chinese New Year transforms TST with decorations and crowds — extraordinary but requires forward planning. June to September brings genuine humidity (90%+) and typhoon risk."
+  - title: "Getting Around Kowloon"
+    content: "MTR covers TST well (Tsuen Wan Line). Star Ferry to Central is HKD 2.70 lower deck and better than any bus. Green minibuses reach corners of Kowloon the MTR misses. Taxis are inexpensive by Western standards — HKD 27 flagfall."
+  - title: "Money and Budget"
+    content: "Mid-range in TST runs HKD 700–1,200/day. Nathan Road street food stalls are cheap. Peninsula Hotel afternoon tea (HKD 400–600) is a splurge worth doing once. Temple Street Night Market is the place for low-cost shopping — bargaining is expected."
+  - title: "Local Culture"
+    content: "Cantonese is the language of Kowloon. 'M̀h gōi' for service interactions goes a long way. The pace is fast — stand right on escalators. The Museum of History here gives excellent context for Hong Kong's unique identity before you wander the streets."
 lastVerified: 2026-03-02
 contentStatus: published
 draft: false
 ---
+
+Tsim Sha Tsui is the best single vantage point in Asia for understanding what Hong Kong is: from the waterfront promenade, you face the unbroken wall of skyscrapers across Victoria Harbour — arguably the most dramatic urban skyline on earth — while behind you, the dense grid of Kowloon extends northward with a density few cities match. Budget visitors get by on HKD 300–500/day eating at cha chaan tengs and taking the HKD 2.70 Star Ferry; mid-range is HKD 700–1,200. Cantonese culture here is vivid and accessible.
 
 Tsim Sha Tsui is where Hong Kong presents itself at full volume. The waterfront promenade along the southern edge of Kowloon delivers the single best view of the Hong Kong Island skyline — an unbroken wall of skyscrapers rising from the harbour, dense and impossibly vertical, with Victoria Peak looming behind them all. We have stood here at every hour of the day, and it never loses its power.
 
 The Star Ferry crossing is a ceremony worth repeating. The green and white double-decker ferries have been crossing Victoria Harbour since 1888, and the 10-minute journey from Central Pier 7 to TST remains one of the world's great short journeys. Upper deck, bow side, daytime or night — each has its merits. The fare (HKD 3.40) is so absurdly cheap for what you get that it still surprises us.
 
 Every night at 8pm, the Symphony of Lights transforms the harbour into the world's largest permanent light and sound show. Forty-four buildings on both sides of the water synchronize their LED systems, lasers, and searchlights for 13 minutes. The show is free, and the Avenue of Stars promenade fills with visitors from every corner of the world watching together in something close to reverence.
+
+{{< immersive-break-inline videoSrc="/videos/destinations/tsim-sha-tsui-hero.mp4" >}}
 
 The Hong Kong Museum of History on Chatham Road South is one of Asia's better city museums and often free. The permanent exhibition traces Hong Kong's story from prehistoric times through the colonial era to the 1997 handover with excellent reconstructions of old Hong Kong street life — a proper way to understand the city you are walking through.
 

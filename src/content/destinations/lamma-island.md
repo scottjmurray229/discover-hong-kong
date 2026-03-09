@@ -72,6 +72,14 @@ faqItems:
     answer: "Yes — Yung Shue Wan has a handful of guesthouses and small holiday flats available by the night. They are basic but clean, and staying overnight gives you the island at dawn before the day-trippers arrive. Book in advance for weekends."
   - question: "What food should I eat in Yung Shue Wan?"
     answer: "Yung Shue Wan Main Street has good casual restaurants. Bookworm Cafe is a long-running vegetarian cafe with a library corner — excellent for breakfast or a light lunch. For seafood at a lower price than Sok Kwu Wan, some waterfront restaurants in Yung Shue Wan serve good steamed fish and prawn dishes."
+  - question: "Is Lamma Island safe?"
+    answer: "Lamma Island is very safe — it is a residential community with local families and long-term residents. The only real risks are slippery trails after rain and the ferry schedule (missing the last boat means an unplanned overnight). Carry a flashlight app if you are hiking at dusk."
+  - question: "Is Lamma Island worth visiting?"
+    answer: "Yes — Lamma Island is one of the best half-days available from Hong Kong. The combination of a car-free environment, an easy scenic trail, a beach, and outdoor waterfront seafood at Sok Kwu Wan is exceptional value for HKD 200–450 all in. It is the sharpest possible contrast with the urban Hong Kong experience."
+  - question: "What language do they speak on Lamma Island?"
+    answer: "Cantonese is the main language, but Lamma has a significant long-term international resident community (expats who have lived there for decades), so English is widely understood in restaurants, cafes, and shops in both Yung Shue Wan and Sok Kwu Wan."
+  - question: "How many days do I need for Hong Kong including the islands?"
+    answer: "A week in Hong Kong allows you to visit Lamma properly — half-day ferry to Yung Shue Wan, Family Trail walk, seafood lunch at Sok Kwu Wan. Five days gets you Lamma as a half-day combined with Stanley on the same day. Three days means you may need to skip the outlying islands, which would be a shame."
 affiliatePicks:
   - name: "Find Guesthouses on Lamma Island"
     type: "hotel"
@@ -83,15 +91,33 @@ affiliatePicks:
     price: "HKD 250-400"
     personalNote: "Guided Lamma tours that include the ferry crossing, village trail, and seafood lunch with ordering guidance are good for first-time visitors to the island."
     affiliateUrl: "https://www.klook.com/en-HK/search/result/?query=Lamma+Island+tour+Hong+Kong&aid=112015"
-  - name: "Hong Kong Outlying Islands Tour (Traveloka)"
+  - name: "Lamma Island Seafood and Hiking Day Trip (GetYourGuide)"
     type: "tour"
-    price: "From HKD 350"
-    personalNote: "Multi-island tours combining Lamma and Cheung Chau give good coverage of the outlying islands in a single day."
-    affiliateUrl: "https://traveloka.prf.hn/click/camref:1100l5F6Fa/creativeref:1011l160645"
+    price: "From HKD 320"
+    personalNote: "Guided Lamma day trips that cover the Family Trail, Hung Shing Ye Beach, and a Sok Kwu Wan seafood lunch are worth it for the ordering expertise alone — knowing how to select and price live seafood at the tanks."
+    affiliateUrl: "https://www.getyourguide.com/hong-kong-l7/lamma-island-day-trip-tc24/?partner_id=3VYNY1C"
+  - name: "Packable Rain Jacket + Dry Bag (Amazon)"
+    type: "gear"
+    price: "USD 15-30"
+    personalNote: "The Lamma Family Trail can be slippery after rain, and the ferry crossing can be choppy. A lightweight packable rain jacket and a small dry bag for your phone and documents are worth packing."
+    affiliateUrl: "https://www.amazon.com/s?k=packable+rain+jacket+travel+dry+bag&tag=discovermore09-20"
+scottTips:
+  - title: "Logistics — Getting to Lamma"
+    content: "Ferry from Central Pier 4 to Yung Shue Wan takes 25 minutes (HKD 20–30). Cash or card at the pier — Octopus card is not accepted on outlying island ferries. Last ferry back from Yung Shue Wan is around 11:30pm."
+  - title: "Best Time to Visit"
+    content: "October to April — cooler temperatures make the hour-long Family Trail comfortable. Summer hiking (June–September) is hot and humid. Lamma is excellent year-round for the seafood restaurants. Weekdays are significantly quieter than weekends."
+  - title: "Getting Around the Island"
+    content: "No cars, no buses, no taxis — walk everywhere. Yung Shue Wan to Sok Kwu Wan is one hour on the Family Trail. The two ferry piers are at opposite ends of the island, so you naturally do a one-way crossing if you walk the trail."
+  - title: "Money and Budget"
+    content: "Lamma is affordable by Hong Kong standards. Seafood lunch at Sok Kwu Wan runs HKD 120–300/person depending on what you order. Ferry is HKD 20–30 each way. Bookworm Cafe breakfast is under HKD 80. A full Lamma day costs HKD 200–500 all in."
+  - title: "Local Culture"
+    content: "Lamma has a distinct character — a long-term mix of Hong Kong local families and international residents who moved here for the quieter pace. It is not a resort island; it is a genuine community. The seafood ordering culture at Sok Kwu Wan restaurants is an experience in itself — point at the tank, specify your cooking method, trust the kitchen."
 lastVerified: 2026-03-02
 contentStatus: published
 draft: false
 ---
+
+Lamma Island is twenty-five minutes from Central by ferry and operates at an entirely different pace — no cars, no MTR, no malls, just a car-free village trail, a beach, and some of Hong Kong's best outdoor seafood restaurants built over the water on stilts at Sok Kwu Wan. A full day runs HKD 200–500/person including the ferry and a proper seafood lunch. It is the Hong Kong that most visitors don't expect to find, and it is genuinely restorative.
 
 Lamma is twenty-five minutes from Central Pier 4 and feels like a different country. There are no cars anywhere on the island. The main streets — such as they are — run between low-rise shophouses, small temples, and fishing shacks, with cats sleeping in doorways and wind chimes on balconies. The contrast with the vertical density of Kowloon, visible across the water to the north, is one of Hong Kong's most effective one-two punches.
 
@@ -100,3 +126,5 @@ The Lamma Family Trail from Yung Shue Wan to Sok Kwu Wan takes about an hour on 
 Sok Kwu Wan is essentially a row of outdoor seafood restaurants built over the water on stilts. Tables have direct views of the bay and the forested hills across it. The restaurants operate on a simple model: walk to the tanks outside, choose a fish, specify your preferred cooking method, and return to the table while the kitchen handles the rest. Steamed garoupa with ginger and spring onion, baked lobster, salt and pepper squid, and typhoon shelter crab are the standard order. Lunch stretches naturally into the afternoon if you let it.
 
 Yung Shue Wan, at the north end of the island, has the most character — a genuine working village with a wet market, long-term resident community of local Hong Kongers and expats, and the best cafes on the island for breakfast before starting the trail. Bookworm Cafe on Main Street is a local institution with a small library corner and a vegetarian menu that has been quietly feeding people for decades.
+
+{{< immersive-break-inline videoSrc="/videos/destinations/lamma-island-hero.mp4" >}}
