@@ -1,0 +1,590 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import EmailCapture from '../../components/EmailCapture.astro';
+import FAQ from '../../components/FAQ.astro';
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Dim Sum Guide', url: '/dim-sum-guide/' },
+];
+
+const pageTitle = 'Hong Kong Dim Sum Guide 2026 — Where, What & How to Order';
+const pageDescription = "Dim sum is the soul of Hong Kong food culture — morning yum cha sessions at packed Cantonese teahouses, ordering from carts or tick-box menus, and sharing dozens of small plates. A first-timer's guide to doing it right.";
+
+interface DimSumDish {
+  name: string;
+  cantonese: string;
+  category: string;
+  description: string;
+  price_range_hkd: string;
+  order_it: string;
+  tag?: string;
+}
+
+interface Restaurant {
+  name: string;
+  neighborhood: string;
+  price_range: string;
+  vibe: string;
+  must_order: string;
+  booking_required: 'yes' | 'no' | 'recommended';
+  tag?: string;
+}
+
+const dishes: DimSumDish[] = [
+  {
+    name: "Har Gow",
+    cantonese: "蝦餃 — Shrimp Dumplings",
+    category: "Steamed Dumplings",
+    description: "The definitive benchmark of any dim sum kitchen. Translucent, hand-pleated wrappers encasing two or three whole, plump shrimp with a touch of bamboo shoot for crunch. A master chef's har gow skin is so thin it's nearly see-through, yet holds together perfectly when lifted with chopsticks. The pleating — traditionally at least seven folds — signals the chef's skill. If the har gow is mediocre, leave. If it's extraordinary, order a second steamer.",
+    price_range_hkd: "HKD 42–65 per steamer (3–4 pieces)",
+    order_it: "Order first, before anything else — it arrives fast, sets your benchmark for the kitchen, and you'll want seconds.",
+    tag: "Essential",
+  },
+  {
+    name: "Siu Mai",
+    cantonese: "燒賣 — Pork & Shrimp Dumplings",
+    category: "Steamed Dumplings",
+    description: "Open-topped, cylindrical dumplings with a filling of coarsely minced pork and whole shrimp, topped with a dot of fish roe (tobiko) or a single green pea. The wrapper is thicker than har gow — more of a noodle texture — and the filling is seasoned with soy, sesame oil, and Shaoxing wine. A proper siu mai is dense and juicy. Biting into it should release a small burst of broth from the pork fat. If it's dry, the kitchen over-steamed it.",
+    price_range_hkd: "HKD 38–58 per steamer (3–4 pieces)",
+    order_it: "Pairs perfectly with har gow — order both simultaneously and compare the kitchen's dumpling work.",
+    tag: "Essential",
+  },
+  {
+    name: "Char Siu Bao — Baked",
+    cantonese: "叉燒包 (焗) — BBQ Pork Bun (Baked)",
+    category: "Buns",
+    description: "The baked version features a golden, slightly sweet, glazed exterior — shiny on top from an egg wash, with the top split open in a characteristic cross shape as it puffs in the oven. Inside: diced char siu (Cantonese BBQ pork) in a sticky-sweet sauce of oyster sauce, hoisin, and soy. The bun itself is enriched with lard for a soft, slightly flaky crumb. Sold individually or in pairs. The baked version is the one you'll find in bakeries across Hong Kong at any hour.",
+    price_range_hkd: "HKD 14–22 per bun",
+    order_it: "Order one each of baked and steamed to compare — they're genuinely different eating experiences despite the same filling.",
+  },
+  {
+    name: "Char Siu Bao — Steamed",
+    cantonese: "叉燒包 (蒸) — BBQ Pork Bun (Steamed)",
+    category: "Buns",
+    description: "The steamed version is softer, whiter, more pillowy — the texture of a cloud. Same char siu filling inside, but the experience is completely different: soft and yielding, almost melting in the mouth. The wrapper is thicker and more bread-like than the baked version. In traditional teahouses, the steamed bao arrives in a bamboo steamer, and the chef scores the top in a cross so it blooms open like a flower during steaming. This is the version most associated with classic yum cha.",
+    price_range_hkd: "HKD 36–55 per steamer (3 pieces)",
+    order_it: "Always order if available — this is the quintessential dim sum dish that every first-timer needs to eat at a proper teahouse.",
+    tag: "Must Order",
+  },
+  {
+    name: "Cheung Fun",
+    cantonese: "腸粉 — Rice Noodle Rolls",
+    category: "Rice Noodle Rolls",
+    description: "Silky rice noodle sheets (made from a thin batter of rice flour and water, steamed on cloth-covered trays) rolled around fillings of shrimp, beef, or char siu, then cut into segments and drizzled with sweet soy sauce and sesame oil. The texture is the point — smooth, almost slippery, contrasting with the firm filling inside. The best cheung fun virtually melts on contact with the tongue. Available in most teahouses and also as a breakfast street food from dedicated stalls in Sham Shui Po and Sai Ying Pun.",
+    price_range_hkd: "HKD 38–62 per plate",
+    order_it: "Shrimp version (蝦腸粉) is the classic — beef (牛肉腸粉) is earthier and equally good.",
+    tag: "Must Order",
+  },
+  {
+    name: "Lo Bak Go",
+    cantonese: "蘿蔔糕 — Turnip Cake",
+    category: "Pan-Fried Dishes",
+    description: "Slices of steamed then pan-fried radish cake (actually made from Chinese radish/daikon, rice flour, and dried shrimp) with a crispy golden crust and a yielding, slightly sticky interior. The radish flavour is subtle — it's more about the savoury XO sauce or oyster sauce it's served with. Some versions include Chinese sausage (lap cheong) or dried scallops in the mix. It's humble and deeply satisfying — one of those dishes that tastes infinitely better in Hong Kong than anywhere else because the skill in the pan-frying makes the difference.",
+    price_range_hkd: "HKD 32–50 per plate",
+    order_it: "Good for mid-meal — it's filling, so don't order early if you want room for everything else.",
+  },
+  {
+    name: "Dan Tat",
+    cantonese: "蛋撻 — Egg Tarts",
+    category: "Pastry & Dessert",
+    description: "Hong Kong's contribution to the global egg tart canon — a silky, wobbly egg custard (barely set, trembling) in either a flaky pastry shell (葡式 Portuguese-style, richer) or a shortcrust shell (traditional Cantonese, crumblier). The custard is lightly sweet, fragrant with vanilla, and the surface is smooth rather than caramelised. The Portuguese style came via Macau through the influence of Lord Stow's bakery in Coloane. A great dan tat should be eaten warm, straight from the tray. Tai Cheong Bakery on Lyndhurst Terrace in Central is the most famous source.",
+    price_range_hkd: "HKD 12–20 per tart",
+    order_it: "Order at the end as dessert — or stop at Tai Cheong Bakery or the Jordan dai pai dong stalls for the best standalone experience.",
+    tag: "Iconic",
+  },
+  {
+    name: "Wu Gok",
+    cantonese: "芋角 — Taro Dumplings",
+    category: "Deep-Fried Dishes",
+    description: "A shatteringly crisp, honeycomb-textured shell of taro (yam) encasing a filling of seasoned pork, mushroom, and dried shrimp — deep-fried until the shell forms an open lacework of bubbles that crumbles at the slightest pressure. The taro itself is mildly sweet and earthy, contrasting with the savoury filling. Wu gok requires significant skill to make — the taro dough must be at the exact temperature and consistency for the shell to form correctly. Often overlooked by first-timers; never overlooked by regulars. One of dim sum's most technically demanding dishes.",
+    price_range_hkd: "HKD 38–58 per steamer (3 pieces)",
+    order_it: "Eat immediately after arrival — the honeycomb shell starts to soften within minutes of leaving the fryer.",
+  },
+  {
+    name: "Lo Mai Gai",
+    cantonese: "糯米雞 — Sticky Rice in Lotus Leaf",
+    category: "Steamed Rice Dishes",
+    description: "Glutinous rice filled with chicken, Chinese sausage, dried shrimp, mushrooms, and salted egg yolk, wrapped in a lotus leaf and steamed until the rice absorbs the flavours of everything around it — especially the lotus leaf's distinctive grassy, slightly floral aroma. Unwrapping it at the table is part of the ritual. It's substantial — one lotus leaf package is often enough for two people as part of a larger order. The rice at the edges closest to the leaf is the most fragrant and most prized.",
+    price_range_hkd: "HKD 45–70 per portion",
+    order_it: "Order early — it takes longer to arrive than steamed dumplings. One package shared between two is usually enough.",
+  },
+  {
+    name: "Feng Zhua",
+    cantonese: "鳳爪 — Phoenix Claws (Chicken Feet)",
+    category: "Braised & Steamed",
+    description: "Deep-fried, then braised in a black bean and oyster sauce, then steamed again — chicken feet become yielding, gelatinous, and intensely flavoured. There is almost no actual meat: you eat the skin, cartilage, and marrow-rich bones, stripping them clean with tongue and teeth. It's a technique-intensive dish both to make and to eat. The term 'phoenix claws' is the poetic Cantonese name. For first-timers, the best approach is simply to pick one up and follow what the people around you are doing. The texture is remarkable — bouncy and silky simultaneously.",
+    price_range_hkd: "HKD 42–65 per steamer",
+    order_it: "A rite of passage. Order once. If you love it (many do) order again. If you don't, you now know.",
+  },
+];
+
+const restaurants: Restaurant[] = [
+  {
+    name: "Tim Ho Wan",
+    neighborhood: "Sham Shui Po (multiple branches)",
+    price_range: "HKD 100–200 per person",
+    vibe: "The world's most affordable Michelin-starred restaurant — simple, efficient, legendary for baked BBQ pork buns",
+    must_order: "Baked char siu bao — they make the shells from a secret recipe that produces an extraordinary crust",
+    booking_required: "no",
+    tag: "Michelin",
+  },
+  {
+    name: "Maxim's Palace",
+    neighborhood: "City Hall, Central",
+    price_range: "HKD 250–450 per person",
+    vibe: "Old-school banquet hall grandeur — massive space, cart service, wedding-party energy on weekends",
+    must_order: "All the classics from cart — har gow, siu mai, wu gok; flag down the roast pork belly cart",
+    booking_required: "recommended",
+    tag: "Classic",
+  },
+  {
+    name: "Lin Heung Tea House",
+    neighborhood: "Sheung Wan",
+    price_range: "HKD 150–300 per person",
+    vibe: "Time capsule — traditional teahouse unchanged since the 1980s, elderly regulars with newspapers, cart ladies who've been here for decades",
+    must_order: "Whatever the cart ladies bring — there's no English menu and that's not a problem",
+    booking_required: "no",
+    tag: "Traditional",
+  },
+  {
+    name: "One Harbour Road",
+    neighborhood: "Wan Chai (Grand Hyatt)",
+    price_range: "HKD 500–900 per person",
+    vibe: "Upscale Cantonese fine dining with harbour views — dim sum elevated to art form, white tablecloths, excellent service",
+    must_order: "Lobster har gow, abalone siu mai, bespoke dim sum set menu (request ahead)",
+    booking_required: "yes",
+    tag: "Upscale",
+  },
+  {
+    name: "City Hall Maxim's",
+    neighborhood: "Central (Edinburgh Place)",
+    price_range: "HKD 200–380 per person",
+    vibe: "Iconic Hong Kong institution since 1966 — first-floor harbour views, traditional cart service, suits and families side by side",
+    must_order: "Cheung fun, char siu bao (steamed), egg tarts from the dessert cart",
+    booking_required: "recommended",
+  },
+  {
+    name: "Victoria City Seafood Restaurant",
+    neighborhood: "Wan Chai (Sun Hung Kai Centre)",
+    price_range: "HKD 180–350 per person",
+    vibe: "Polished, reliable, business-lunch favourite — tick-box menu ordering, excellent kitchen consistency, English-friendly",
+    must_order: "Har gow, siu mai, lo mai gai — this is the restaurant for perfect execution of the classics",
+    booking_required: "recommended",
+  },
+];
+
+const faqItems = [
+  {
+    question: "What time should I go for dim sum in Hong Kong?",
+    answer: "The traditional window is 7am–noon — this is yum cha (literally 'drink tea'), and teahouses open early specifically for breakfast dim sum culture. The sweet spot is 9–10am: the kitchen is in full flow, the carts are loaded, and the energy is high. Arrive after 11am on a weekend and you'll queue for 30–60 minutes at any decent teahouse. Some restaurants serve dim sum until 3pm or even 5pm, but the full cart selection is typically only available in the morning. For a special experience, do one early weekday morning visit and one weekend morning visit — the vibe is completely different.",
+  },
+  {
+    question: "What's the difference between cart service and tick-box menu ordering?",
+    answer: "Cart service is the traditional method — bamboo steamers and plates are wheeled through the restaurant on trolleys, and you select what you want as carts pass your table. It's chaotic, lively, and requires quick decisions (popular items sell out fast). Tick-box menus are more modern — you receive a printed menu in Chinese (sometimes with English and photos) and check boxes next to what you want, then hand it to a server. Tick-box restaurants offer more consistency and are generally easier for first-timers. Traditional teahouses like Lin Heung Tea House use cart service exclusively; newer or hotel restaurants use tick-box menus. Both are authentic.",
+  },
+  {
+    question: "How do I get a table without a booking — tips for packed teahouses?",
+    answer: "For the most popular teahouses (especially Tim Ho Wan, Lin Heung, Maxim's Palace on weekends), arrive before the restaurant opens or within the first 30 minutes of service. Many teahouses don't take reservations at all — the queue starts before the doors open. For a party of two, ask if you can share a large table with strangers (table sharing is completely normal and accepted in Hong Kong teahouses — it's not rude to ask or to be asked). For larger groups at popular spots, send one person ahead to queue while the others make their way. Apps like OpenTable, Chope, or the restaurant's own booking system work for nicer establishments that do take reservations.",
+  },
+  {
+    question: "What dim sum options exist for vegetarians in Hong Kong?",
+    answer: "Traditional Cantonese dim sum is heavily meat and seafood-based, but vegetarian options exist. Turnip cake (lo bak go) is vegetarian if made without dried shrimp — ask the kitchen. Steamed rice noodle rolls with vegetables are available in most teahouses. Vegetarian cheung fun with chives or tofu is excellent. Some teahouses (especially those near Buddhist temples in the New Territories) offer fully vegetarian dim sum menus. For dedicated vegetarian dim sum, Kung Tak Lam in Tsim Sha Tsui serves excellent Shanghainese vegetarian cuisine. Pure Table in Central offers a high-end modern vegetarian menu with some dim sum items. Let your server know immediately ('我是素食者', wǒ shì sùshízhě / 我係素食 in Cantonese) — kitchens will usually do their best.",
+  },
+  {
+    question: "How much should I budget for a dim sum meal in Hong Kong?",
+    answer: "At a traditional teahouse (Lin Heung style): HKD 100–200 per person for a full meal with tea. At a mid-range established restaurant (City Hall Maxim's, Victoria City): HKD 200–400 per person. At Tim Ho Wan: HKD 100–200 for a filling meal with everything you want — incredible value for Michelin-starred quality. At an upscale hotel restaurant (One Harbour Road, Lung King Heen): HKD 500–1,000+ per person. The standard ordering approach for two people: 6–8 dishes between two is usually plenty. Order in rounds — start with 4–5 items, see how you feel, then order more. Tea is typically HKD 12–25 per person as a cover charge.",
+  },
+];
+---
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  pageType="destination"
+  schemaData={{ title: pageTitle, description: pageDescription }}
+  faqItems={faqItems}
+  breadcrumbs={breadcrumbs}
+>
+  <!-- Hero -->
+  <header class="dimsum-hero">
+    <div class="dimsum-hero-bg"></div>
+    <div class="dimsum-hero-gradient"></div>
+    <div class="dimsum-hero-noise"></div>
+    <div class="dimsum-hero-content">
+      <h1 class="dimsum-hero-title">Hong Kong Dim Sum Guide</h1>
+      <p class="dimsum-hero-subtitle">Morning teahouses, bamboo steamers stacked to the ceiling, cart ladies who've been doing this for 30 years — dim sum is how Hong Kong eats breakfast, and this is your guide to doing it right.</p>
+      <div class="dimsum-hero-meta">
+        <div class="dimsum-hero-meta-item">
+          <span class="dimsum-hero-meta-label">Essential Dishes</span>
+          <span class="dimsum-hero-meta-value">10</span>
+        </div>
+        <div class="dimsum-hero-meta-item">
+          <span class="dimsum-hero-meta-label">Restaurants</span>
+          <span class="dimsum-hero-meta-value">6</span>
+        </div>
+        <div class="dimsum-hero-meta-item">
+          <span class="dimsum-hero-meta-label">Best Time</span>
+          <span class="dimsum-hero-meta-value">7–11am</span>
+        </div>
+      </div>
+    </div>
+    <div class="dimsum-scroll-hint">Scroll<br />&#8595;</div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="container-content">
+    <Breadcrumb items={breadcrumbs} />
+  </div>
+
+  <!-- Personal intro -->
+  <section class="dimsum-personal reveal">
+    <div class="container-content">
+      <blockquote class="dimsum-personal-quote">
+        <p>My first Hong Kong dim sum was at 7:45am at Lin Heung Tea House in Sheung Wan. An elderly woman pushed a cart past our table without stopping. I had no idea what was on it. The man at the next table saw my face, reached over, flagged her down, pointed at something, and nodded at me. It turned out to be wu gok — taro dumplings with a honeycomb shell that shattered when I bit into it. I've been chasing that texture in every city since. Nothing else has been close.</p>
+        <cite>— Scott</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Intro card -->
+  <section class="dimsum-intro reveal">
+    <div class="container-content">
+      <div class="dimsum-intro-card">
+        <p class="dimsum-intro-text">Dim sum (點心 — "touch the heart") refers to the small plates shared during yum cha (飲茶 — "drink tea"). The ritual is the same in every teahouse: tea arrives first, orders follow in whatever order the kitchen produces them, dishes are shared from the centre of the table, and the meal ends when you can't lift another chopstick. This guide covers <strong>10 essential dishes</strong> with what to look for in each one, <strong>6 restaurants by neighbourhood</strong>, and a complete etiquette and ordering guide at the bottom.</p>
+        <div class="dimsum-intro-legend">
+          <span class="dimsum-badge dimsum-badge--essential">Essential</span>
+          <span class="dimsum-badge dimsum-badge--mustorder">Must Order</span>
+          <span class="dimsum-badge dimsum-badge--iconic">Iconic</span>
+          <span class="dimsum-badge dimsum-badge--michelin">Michelin</span>
+          <span class="dimsum-badge dimsum-badge--classic">Classic</span>
+          <span class="dimsum-badge dimsum-badge--traditional">Traditional</span>
+          <span class="dimsum-badge dimsum-badge--upscale">Upscale</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Essential Dishes Section -->
+  <section class="dimsum-dishes-section reveal">
+    <div class="container-content">
+      <div class="dimsum-section-header" style="background: linear-gradient(135deg, #BF360C 0%, #E8654A 100%);">
+        <div class="dimsum-section-header-inner">
+          <h2 class="dimsum-section-name">Essential Dim Sum Dishes</h2>
+          <p class="dimsum-section-tagline">What to order, what to look for, and why each one matters — 10 dishes every first-timer should try</p>
+          <span class="dimsum-section-count">10 dishes</span>
+        </div>
+        <div class="dimsum-section-ornament">&#127857;</div>
+      </div>
+
+      <div class="dimsum-dish-grid">
+        {dishes.map((dish) => (
+          <div class="dimsum-dish-card">
+            <div class="dimsum-dish-header" style="background: linear-gradient(135deg, #BF360C 0%, #E8654A 100%);">
+              {dish.tag && <span class="dimsum-badge dimsum-badge--hero">{dish.tag}</span>}
+              <span class="dimsum-dish-category">{dish.category}</span>
+            </div>
+            <div class="dimsum-dish-body">
+              <h3 class="dimsum-dish-name">{dish.name}</h3>
+              <p class="dimsum-dish-cantonese">{dish.cantonese}</p>
+              <p class="dimsum-dish-desc">{dish.description}</p>
+              <div class="dimsum-dish-footer">
+                <div class="dimsum-dish-price">
+                  <span class="dimsum-dish-price-label">Price</span>
+                  <span class="dimsum-dish-price-value">{dish.price_range_hkd}</span>
+                </div>
+                <div class="dimsum-dish-tip">
+                  <span class="dimsum-dish-tip-label">Order Tip</span>
+                  <span class="dimsum-dish-tip-value">{dish.order_it}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Restaurants Section -->
+  <section class="dimsum-restaurants-section reveal">
+    <div class="container-content">
+      <div class="dimsum-section-header" style="background: linear-gradient(135deg, #1a2332 0%, #2d4a6e 100%);">
+        <div class="dimsum-section-header-inner">
+          <h2 class="dimsum-section-name">Best Dim Sum Restaurants by Neighbourhood</h2>
+          <p class="dimsum-section-tagline">From Michelin-starred to traditional teahouse — six restaurants that do it right, for every budget</p>
+          <span class="dimsum-section-count">6 restaurants</span>
+        </div>
+        <div class="dimsum-section-ornament">&#127968;</div>
+      </div>
+
+      <div class="dimsum-restaurant-grid">
+        {restaurants.map((resto) => (
+          <div class="dimsum-restaurant-card">
+            <div class="dimsum-restaurant-header">
+              {resto.tag && <span class={`dimsum-badge dimsum-badge--${resto.tag.toLowerCase()}`}>{resto.tag}</span>}
+              <h3 class="dimsum-restaurant-name">{resto.name}</h3>
+              <p class="dimsum-restaurant-hood">{resto.neighborhood}</p>
+            </div>
+            <div class="dimsum-restaurant-body">
+              <div class="dimsum-restaurant-meta">
+                <div class="dimsum-restaurant-meta-item">
+                  <span class="dimsum-restaurant-meta-label">Price Range</span>
+                  <span class="dimsum-restaurant-meta-value">{resto.price_range}</span>
+                </div>
+                <div class="dimsum-restaurant-meta-item">
+                  <span class="dimsum-restaurant-meta-label">Booking</span>
+                  <span class="dimsum-restaurant-meta-value">
+                    {resto.booking_required === 'yes' ? 'Required — book at least 1 week ahead' : resto.booking_required === 'recommended' ? 'Recommended for weekends' : 'No bookings — queue system'}
+                  </span>
+                </div>
+              </div>
+              <p class="dimsum-restaurant-vibe">{resto.vibe}</p>
+              <div class="dimsum-restaurant-mustorder">
+                <span class="dimsum-restaurant-mustorder-label">Must Order</span>
+                <span class="dimsum-restaurant-mustorder-value">{resto.must_order}</span>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Etiquette Guide Section -->
+  <section class="dimsum-etiquette reveal">
+    <div class="container-content">
+      <div class="dimsum-etiquette-card">
+        <h2 class="dimsum-etiquette-heading">How to Order Dim Sum — The Complete Etiquette Guide</h2>
+        <p class="dimsum-etiquette-intro">Dim sum has its own rhythms and conventions. These aren't rules to memorise — they're patterns that make the experience better for everyone at the table.</p>
+
+        <div class="dimsum-etiquette-grid">
+          <div class="dimsum-etiquette-item">
+            <h3 class="dimsum-etiquette-step">1. Tea First — Always</h3>
+            <p class="dimsum-etiquette-desc">When you sit, the first thing your server asks is what tea you'd like. The most common options: <strong>Bo Lei</strong> (普洱, pu-erh — earthy, fermented, cuts through fatty foods, the traditional dim sum tea), <strong>Shou Mei</strong> (壽眉 — white tea, light), <strong>Guk Bou</strong> (菊普 — chrysanthemum and pu-erh blended, slightly floral). Tea is not optional — this is yum cha, tea drinking. Once the tea arrives, you can start ordering food. The tea pot is refilled all morning by simply opening the lid and resting it on top of the pot — this signals to passing staff that you need hot water.</p>
+          </div>
+
+          <div class="dimsum-etiquette-item">
+            <h3 class="dimsum-etiquette-step">2. Rinse Your Cups (Optional But Traditional)</h3>
+            <p class="dimsum-etiquette-desc">In traditional teahouses, particularly older ones, the first pour of hot tea is used to rinse the cups, chopsticks, and sometimes the bowls — then discarded into a provided basin. This is a hygiene ritual from earlier eras, largely ceremonial now, but you'll see locals still doing it. If there's a basin on your table, this is what it's for. You don't have to do it, but doing it marks you as someone who knows what they're doing.</p>
+          </div>
+
+          <div class="dimsum-etiquette-item">
+            <h3 class="dimsum-etiquette-step">3. Pour Tea for Others Before Yourself</h3>
+            <p class="dimsum-etiquette-desc">Pour tea for everyone at the table before filling your own cup. This is basic courtesy and deeply ingrained — doing it without being asked marks you as considerate. If someone pours tea for you, a common (and charming) gesture of thanks is to tap two fingers on the table next to your cup — this originated from a story about an emperor who would tap two fingers to secretly thank servants without revealing his identity. You'll see it everywhere in teahouses.</p>
+          </div>
+
+          <div class="dimsum-etiquette-item">
+            <h3 class="dimsum-etiquette-step">4. Cart Service — How to Not Miss Anything Good</h3>
+            <p class="dimsum-etiquette-desc">At cart-service restaurants: watch the carts coming from the kitchen, not the ones already circulating (they have the freshest food). Position your table near the kitchen entrance if possible. Make eye contact with cart ladies before carts reach you — popular items like wu gok and cheung fun sell out fast. Don't be shy about calling out or flagging. The pace is fast and the signal system is eye contact and a raised hand. If you're unsure what something is, just point — cart staff will mime biting or show you the contents.</p>
+          </div>
+
+          <div class="dimsum-etiquette-item">
+            <h3 class="dimsum-etiquette-step">5. Sharing Protocol — Everything Goes in the Centre</h3>
+            <p class="dimsum-etiquette-desc">Dim sum is communal — all dishes go in the centre of the table, everyone reaches in with chopsticks. Don't plate individual portions for yourself first. The serving chopstick (if present) is for moving food to your bowl; your eating chopsticks are for eating from your bowl. If there are no serving chopsticks, use the non-food end of your eating chopsticks. The last piece of anything on a shared plate is often left — it's slightly forward to claim it, though in practice, offering it to someone else before taking it yourself is the smooth move.</p>
+          </div>
+
+          <div class="dimsum-etiquette-item">
+            <h3 class="dimsum-etiquette-step">6. Paying the Bill</h3>
+            <p class="dimsum-etiquette-desc">In traditional cart-service teahouses, the bill is tracked by the stamps on your paper receipt — each cart lady stamps the receipt when she delivers dishes. Keep this receipt. When you're ready to pay, signal for the bill (ask for "maai dan" — 埋單). At tick-box restaurants, the server tallies everything from your checked menu. Cash is accepted everywhere; credit cards vary. A 10% service charge is commonly added at hotel and upscale restaurants. At local teahouses, a small tip is appreciated but not mandatory.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="dimsum-cta-section reveal">
+    <div class="container-content">
+      <div class="dimsum-cta-card">
+        <h2 class="dimsum-cta-heading">Plan Your Hong Kong Dim Sum Morning</h2>
+        <p class="dimsum-cta-text">Tell our AI planner your neighbourhood, budget, and group size — it will recommend the right teahouse and walk you through exactly what to order.</p>
+        <a href="/plan/" class="dimsum-cta-button">Start Planning &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQ items={faqItems} />
+
+  <!-- Email Capture -->
+  <div class="container-content reveal" style="padding-bottom: var(--space-6);">
+    <EmailCapture
+      leadMagnet="Free Hong Kong Dim Sum Guide"
+      description="A printable pocket guide to Hong Kong dim sum — dish names in English and Chinese characters, ordering etiquette, restaurant recommendations, and Cantonese phrases."
+      bullets={[
+        '10 essential dishes with Cantonese names and descriptions',
+        '6 restaurant picks with prices and booking tips',
+        'Cart service vs tick-box menu — how to handle both',
+        'Cantonese phrases for ordering and asking for the bill',
+      ]}
+      guideTag="pillar-dim-sum"
+    />
+  </div>
+
+  <!-- Cross-links -->
+  <section class="dimsum-crosslinks reveal">
+    <div class="container-content">
+      <h3 class="dimsum-crosslinks-heading">Explore More Hong Kong</h3>
+      <div class="dimsum-crosslinks-grid">
+        <a href="/cuisine/" class="dimsum-crosslink-card">
+          <span class="dimsum-crosslink-icon">&#127829;</span>
+          <span class="dimsum-crosslink-label">Hong Kong Food Guide</span>
+          <span class="dimsum-crosslink-desc">Roast goose, street food, dai pai dongs & more</span>
+        </a>
+        <a href="/destinations/" class="dimsum-crosslink-card">
+          <span class="dimsum-crosslink-icon">&#127758;</span>
+          <span class="dimsum-crosslink-label">Neighbourhoods</span>
+          <span class="dimsum-crosslink-desc">Central, Wan Chai, Mong Kok, Sham Shui Po</span>
+        </a>
+        <a href="/festivals/" class="dimsum-crosslink-card">
+          <span class="dimsum-crosslink-icon">&#127881;</span>
+          <span class="dimsum-crosslink-label">Festivals & Events</span>
+          <span class="dimsum-crosslink-desc">Chinese New Year, Mid-Autumn Festival & more</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const revealObserver = new IntersectionObserver(
+      (entries) => { entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('visible'); }); },
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach((el) => el.classList.add('visible'));
+  }
+</script>
+
+<style>
+  /* ── Hero ───────────────────────────────────────────────── */
+  .dimsum-hero { position: relative; min-height: 60vh; display: flex; flex-direction: column; justify-content: flex-end; padding: 5rem var(--space-6) 60px; overflow: hidden; }
+  .dimsum-hero-bg { position: absolute; inset: 0; z-index: 0; background: linear-gradient(135deg, #BF360C 0%, #7F1D1D 40%, #5C1A1A 100%); }
+  .dimsum-hero-gradient { position: absolute; inset: 0; z-index: 1; background: linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.1) 40%, rgba(0,0,0,0.45) 100%); }
+  .dimsum-hero-noise { position: absolute; inset: 0; z-index: 2; background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E"); pointer-events: none; }
+  .dimsum-hero-content { position: relative; z-index: 3; max-width: 720px; }
+  .dimsum-hero-title { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: var(--weight-bold); color: #fff; line-height: 1.1; margin: 0 0 var(--space-3); }
+  .dimsum-hero-subtitle { font-size: clamp(1rem, 2vw, 1.15rem); color: rgba(255,255,255,0.85); line-height: 1.6; margin: 0 0 var(--space-5); max-width: 580px; }
+  .dimsum-hero-meta { display: flex; gap: var(--space-5); flex-wrap: wrap; }
+  .dimsum-hero-meta-item { display: flex; flex-direction: column; gap: 2px; }
+  .dimsum-hero-meta-label { font-size: 0.65rem; font-weight: var(--weight-semibold); text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.5); }
+  .dimsum-hero-meta-value { font-size: 1.1rem; font-weight: var(--weight-bold); color: #fff; }
+  .dimsum-scroll-hint { position: absolute; bottom: 16px; right: var(--space-6); z-index: 3; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(255,255,255,0.35); text-align: center; animation: dimsumBounce 2s ease-in-out infinite; }
+  @keyframes dimsumBounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(6px); } }
+
+  /* ── Personal Quote ──────────────────────────────────────── */
+  .dimsum-personal { padding-block: var(--space-8); }
+  .dimsum-personal-quote { max-width: 680px; margin: 0 auto; padding: var(--space-6) var(--space-8); border-left: 4px solid #BF360C; background: var(--color-sky); border-radius: 0 12px 12px 0; }
+  .dimsum-personal-quote p { font-size: var(--text-body); color: var(--color-heading); line-height: var(--leading-body); font-style: italic; margin-bottom: var(--space-3); }
+  .dimsum-personal-quote cite { font-size: var(--text-caption); color: #BF360C; font-weight: var(--weight-semibold); font-style: normal; }
+
+  /* ── Intro Card ──────────────────────────────────────────── */
+  .dimsum-intro { padding: var(--space-4) 0 var(--space-6); }
+  .dimsum-intro-card { background: var(--color-white); border: 1px solid rgba(0,0,0,0.06); border-radius: 16px; padding: var(--space-5) var(--space-6); text-align: center; }
+  .dimsum-intro-text { font-size: 1rem; color: var(--color-slate); line-height: 1.7; max-width: 660px; margin: 0 auto var(--space-4); }
+  .dimsum-intro-legend { display: flex; justify-content: center; gap: var(--space-2); flex-wrap: wrap; }
+
+  /* ── Badges ──────────────────────────────────────────────── */
+  .dimsum-badge { display: inline-block; font-size: 0.6rem; font-weight: var(--weight-bold); text-transform: uppercase; letter-spacing: 0.08em; padding: 3px 8px; border-radius: 6px; line-height: 1.4; }
+  .dimsum-badge--essential { background: rgba(191,54,12,0.12); color: #BF360C; }
+  .dimsum-badge--mustorder { background: rgba(191,54,12,0.12); color: #BF360C; }
+  .dimsum-badge--iconic { background: rgba(127,29,29,0.12); color: #7F1D1D; }
+  .dimsum-badge--michelin { background: rgba(230,57,70,0.12); color: #c41230; }
+  .dimsum-badge--classic { background: rgba(30,58,95,0.12); color: #1E3A5F; }
+  .dimsum-badge--traditional { background: rgba(78,50,20,0.1); color: #5a3a10; }
+  .dimsum-badge--upscale { background: rgba(106,27,154,0.1); color: #6A1B9A; }
+  .dimsum-badge--hero { background: rgba(255,255,255,0.2); color: #fff; border: 1px solid rgba(255,255,255,0.35); }
+
+  /* ── Section Headers (shared) ────────────────────────────── */
+  .dimsum-section-header { position: relative; border-radius: 20px; padding: var(--space-6); margin-bottom: var(--space-6); overflow: hidden; display: flex; align-items: center; justify-content: space-between; }
+  .dimsum-section-header-inner { position: relative; z-index: 1; }
+  .dimsum-section-name { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: var(--weight-bold); color: #fff; margin: 0 0 var(--space-1); line-height: 1.2; }
+  .dimsum-section-tagline { font-size: 0.9rem; color: rgba(255,255,255,0.8); margin: 0 0 var(--space-3); max-width: 480px; line-height: 1.5; }
+  .dimsum-section-count { font-size: 0.7rem; font-weight: var(--weight-semibold); text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.55); background: rgba(255,255,255,0.1); padding: 4px 12px; border-radius: 20px; }
+  .dimsum-section-ornament { font-size: 3rem; color: rgba(255,255,255,0.15); position: relative; z-index: 1; }
+
+  /* ── Dish Grid ───────────────────────────────────────────── */
+  .dimsum-dishes-section { padding: var(--space-4) 0 var(--space-8); }
+  .dimsum-dish-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-5); }
+  @media (max-width: 768px) { .dimsum-dish-grid { grid-template-columns: 1fr; } }
+
+  /* ── Dish Card ───────────────────────────────────────────── */
+  .dimsum-dish-card { background: var(--color-white); border: 1px solid rgba(0,0,0,0.06); border-radius: 16px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; display: flex; flex-direction: column; }
+  .dimsum-dish-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.12); }
+  .dimsum-dish-header { padding: var(--space-3) var(--space-4); display: flex; align-items: center; gap: var(--space-2); }
+  .dimsum-dish-category { font-size: 0.65rem; font-weight: var(--weight-semibold); text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.75); margin-left: auto; }
+  .dimsum-dish-body { padding: var(--space-4) var(--space-5) var(--space-5); display: flex; flex-direction: column; flex: 1; gap: var(--space-3); }
+  .dimsum-dish-name { font-size: 1.05rem; font-weight: var(--weight-bold); color: var(--color-deep-night); margin: 0; line-height: 1.2; }
+  .dimsum-dish-cantonese { font-size: 0.75rem; color: #BF360C; font-weight: var(--weight-medium); margin: 0; }
+  .dimsum-dish-desc { font-size: 0.82rem; color: var(--color-slate); line-height: 1.65; margin: 0; flex: 1; }
+  .dimsum-dish-footer { border-top: 1px solid rgba(0,0,0,0.06); padding-top: var(--space-3); display: flex; flex-direction: column; gap: var(--space-2); }
+  .dimsum-dish-price { display: flex; flex-direction: column; gap: 2px; }
+  .dimsum-dish-price-label { font-size: 0.58rem; font-weight: var(--weight-bold); text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-slate); }
+  .dimsum-dish-price-value { font-size: 0.78rem; font-weight: var(--weight-semibold); color: var(--color-deep-night); }
+  .dimsum-dish-tip { background: rgba(191,54,12,0.05); border-radius: 8px; padding: var(--space-2) var(--space-3); display: flex; flex-direction: column; gap: 2px; }
+  .dimsum-dish-tip-label { font-size: 0.58rem; font-weight: var(--weight-bold); text-transform: uppercase; letter-spacing: 0.1em; color: #BF360C; }
+  .dimsum-dish-tip-value { font-size: 0.75rem; color: var(--color-deep-night); line-height: 1.5; }
+
+  /* ── Restaurant Grid ─────────────────────────────────────── */
+  .dimsum-restaurants-section { padding: var(--space-4) 0 var(--space-8); }
+  .dimsum-restaurant-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-5); }
+  @media (max-width: 768px) { .dimsum-restaurant-grid { grid-template-columns: 1fr; } }
+
+  /* ── Restaurant Card ─────────────────────────────────────── */
+  .dimsum-restaurant-card { background: var(--color-white); border: 1px solid rgba(0,0,0,0.06); border-radius: 16px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; display: flex; flex-direction: column; }
+  .dimsum-restaurant-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.12); }
+  .dimsum-restaurant-header { background: linear-gradient(135deg, #1a2332 0%, #2d4a6e 100%); padding: var(--space-4) var(--space-5); }
+  .dimsum-restaurant-name { font-size: 1.05rem; font-weight: var(--weight-bold); color: #fff; margin: 0 0 4px; line-height: 1.2; }
+  .dimsum-restaurant-hood { font-size: 0.72rem; color: rgba(255,255,255,0.7); margin: 0; }
+  .dimsum-restaurant-body { padding: var(--space-4) var(--space-5) var(--space-5); display: flex; flex-direction: column; flex: 1; gap: var(--space-3); }
+  .dimsum-restaurant-meta { display: flex; flex-direction: column; gap: var(--space-2); }
+  .dimsum-restaurant-meta-item { display: flex; flex-direction: column; gap: 2px; }
+  .dimsum-restaurant-meta-label { font-size: 0.58rem; font-weight: var(--weight-bold); text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-slate); }
+  .dimsum-restaurant-meta-value { font-size: 0.78rem; color: var(--color-deep-night); line-height: 1.4; }
+  .dimsum-restaurant-vibe { font-size: 0.82rem; font-style: italic; color: var(--color-slate); line-height: 1.55; margin: 0; }
+  .dimsum-restaurant-mustorder { background: rgba(191,54,12,0.06); border-radius: 8px; padding: var(--space-2) var(--space-3); display: flex; flex-direction: column; gap: 2px; }
+  .dimsum-restaurant-mustorder-label { font-size: 0.58rem; font-weight: var(--weight-bold); text-transform: uppercase; letter-spacing: 0.1em; color: #BF360C; }
+  .dimsum-restaurant-mustorder-value { font-size: 0.78rem; color: var(--color-deep-night); line-height: 1.5; }
+
+  /* ── Etiquette Section ───────────────────────────────────── */
+  .dimsum-etiquette { padding: var(--space-4) 0 var(--space-8); }
+  .dimsum-etiquette-card { background: var(--color-white); border: 1px solid rgba(0,0,0,0.06); border-radius: 20px; padding: var(--space-8) var(--space-8); }
+  .dimsum-etiquette-heading { font-size: clamp(1.3rem, 3vw, 1.9rem); font-weight: var(--weight-bold); color: var(--color-deep-night); margin: 0 0 var(--space-3); }
+  .dimsum-etiquette-intro { font-size: 1rem; color: var(--color-slate); line-height: 1.7; max-width: 680px; margin: 0 0 var(--space-6); }
+  .dimsum-etiquette-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-5); }
+  @media (max-width: 768px) { .dimsum-etiquette-grid { grid-template-columns: 1fr; } }
+  .dimsum-etiquette-item { border: 1px solid rgba(191,54,12,0.12); border-radius: 14px; padding: var(--space-5); }
+  .dimsum-etiquette-step { font-size: 0.95rem; font-weight: var(--weight-bold); color: #BF360C; margin: 0 0 var(--space-3); }
+  .dimsum-etiquette-desc { font-size: 0.82rem; color: var(--color-slate); line-height: 1.65; margin: 0; }
+
+  /* ── CTA ─────────────────────────────────────────────────── */
+  .dimsum-cta-section { padding: var(--space-6) 0 var(--space-8); }
+  .dimsum-cta-card { background: linear-gradient(135deg, #BF360C 0%, #7F1D1D 100%); border-radius: 20px; padding: var(--space-8) var(--space-6); text-align: center; color: #fff; }
+  .dimsum-cta-heading { font-size: clamp(1.3rem, 3vw, 1.8rem); font-weight: var(--weight-bold); margin: 0 0 var(--space-3); color: #fff; }
+  .dimsum-cta-text { font-size: 1rem; color: rgba(255,255,255,0.75); max-width: 520px; margin: 0 auto var(--space-5); line-height: 1.6; }
+  .dimsum-cta-button { display: inline-block; background: rgba(255,255,255,0.15); color: #fff; font-size: 0.9rem; font-weight: var(--weight-semibold); padding: 12px 28px; border-radius: 40px; text-decoration: none; border: 2px solid rgba(255,255,255,0.4); transition: background 0.2s ease, transform 0.2s ease; }
+  .dimsum-cta-button:hover { background: rgba(255,255,255,0.25); transform: translateY(-2px); }
+
+  /* ── Cross-links ─────────────────────────────────────────── */
+  .dimsum-crosslinks { padding: 0 0 var(--space-10); }
+  .dimsum-crosslinks-heading { font-size: 1.1rem; font-weight: var(--weight-bold); color: var(--color-deep-night); text-align: center; margin: 0 0 var(--space-4); }
+  .dimsum-crosslinks-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); max-width: 800px; margin: 0 auto; }
+  @media (max-width: 640px) { .dimsum-crosslinks-grid { grid-template-columns: 1fr; } }
+  .dimsum-crosslink-card { display: flex; flex-direction: column; align-items: center; gap: var(--space-2); padding: var(--space-5) var(--space-4); background: var(--color-white); border: 1px solid rgba(0,0,0,0.06); border-radius: 16px; text-decoration: none; color: inherit; text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .dimsum-crosslink-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+  .dimsum-crosslink-icon { font-size: 1.8rem; }
+  .dimsum-crosslink-label { font-size: 0.95rem; font-weight: var(--weight-bold); color: var(--color-deep-night); }
+  .dimsum-crosslink-desc { font-size: 0.78rem; color: var(--color-slate); line-height: 1.4; }
+
+  @media (max-width: 640px) {
+    .dimsum-hero { min-height: 55vh; padding: 0 var(--space-4) 40px; }
+    .dimsum-hero-meta { gap: var(--space-4); }
+    .dimsum-scroll-hint { display: none; }
+    .dimsum-etiquette-card { padding: var(--space-5) var(--space-4); }
+    .dimsum-section-header { padding: var(--space-5) var(--space-4); }
+    .dimsum-section-ornament { display: none; }
+  }
+</style>
