@@ -10,15 +10,12 @@ const navLinks = [
 
 const guideLinks = [
   { href: '/dim-sum-guide/', label: 'Dim Sum Guide', icon: '🥟' },
-  { href: '/hiking-hong-kong/', label: 'Hiking', icon: '🥾' },
-  { href: '/hong-kong-islands/', label: 'Outlying Islands', icon: '🏝️' },
-  { href: '/night-markets/', label: 'Night Markets', icon: '🌃' },
   { href: '/practical/', label: 'Travel Tips', icon: '🛠️' },
   { href: '/packing-list/', label: 'Packing List', icon: '🎒' },
 ];
 
 const isGuidesActive = (p: string) =>
-  p.startsWith('/dim-sum') || p.startsWith('/hiking') || p.startsWith('/hong-kong-islands') || p.startsWith('/night-markets') || p.startsWith('/practical') || p.startsWith('/packing-list');
+  p.startsWith('/dim-sum') || p.startsWith('/practical') || p.startsWith('/packing-list');
 ---
 
 <!-- Desktop: top nav bar — transparent → solid on scroll -->
