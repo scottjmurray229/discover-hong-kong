@@ -63,6 +63,7 @@ const pillarLinks = [
   { icon: '🗺️', label: 'AI Trip Planner', desc: 'Build your itinerary', url: '/plan/' },
 ];
 ---
+import NetworkCrossLinks from '../components/NetworkCrossLinks.astro';
 <BaseLayout
   title="Discovering Hong Kong — Travel Guides by Scott & Jenice"
   description="Your complete guide to Hong Kong — harbour views, dim sum, hiking trails, and honest recommendations from people who keep coming back."
@@ -416,6 +417,7 @@ const pillarLinks = [
   <div class="container-content">
     <FTCDisclosure placement="inline" />
   </div>
+<NetworkCrossLinks currentSite="Hong Kong" cluster="east-asia" />
 </BaseLayout>
 
 <!-- Scroll Reveal Observer -->
