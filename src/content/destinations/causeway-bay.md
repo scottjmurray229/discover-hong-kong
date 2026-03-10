@@ -103,7 +103,7 @@ affiliatePicks:
     type: "tour"
     price: "From HKD 340"
     personalNote: "Food tours hitting Causeway Bay's Japanese restaurant strip, local cha chaan tengs, and the Bowrington Road wet market give excellent context for this neighbourhood's food culture."
-    affiliateUrl: "https://www.getyourguide.com/hong-kong-l7/hong-kong-food-tour-tc24/?partner_id=3VYNY1C"
+    affiliateUrl: "https://www.getyourguide.com/hong-kong-l7/hong-kong-food-tour-tc24/?partner_id=IVN6IQ3"
   - name: "Compact Umbrella + Octopus Card Holder (Amazon)"
     type: "gear"
     price: "USD 10-16"

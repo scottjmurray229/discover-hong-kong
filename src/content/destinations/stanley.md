@@ -103,7 +103,7 @@ affiliatePicks:
     type: "tour"
     price: "From HKD 310"
     personalNote: "Guided south HK Island tours covering Stanley Market, Murray House, Repulse Bay, and Aberdeen give context for the colonial history and fishing culture of this side of the island."
-    affiliateUrl: "https://www.getyourguide.com/hong-kong-l7/stanley-repulse-bay-south-island-tc24/?partner_id=3VYNY1C"
+    affiliateUrl: "https://www.getyourguide.com/hong-kong-l7/stanley-repulse-bay-south-island-tc24/?partner_id=IVN6IQ3"
   - name: "Compact Travel Umbrella + Silk Scarf Packing Cube (Amazon)"
     type: "gear"
     price: "USD 12-22"

@@ -102,7 +102,7 @@ affiliatePicks:
     type: "tour"
     price: "From HKD 320"
     personalNote: "Guided sunset tours to Victoria Peak that include the Lugard Road circular walk, Sky Terrace entry, and a guide who explains the city's layout below are a great orientation for first-time visitors."
-    affiliateUrl: "https://www.getyourguide.com/hong-kong-l7/victoria-peak-sunset-tour-tc24/?partner_id=3VYNY1C"
+    affiliateUrl: "https://www.getyourguide.com/hong-kong-l7/victoria-peak-sunset-tour-tc24/?partner_id=IVN6IQ3"
   - name: "Lightweight Camera Tripod + ND Filter (Amazon)"
     type: "gear"
     price: "USD 25-45"

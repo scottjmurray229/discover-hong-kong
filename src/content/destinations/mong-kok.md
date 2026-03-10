@@ -103,7 +103,7 @@ affiliatePicks:
     type: "tour"
     price: "From HKD 290"
     personalNote: "Evening street food tours through Mong Kok cover egg waffles, curry fish balls, and the market scene with a guide who explains the culture behind each stall."
-    affiliateUrl: "https://www.getyourguide.com/hong-kong-l7/hong-kong-street-food-tour-tc24/?partner_id=3VYNY1C"
+    affiliateUrl: "https://www.getyourguide.com/hong-kong-l7/hong-kong-street-food-tour-tc24/?partner_id=IVN6IQ3"
   - name: "Octopus Card Holder + Compact Umbrella (Amazon)"
     type: "gear"
     price: "USD 10-18"

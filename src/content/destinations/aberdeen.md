@@ -103,7 +103,7 @@ affiliatePicks:
     type: "activity"
     price: "HKD 440-520"
     personalNote: "Ocean Park is genuinely impressive — marine life, giant pandas, roller coasters with sea views. Book in advance on GetYourGuide for the best rates and skip-the-queue entry."
-    affiliateUrl: "https://www.getyourguide.com/hong-kong-l7/ocean-park-hong-kong-tickets-tc24/?partner_id=3VYNY1C"
+    affiliateUrl: "https://www.getyourguide.com/hong-kong-l7/ocean-park-hong-kong-tickets-tc24/?partner_id=IVN6IQ3"
   - name: "Travel Adapter Type G + Octopus Card Holder (Amazon)"
     type: "gear"
     price: "USD 10-16"

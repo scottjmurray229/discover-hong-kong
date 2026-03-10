@@ -103,7 +103,7 @@ affiliatePicks:
     type: "tour"
     price: "From HKD 420"
     personalNote: "Guided day tours combining the Big Buddha, cable car, and Tai O stilt village give structure to a long day across Lantau. The guide's knowledge of Tai O's fishing culture and history adds significant value."
-    affiliateUrl: "https://www.getyourguide.com/hong-kong-l7/lantau-island-big-buddha-day-trip-tc24/?partner_id=3VYNY1C"
+    affiliateUrl: "https://www.getyourguide.com/hong-kong-l7/lantau-island-big-buddha-day-trip-tc24/?partner_id=IVN6IQ3"
   - name: "Shrimp Paste Gift Set + Earthenware Pot Holder (Amazon)"
     type: "gear"
     price: "USD 12-25"

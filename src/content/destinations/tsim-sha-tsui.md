@@ -105,7 +105,7 @@ affiliatePicks:
     type: "tour"
     price: "From HKD 220"
     personalNote: "A harbour cruise from TST timed for the 8pm Symphony of Lights is one of the best evening experiences in Hong Kong. GetYourGuide has several options from junk boats to modern cruisers."
-    affiliateUrl: "https://www.getyourguide.com/hong-kong-l7/hong-kong-night-cruise-harbour-tc24/?partner_id=3VYNY1C"
+    affiliateUrl: "https://www.getyourguide.com/hong-kong-l7/hong-kong-night-cruise-harbour-tc24/?partner_id=IVN6IQ3"
   - name: "Compact Travel Umbrella + Type G Adapter (Amazon)"
     type: "gear"
     price: "USD 12-20"

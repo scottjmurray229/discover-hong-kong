@@ -103,7 +103,7 @@ affiliatePicks:
     type: "tour"
     price: "From HKD 290"
     personalNote: "Walking tours of Wan Chai covering the Blue House, Bowrington Road market, Pak Tai Temple, and local dim sum stops are the best way to understand this neighbourhood's layered history."
-    affiliateUrl: "https://www.getyourguide.com/hong-kong-l7/wan-chai-heritage-walking-tour-tc24/?partner_id=3VYNY1C"
+    affiliateUrl: "https://www.getyourguide.com/hong-kong-l7/wan-chai-heritage-walking-tour-tc24/?partner_id=IVN6IQ3"
   - name: "Type G Travel Adapter + Portable Charger (Amazon)"
     type: "gear"
     price: "USD 15-30"

@@ -103,7 +103,7 @@ affiliatePicks:
     type: "tour"
     price: "From HKD 420"
     personalNote: "Guided Lantau day tours combining the Big Buddha, cable car, Tai O stilt village, and pink dolphin boat tour cover the island's highlights with transport arranged — the most efficient way to see it all."
-    affiliateUrl: "https://www.getyourguide.com/hong-kong-l7/lantau-island-big-buddha-day-trip-tc24/?partner_id=3VYNY1C"
+    affiliateUrl: "https://www.getyourguide.com/hong-kong-l7/lantau-island-big-buddha-day-trip-tc24/?partner_id=IVN6IQ3"
   - name: "Hiking Shoes + Packable Daypack (Amazon)"
     type: "gear"
     price: "USD 20-50"

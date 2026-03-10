@@ -104,7 +104,7 @@ affiliatePicks:
     type: "tour"
     price: "From HKD 380"
     personalNote: "Guided hiking tours to the High Island Reservoir Geopark and MacLehose Trail Stage 1 are the best way to see the hexagonal rock columns with someone who knows the route and the geology."
-    affiliateUrl: "https://www.getyourguide.com/hong-kong-l7/sai-kung-hiking-geopark-tour-tc24/?partner_id=3VYNY1C"
+    affiliateUrl: "https://www.getyourguide.com/hong-kong-l7/sai-kung-hiking-geopark-tour-tc24/?partner_id=IVN6IQ3"
   - name: "Hiking Shoes + Trekking Poles + Water Bottle (Amazon)"
     type: "gear"
     price: "USD 25-60"

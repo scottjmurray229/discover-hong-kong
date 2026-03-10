@@ -103,7 +103,7 @@ affiliatePicks:
     type: "tour"
     price: "From HKD 320"
     personalNote: "Walking tours through Central's colonial heritage — Man Mo Temple, PMQ, Hollywood Road — combined with dim sum stops are a fantastic way to eat and explore simultaneously."
-    affiliateUrl: "https://www.getyourguide.com/hong-kong-l7/hong-kong-central-food-tour-tc24/?partner_id=3VYNY1C"
+    affiliateUrl: "https://www.getyourguide.com/hong-kong-l7/hong-kong-central-food-tour-tc24/?partner_id=IVN6IQ3"
   - name: "Octopus Card Holder + Travel Accessories (Amazon)"
     type: "gear"
     price: "USD 8-15"

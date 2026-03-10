@@ -104,7 +104,7 @@ affiliatePicks:
     type: "tour"
     price: "From HKD 320"
     personalNote: "Guided Lamma day trips that cover the Family Trail, Hung Shing Ye Beach, and a Sok Kwu Wan seafood lunch are worth it for the ordering expertise alone — knowing how to select and price live seafood at the tanks."
-    affiliateUrl: "https://www.getyourguide.com/hong-kong-l7/lamma-island-day-trip-tc24/?partner_id=3VYNY1C"
+    affiliateUrl: "https://www.getyourguide.com/hong-kong-l7/lamma-island-day-trip-tc24/?partner_id=IVN6IQ3"
   - name: "Packable Rain Jacket + Dry Bag (Amazon)"
     type: "gear"
     price: "USD 15-30"
