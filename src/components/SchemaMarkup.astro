@@ -112,7 +112,7 @@ function buildDestinationSchemas() {
     ...(data.lastVerified && { dateModified: new Date(data.lastVerified).toISOString() }),
     speakable: {
       '@type': 'SpeakableSpecification',
-      cssSelector: ['#quick-facts'],
+      cssSelector: ['.aeo-quick-facts', '.quick-facts', '.dest-quick-facts'],
     },
     isPartOf: { '@id': `${baseUrl}/#website` },
   });
