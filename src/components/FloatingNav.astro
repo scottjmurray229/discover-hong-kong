@@ -12,10 +12,15 @@ const guideLinks = [
   { href: '/dim-sum-guide/', label: 'Dim Sum Guide', icon: '🥟' },
   { href: '/practical/', label: 'Travel Tips', icon: '🛠️' },
   { href: '/packing-list/', label: 'Packing List', icon: '🎒' },
+  { href: '/cuisine/', label: 'Food & Cuisine', icon: '🍜' },
+  { href: '/festivals/', label: 'Festivals', icon: '🎉' },
+  { href: '/finer-things/', label: 'The Finer Things', icon: '🥃' },
+  { href: '/history/', label: 'History', icon: '🏛️' },
+  { href: '/compare/', label: 'Compare Destinations', icon: '⚖️' },
 ];
 
 const isGuidesActive = (p: string) =>
-  p.startsWith('/dim-sum') || p.startsWith('/practical') || p.startsWith('/packing-list');
+  p.startsWith('/dim-sum') || p.startsWith('/practical') || p.startsWith('/packing-list') || p.startsWith('/cuisine') || p.startsWith('/festivals') || p.startsWith('/finer-things') || p.startsWith('/history') || p.startsWith('/compare');
 ---
 
 <!-- Desktop: top nav bar — transparent → solid on scroll -->
