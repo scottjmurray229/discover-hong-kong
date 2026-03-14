@@ -25,7 +25,7 @@ budgetPerDay:
   backpacker: 60
   midRange: 160
   luxury: 450
-gettingThere: "MTR Wan Chai station (Island Line). Historic tram from Central (HKD 3 flat fare). Star Ferry from Tsim Sha Tsui East Ferry Terminal."
+gettingThere: 'MTR Wan Chai station (Island Line). Historic tram from Central (HKD 3 flat fare). Star Ferry from Tsim Sha Tsui East Ferry Terminal. <a href="https://airasia.prf.hn/click/camref:1101l5F4ob">AirAsia</a> flies to Hong Kong from Bangkok, KL, and Manila.'
 essentials:
   - icon: "🚇"
     label: "Getting There"

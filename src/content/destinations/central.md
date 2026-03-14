@@ -25,7 +25,7 @@ budgetPerDay:
   backpacker: 80
   midRange: 200
   luxury: 600
-gettingThere: "MTR Central station (Island Line or Tsuen Wan Line). Airport Express to Hong Kong Station. Star Ferry from Tsim Sha Tsui Pier 7."
+gettingThere: 'MTR Central station (Island Line or Tsuen Wan Line). Airport Express to Hong Kong Station. Star Ferry from Tsim Sha Tsui Pier 7. <a href="https://airasia.prf.hn/click/camref:1101l5F4ob">AirAsia</a> flies to Hong Kong from Bangkok, KL, and Manila.'
 essentials:
   - icon: "🚇"
     label: "Getting There"

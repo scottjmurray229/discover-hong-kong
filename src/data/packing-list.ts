@@ -59,6 +59,36 @@ export const HK_ESSENTIALS: PackingItem[] = [
     essential: false,
     localAlternative: 'Google Translate works well — download Cantonese offline pack',
   },
+  {
+    id: 'vpn-subscription',
+    name: 'VPN Subscription',
+    category: 'electronics',
+    description: 'Secure your data on public WiFi — essential for hotel, airport, and cafe networks abroad.',
+    essential: false,
+    affiliateUrl: 'https://go.nordvpn.net/aff_c?offer_id=15&aff_id=142311&url_id=902',
+    affiliatePrice: '~$3/month',
+    affiliatePartner: 'NordVPN',
+  },
+  {
+    id: '360-camera',
+    name: '360° Camera',
+    category: 'gear',
+    description: 'Capture immersive views of architecture, cityscapes, and landmarks.',
+    essential: false,
+    affiliateUrl: 'https://www.insta360.com/sal/x5?utm_source=AffiliateCenter&utm_medium=copylink&utm_term=INRSG7H5RTR',
+    affiliatePrice: '~$499',
+    affiliatePartner: 'Insta360',
+  },
+  {
+    id: 'phone-gimbal',
+    name: 'Phone Gimbal for Travel Vlogging',
+    category: 'electronics',
+    description: 'Stabilized video from your phone — no editing needed.',
+    essential: false,
+    affiliateUrl: 'https://www.insta360.com/sal/flow-2-pro?utm_source=AffiliateCenter&utm_medium=copylink&utm_term=INRSG7H5RTR',
+    affiliatePrice: '~$149',
+    affiliatePartner: 'Insta360',
+  },
 ];
 
 // ─────────────────────────────────────────────────────────────────────────────
